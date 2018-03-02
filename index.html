@@ -1,12 +1,257 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
+<head>
+	<meta charset="utf-8">
+	<title>HTML Academy: Девайс</title>
+</head>
 
-  </body>
+<body>
+
+	<!-- HEADER -->
+
+	<header class="main-header">
+
+		<h1>Магазин техники Девайс</h1>
+
+		<!-- MAIN NAV -->
+
+		<nav class="main-header__main-nav">
+
+			<!-- LOGO -->
+
+			<a href="" class="main-header__logo logo">DEVICE</a>
+
+			<!-- MAIN ACTION -->
+
+			<ul class="main-header__user-action user-action">
+
+				<li class="user-action__item">Поиск по сайту</li>
+				<!-- Здесь будет форма -->
+
+				<li class="user-action__item"><a href="#" class="user-action__login">Войти</a></li>
+
+				<li class="user-action__item"><a href="#" class="user-action__compair">Сравнить</a></li>
+
+				<li class="user-action__item"><a href="#" class="user-actions__cart">Корзина</a></li>
+
+			</ul>
+
+			<!-- SITE NAVIGATON -->
+
+			<ul class="main-header__site-nav site-nav">
+
+				<li class="site-nav__item"><a href="#" class="site-nav__link">Каталог товаров</a>
+
+					<!-- HIDDEN CATALOG IN SITE NAVIGATION -->
+
+					<ul class="site-nav__catalog catalog">
+
+						<li class="catalog__item">
+
+							<ul class="catalog__list">
+
+								<li class="catalog__item"><a href="#" class="catalog__list">Виртуальная реальность</a></li>
+								<li class="catalog__item"><a href="#" class="catalog__list">Моноподы для селфи</a></li>
+								<li class="catalog__item"><a href="#" class="catalog__list">Экшн-камеры</a></li>
+
+							</ul>
+
+						</li>
+						<li class="catalog__item">
+
+							<ul class="catalog__list">
+
+								<li class="catalog__item"><a href="#" class="catalog__list">Фитнеc-браслеты</a></li>
+								<li class="catalog__item"><a href="#" class="catalog__list">Умные часы</a></li>
+
+							</ul>
+
+						</li>
+						<li class="catalog__item"><a href="#" class="catalog__link">Квадрокоптеры</a></li>
+
+					</ul>
+
+				</li>
+				<li class="site-nav__item"><a href="#" class="site-nav__link">Доставка</a></li>
+				<li class="site-nav__item"><a href="#" class="site-nav__link">Гарантия</a></li>
+				<li class="site-nav__item"><a href="#" class="site-nav__link">Контакты</a></li>
+
+			</ul>
+
+		</nav>
+
+	</header>
+
+	<main class="container">
+
+		<!-- PROMO SECTION -->
+
+		<section class="promo-slider">
+
+			<!-- HIDDEN HEADING -->
+
+			<h2>Промо слайдер с топ 3 товарами</h2>
+
+			<!-- PROMO SLIDER ITEM 1 -->
+
+			<div class="promo-slider__item">
+
+				<!-- IMG SLIDER -->
+
+				<img src="http://via.placeholder.com/384x486" alt="" class="promo-slider__img">
+
+				<!-- PROMO CONTENT -->
+
+				<div class="promo-slider__content">
+
+					<h3 class="promo-slider__heading">Делай селфи, как Бен Стиллер!</h3>
+
+					<p class="promo-slider__description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+
+					<!-- TABLE WITH ADVANTAGE -->
+
+					<table class="promo-slider__advantage table">
+
+						<tr class="table__row">
+
+							<td class="table__data">Длина палки</td>
+							<td class="table__data">Вес палки</td>
+							<td class="table__data">Материал</td>
+
+						</tr>
+
+						<tr class="table__row">
+
+							<td class="table__data">8,5 м</td>
+							<td class="table__data">5 кг</td>
+							<td class="table__data">Карбон</td>
+
+						</tr>
+
+					</table>
+
+					<!-- SLIDE CONTROL -->
+
+					<button class="promo-slider__control slider-control">Первый слайд</button>
+					<button class="promo-slider__control slider-control">Второй слайд</button>
+					<button class="promo-slider__control slider-control">Третий слайд</button>
+
+					<!-- SLIDE A -->
+
+					<a href="" class="promo-slider__link">Подробнее</a>
+
+				</div>
+
+			</div>
+
+			<!-- PROMO SLIDER ITEM 2 -->
+
+			<div class="promo-slider__item">
+
+				<!-- IMG SLIDER -->
+
+				<img src="http://via.placeholder.com/384x486" alt="" class="promo-slider__img">
+
+				<!-- PROMO CONTENT -->
+
+				<div class="promo-slider__content">
+
+					<h3 class="promo-slider__heading">Худеем правильно!</h3>
+
+					<p class="promo-slider__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+
+					<!-- TABLE WITH ADVANTAGE -->
+
+					<table class="promo-slider__advantage table">
+
+						<tr class="table__row">
+
+							<td class="table__data">Без подзарядки</td>
+
+						</tr>
+
+						<tr class="table__row">
+
+							<td class="table__data">48 часов</td>
+
+						</tr>
+
+					</table>
+
+					<!-- SLIDE CONTROL -->
+
+					<button class="promo-slider__control slider-control">Первый слайд</button>
+					<button class="promo-slider__control slider-control">Второй слайд</button>
+					<button class="promo-slider__control slider-control">Третий слайд</button>
+
+					<!-- SLIDE A -->
+
+					<a href="" class="promo-slider__link">Подробнее</a>
+
+				</div>
+
+			</div>
+
+			<!-- PROMO SLIDER ITEM 3 -->
+
+			<div class="promo-slider__item">
+
+				<!-- IMG SLIDER -->
+
+				<img src="http://via.placeholder.com/526x334" alt="" class="promo-slider__img">
+
+				<!-- PROMO CONTENT -->
+
+				<div class="promo-slider__content">
+
+					<h3 class="promo-slider__heading">Порхает как бабочка, жалит как пчела!</h3>
+
+					<p class="promo-slider__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+
+					<!-- TABLE WITH ADVANTAGE -->
+
+					<table class="promo-slider__advantage table">
+
+						<tr class="table__row">
+
+							<td class="table__data">Дальность полета</td>
+							<td class="table__data">Радиус поражения</td>
+
+						</tr>
+
+						<tr class="table__row">
+
+							<td class="table__data">800 м</td>
+							<td class="table__data">50 м</td>
+
+						</tr>
+
+					</table>
+
+					<!-- SLIDE CONTROL -->
+
+					<button class="promo-slider__control slider-control">Первый слайд</button>
+					<button class="promo-slider__control slider-control">Второй слайд</button>
+					<button class="promo-slider__control slider-control">Третий слайд</button>
+
+					<!-- SLIDE A -->
+
+					<a href="" class="promo-slider__link">Подробнее</a>
+
+				</div>
+
+			</div>
+
+		</section>
+
+	</main>
+
+	<footer class="footer">
+
+
+	</footer>
+
+</body>
+
 </html>
