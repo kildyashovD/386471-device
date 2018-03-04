@@ -11,72 +11,75 @@
   <!-- HEADER -->
   <header class="main-header">
 
-    <h1>Магазин техники Девайc</h1>
+    <div class="container">
 
-    <!-- LOGO, которому зададим абсолютное позиционирование -->
-    <a href="#" class="main-header__logo logo">DEVICE</a>
+      <h1>Магазин техники Девайc</h1>
 
-    <!-- MAIN NAV -->
-    <!-- Здесь будет форма -->
-    <span class="user-search">Поиск по сайту</span>
+      <!-- LOGO, которому зададим абсолютное позиционирование -->
+      <a href="#" class="main-header__logo logo">DEVICE</a>
 
-    <!-- USER ACTION -->
-    <nav class="main-header__user-action">
+      <!-- MAIN NAV -->
+      <!-- Здесь будет форма -->
+      <span class="user-search">Поиск по сайту</span>
 
-      <ul class="user-action">
+      <!-- USER ACTION -->
+      <nav class="main-header__user-action">
 
-        <li class="user-action__item"><a href="#" class="user-action__login">Войти</a></li>
+        <ul class="user-action">
 
-        <li class="user-action__item"><a href="#" class="user-action__compair">Сравнить</a></li>
+          <li class="user-action__item"><a href="#" class="user-action__login">Войти</a></li>
 
-        <li class="user-action__item"><a href="#" class="user-actions__cart">Корзина</a></li>
+          <li class="user-action__item"><a href="#" class="user-action__compair">Сравнить</a></li>
 
-      </ul>
-    </nav>
+          <li class="user-action__item"><a href="#" class="user-actions__cart">Корзина</a></li>
 
-    <!-- SITE NAVIGATON -->
-    <nav class="main-header__site-nev">
-      <ul class="site-nav">
+        </ul>
+      </nav>
 
-        <li class="site-nav__item"><a href="catalog.html" class="site-nav__link">Каталог товаров</a>
+      <!-- SITE NAVIGATON -->
+      <nav class="main-header__site-nev">
+        <ul class="site-nav">
 
-          <!-- HIDDEN CATALOG IN SITE NAVIGATION -->
-          <ul class="site-nav__catalog catalog">
+          <li class="site-nav__item"><a href="catalog.html" class="site-nav__link">Каталог товаров</a>
 
-            <li class="catalog__item">
+            <!-- HIDDEN CATALOG IN SITE NAVIGATION -->
+            <ul class="site-nav__catalog catalog">
 
-              <ul class="catalog__list">
+              <li class="catalog__item">
 
-                <li class="catalog__item"><a href="#" class="catalog__link">Виртуальная реальность</a></li>
-                <li class="catalog__item"><a href="#" class="catalog__link">Моноподы для селфи</a></li>
-                <li class="catalog__item"><a href="#" class="catalog__link">Экшн-камеры</a></li>
+                <ul class="catalog__list">
 
-              </ul>
+                  <li class="catalog__item"><a href="#" class="catalog__link">Виртуальная реальность</a></li>
+                  <li class="catalog__item"><a href="#" class="catalog__link">Моноподы для селфи</a></li>
+                  <li class="catalog__item"><a href="#" class="catalog__link">Экшн-камеры</a></li>
 
-            </li>
-            <li class="catalog__item">
+                </ul>
 
-              <ul class="catalog__list">
+              </li>
+              <li class="catalog__item">
 
-                <li class="catalog__item"><a href="#" class="catalog__link">Фитнеc-браслеты</a></li>
-                <li class="catalog__item"><a href="#" class="catalog__link">Умные часы</a></li>
+                <ul class="catalog__list">
 
-              </ul>
+                  <li class="catalog__item"><a href="#" class="catalog__link">Фитнеc-браслеты</a></li>
+                  <li class="catalog__item"><a href="#" class="catalog__link">Умные часы</a></li>
 
-            </li>
-            <li class="catalog__item"><a href="#" class="catalog__link">Квадрокоптеры</a></li>
+                </ul>
 
-          </ul>
+              </li>
+              <li class="catalog__item"><a href="#" class="catalog__link">Квадрокоптеры</a></li>
 
-        </li>
-        <li class="site-nav__item"><a href="#" class="site-nav__link">Доставка</a></li>
-        <li class="site-nav__item"><a href="#" class="site-nav__link">Гарантия</a></li>
-        <li class="site-nav__item"><a href="#" class="site-nav__link">Контакты</a></li>
+            </ul>
 
-      </ul>
+          </li>
+          <li class="site-nav__item"><a href="#" class="site-nav__link">Доставка</a></li>
+          <li class="site-nav__item"><a href="#" class="site-nav__link">Гарантия</a></li>
+          <li class="site-nav__item"><a href="#" class="site-nav__link">Контакты</a></li>
 
-    </nav>
+        </ul>
 
+      </nav>
+
+    </div>
   </header>
 
   <main class="container">
@@ -84,174 +87,182 @@
     <!-- PROMO SECTION -->
     <section class="promo-slider">
 
-      <!-- HIDDEN HEADING -->
-      <h2>Промо слайдер с топ 3 товарами</h2>
+      <input type="radio" name="promo-slider-control" id="promo-slider-btn-1" checked>
+      <input type="radio" name="promo-slider-control" id="promo-slider-btn-2">
+      <input type="radio" name="promo-slider-control" id="promo-slider-btn-3">
 
-      <!-- PROMO SLIDER ITEM 1 -->
-      <div class="promo-slider__item">
+      <div class="container">
 
-        <!-- IMG SLIDER -->
-        <img src="http://via.placeholder.com/384x486" alt="Селфи-палка" class="promo-slider__img">
+        <!-- HIDDEN HEADING -->
+        <h2>Промо слайдер с топ 3 товарами</h2>
 
-        <!-- PROMO CONTENT -->
-        <div class="promo-slider__content">
+        <!-- PROMO SLIDER ITEM 1 -->
+        <div class="promo-slider__item">
 
-          <p class="promo-slider__lead">Делай селфи, как Бен Стиллер!</p>
+          <!-- IMG SLIDER -->
+          <img src="http://via.placeholder.com/384x486" alt="Селфи-палка" class="promo-slider__img">
 
-          <p class="promo-slider__description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+          <!-- PROMO CONTENT -->
+          <div class="promo-slider__content">
 
-          <!-- DESCRIPTION WITH ADVANTAGE -->
-          <dl class="promo-slider__advantage descripton-list">
+            <p class="promo-slider__lead">Делай селфи, как Бен Стиллер!</p>
 
-            <dt class="descripton-list__name">Длина палки</dt>
-            <dd class="descripton-list__definition">8,5 м</dd>
+            <p class="promo-slider__description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 
-            <dt class="descripton-list__name">Вес палки</dt>
-            <dd class="descripton-list__definition">5 кг</dd>
+            <!-- DESCRIPTION WITH ADVANTAGE -->
+            <dl class="promo-slider__advantage descripton-list">
 
-            <dt class="descripton-list__name">Материал</dt>
-            <dd class="descripton-list__definition">Карбон</dd>
+              <dt class="descripton-list__name">Длина палки</dt>
+              <dd class="descripton-list__definition">8,5 м</dd>
 
-          </dl>
+              <dt class="descripton-list__name">Вес палки</dt>
+              <dd class="descripton-list__definition">5 кг</dd>
 
-          <!-- SLIDE LINK -->
-          <a href="#" class="promo-slider__link">Подробнее</a>
+              <dt class="descripton-list__name">Материал</dt>
+              <dd class="descripton-list__definition">Карбон</dd>
 
-        </div>
+            </dl>
 
-      </div>
+            <!-- SLIDE LINK -->
+            <a href="#" class="promo-slider__link">Подробнее</a>
 
-      <!-- PROMO SLIDER ITEM 2 -->
-      <div class="promo-slider__item">
-
-        <!-- IMG SLIDER -->
-        <img src="http://via.placeholder.com/384x486" alt="Фитнес-браслет" class="promo-slider__img">
-
-        <!-- PROMO CONTENT -->
-        <div class="promo-slider__content">
-
-          <p class="promo-slider__lead">Худеем правильно!</p>
-
-          <p class="promo-slider__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-
-          <!-- DESCRIPTION WITH ADVANTAGE -->
-          <dl class="promo-slider__advantage descripton-list">
-
-            <dt class="descripton-list__name">Без подзарядки</dt>
-            <dd class="descripton-list__definition">48 часов</dd>
-
-          </dl>
-
-          <!-- SLIDE LINK -->
-          <a href="" class="promo-slider__link">Подробнее</a>
+          </div>
 
         </div>
 
-      </div>
+        <!-- PROMO SLIDER ITEM 2 -->
+        <div class="promo-slider__item">
 
-      <!-- PROMO SLIDER ITEM 3 -->
-      <div class="promo-slider__item">
+          <!-- IMG SLIDER -->
+          <img src="http://via.placeholder.com/384x486" alt="Фитнес-браслет" class="promo-slider__img">
 
-        <!-- IMG SLIDER -->
-        <img src="http://via.placeholder.com/526x334" alt="Квадрокоптер" class="promo-slider__img">
+          <!-- PROMO CONTENT -->
+          <div class="promo-slider__content">
 
-        <!-- PROMO CONTENT -->
-        <div class="promo-slider__content">
+            <p class="promo-slider__lead">Худеем правильно!</p>
 
-          <p class="promo-slider__lead">Порхает как бабочка, жалит как пчела!</p>
+            <p class="promo-slider__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
 
-          <p class="promo-slider__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+            <!-- DESCRIPTION WITH ADVANTAGE -->
+            <dl class="promo-slider__advantage descripton-list">
 
-          <!-- DESCRIPTION WITH ADVANTAGE -->
-          <dl class="promo-slider__advantage descripton-list">
+              <dt class="descripton-list__name">Без подзарядки</dt>
+              <dd class="descripton-list__definition">48 часов</dd>
 
-            <dt class="descripton-list__name">Дальность полета</dt>
-            <dd class="descripton-list__definition">800 м</dd>
+            </dl>
 
-            <dt class="descripton-list__name">Радиус поражения</dt>
-            <dd class="descripton-list__definition">50 м</dd>
+            <!-- SLIDE LINK -->
+            <a href="" class="promo-slider__link">Подробнее</a>
 
-          </dl>
-
-          <!-- SLIDE LINK -->
-          <a href="#" class="promo-slider__link link">Подробнее</a>
+          </div>
 
         </div>
 
+        <!-- PROMO SLIDER ITEM 3 -->
+        <div class="promo-slider__item">
+
+          <!-- IMG SLIDER -->
+          <img src="http://via.placeholder.com/526x334" alt="Квадрокоптер" class="promo-slider__img">
+
+          <!-- PROMO CONTENT -->
+          <div class="promo-slider__content">
+
+            <p class="promo-slider__lead">Порхает как бабочка, жалит как пчела!</p>
+
+            <p class="promo-slider__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+
+            <!-- DESCRIPTION WITH ADVANTAGE -->
+            <dl class="promo-slider__advantage descripton-list">
+
+              <dt class="descripton-list__name">Дальность полета</dt>
+              <dd class="descripton-list__definition">800 м</dd>
+
+              <dt class="descripton-list__name">Радиус поражения</dt>
+              <dd class="descripton-list__definition">50 м</dd>
+
+            </dl>
+
+            <!-- SLIDE LINK -->
+            <a href="#" class="promo-slider__link link">Подробнее</a>
+
+          </div>
+
+        </div>
+
+        <!-- SLIDE CONTROL -->
+        <ul class="promo-slider__control slider-control">
+
+
+
+          <li class="slider-control__item">
+            <label for="promo-slider-btn-1" class="slider-control__btn"></label>
+          </li>
+          <li class="slider-control__item">
+            <label for="promo-slider-btn-2" class="slider-control__btn"></label>
+          </li>
+          <li class="slider-control__item">
+            <label for="promo-slider-btn-3" class="slider-control__btn"></label>
+          </li>
+
+        </ul>
       </div>
-
-      <!-- SLIDE CONTROL -->
-      <ul class="promo-slider__control slider-control">
-
-        <li class="slider-control__item">
-          <label for="promo-slider-btn-1" class="slider-control__btn">
-                    <input type="radio" id="promo-slider-btn-1" checked>
-                  </label>
-        </li>
-        <li class="slider-control__item">
-          <label for="promo-slider-btn-2" class="slider-control__btn">
-                    <input type="radio" id="promo-slider-btn-2">
-                  </label>
-        </li>
-        <li class="slider-control__item">
-          <label for="promo-slider-btn-3" class="slider-control__btn">
-                    <input type="radio" id="promo-slider-btn-3">
-                  </label>
-        </li>
-
-      </ul>
-
     </section>
 
     <!-- PRODUCT NAVIGATION -->
     <nav class="product-nav">
 
-      <h2>Навигация по товарам Магазина</h2>
-      <!-- Скроем заголовок -->
+      <div class="container">
 
-      <ul class="product-nav__list">
-        <li class="product-nav__item">
-          <a href="" class="product-nav__link">
+        <h2>Навигация по товарам Магазина</h2>
+        <!-- Скроем заголовок -->
+
+        <ul class="product-nav__list">
+          <li class="product-nav__item">
+            <a href="" class="product-nav__link">
                         <img src="http://via.placeholder.com/160x160" alt="Виртуальная реальность" class="product-nav__img">
                         <h3 class="product-nav__heading">Виртуальная реальность</h3>
                     </a>
-        </li>
-        <li class="product-nav__item">
-          <a href="" class="product-nav__link">
+          </li>
+          <li class="product-nav__item">
+            <a href="" class="product-nav__link">
                         <img src="http://via.placeholder.com/160x160" alt="Моноподы для селфи" class="product-nav__img">
                         <h3 class="product-nav__heading">Моноподы для селфи</h3>
                     </a>
-        </li>
-        <li class="product-nav__item">
-          <a href="" class="product-nav__link">
+          </li>
+          <li class="product-nav__item">
+            <a href="" class="product-nav__link">
                         <img src="http://via.placeholder.com/160x160" alt="Экшн-камеры" class="product-nav__img">
                         <h3 class="product-nav__heading">Экшн-камеры</h3>
                     </a>
-        </li>
-        <li class="product-nav__item">
-          <a href="" class="product-nav__link">
+          </li>
+          <li class="product-nav__item">
+            <a href="" class="product-nav__link">
                         <img src="http://via.placeholder.com/160x160" alt="Фитнес-браслеты" class="product-nav__img">
                         <h3 class="product-nav__heading">Фитнес-браслеты</h3>
                     </a>
-        </li>
-        <li class="product-nav__item">
-          <a href="" class="product-nav__link">
+          </li>
+          <li class="product-nav__item">
+            <a href="" class="product-nav__link">
                         <img src="http://via.placeholder.com/160x160" alt="Умные часы" class="product-nav__img">
                         <h3 class="product-nav__heading">Умные часы</h3>
                     </a>
-        </li>
-        <li class="product-nav__item">
-          <a href="" class="product-nav__link">
+          </li>
+          <li class="product-nav__item">
+            <a href="" class="product-nav__link">
                         <img src="http://via.placeholder.com/160x160" alt="Квадрокоптеры" class="product-nav__img">
                         <h3 class="product-nav__heading">Квадрокоптеры</h3>
                     </a>
-        </li>
-      </ul>
-
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <!-- PURCHASE DETAILS -->
     <section class="purchase-details">
+
+      <input type="radio" name="purchase-slider-control" id="purchase-details-btn-1" checked>
+      <input type="radio" name="purchase-slider-control" id="purchase-details-btn-2">
+      <input type="radio" name="purchase-slider-control" id="purchase-details-btn-3">
 
       <div class="container">
 
@@ -288,19 +299,13 @@
         <ul class="purchase-details__control slider-control">
 
           <li class="slider-control__item">
-            <label for="purchase-details-btn-1" class="slider-control__btn">
-              <input type="radio" id="purchase-details-btn-1" checked>
-            </label>
+            <label for="purchase-details-btn-1" class="slider-control__btn"></label>
           </li>
           <li class="slider-control__item">
-            <label for="purchase-details-btn-2" class="slider-control__btn">
-              <input type="radio" id="purchase-details-btn-2">
-            </label>
+            <label for="purchase-details-btn-2" class="slider-control__btn"></label>
           </li>
           <li class="slider-control__item">
-            <label for="purchase-details-btn-3" class="slider-control__btn">
-              <input type="radio" id="purchase-details-btn-3">
-            </label>
+            <label for="purchase-details-btn-3" class="slider-control__btn"></label>
           </li>
 
         </ul>
@@ -312,39 +317,42 @@
     <!-- BRANDS LOGOTYPES -->
     <section class="brands-logotypes">
 
-      <h2>Логотипы топ 4 производителей товаров</h2>
+      <div class="container">
 
-      <ul class="brands-logotypes__list">
+        <h2>Логотипы топ 4 производителей товаров</h2>
 
-        <!-- LOGO DJI -->
-        <li class="brands-logotypes__item">
-          <a href="#" class="brands-logotypes__link">
+        <ul class="brands-logotypes__list">
+
+          <!-- LOGO DJI -->
+          <li class="brands-logotypes__item">
+            <a href="#" class="brands-logotypes__link">
             <img src="http://via.placeholder.com/260x100" alt="DJI-logo" class="brands-logotypes__img">
           </a>
-        </li>
+          </li>
 
-        <!-- LOGO SPGADGEST -->
-        <li class="brands-logotypes__item">
-          <a href="#" class="brands-logotypes__link">
+          <!-- LOGO SPGADGEST -->
+          <li class="brands-logotypes__item">
+            <a href="#" class="brands-logotypes__link">
             <img src="http://via.placeholder.com/260x100" alt="SPGADGEST-logo" class="brands-logotypes__img">
           </a>
-        </li>
+          </li>
 
-        <!-- LOGO GOPRO -->
-        <li class="brands-logotypes__item">
-          <a href="#" class="brands-logotypes__link">
+          <!-- LOGO GOPRO -->
+          <li class="brands-logotypes__item">
+            <a href="#" class="brands-logotypes__link">
             <img src="http://via.placeholder.com/260x100" alt="GOPRO-logo" class="brands-logotypes__img">
           </a>
-        </li>
+          </li>
 
-        <!-- LOGO VIVE -->
-        <li class="brands-logotypes__item">
-          <a href="#" class="brands-logotypes__link">
+          <!-- LOGO VIVE -->
+          <li class="brands-logotypes__item">
+            <a href="#" class="brands-logotypes__link">
             <img src="http://via.placeholder.com/260x100" alt="VIVE-logo" class="brands-logotypes__img">
           </a>
-        </li>
+          </li>
 
-      </ul>
+        </ul>
+      </div>
 
     </section>
 
