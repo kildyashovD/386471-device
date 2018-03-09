@@ -20,7 +20,11 @@
 
       <!-- MAIN NAV -->
       <!-- Здесь будет форма -->
-      <span class="user-search">Поиск по сайту</span>
+      <form class="main-header__user-action-form user-action-form">
+        <label for="user-search" class="visually-hidden">Поиск по сайту</label>
+        <input type="search" name="user-search" class="user-action-form__user-search" id="user-search" placeholder="Поиск по сайту">
+        <button type="submit">Найти</button>
+      </form>
 
       <!-- USER ACTION -->
       <nav class="main-header__user-action">
@@ -329,28 +333,32 @@
           <!-- LOGO DJI -->
           <li class="brands-logotypes__item">
             <a href="#" class="brands-logotypes__link">
-            <img src="img/logo-1.png" width="260" height="100" alt="Логотип кампании DJI" class="brands-logotypes__img">
+            <img src="img/logo-1.png" width="260" height="100" alt="Логотип кампании DJI" class="brands-logotypes__img brands-logotypes__img_color_b-w">
+            <img src="img/logo-1-color.png" width="260" height="100" alt="Логотип кампании DJI" class="brands-logotypes__img brands-logotypes__img_color_colorful">
           </a>
           </li>
 
           <!-- LOGO SPGADGEST -->
           <li class="brands-logotypes__item">
             <a href="#" class="brands-logotypes__link">
-            <img src="img/logo-3.png" width="260" height="100" alt="Логотип кампании SPGADGEST" class="brands-logotypes__img">
+            <img src="img/logo-3.png" width="260" height="100" alt="Логотип кампании SPGADGEST" class="brands-logotypes__img brands-logotypes__img_color_b-w">
+            <img src="img/logo-2-color.png" width="260" height="100" alt="Логотип кампании DJI" class="brands-logotypes__img brands-logotypes__img_color_colorful">
           </a>
           </li>
 
           <!-- LOGO GOPRO -->
           <li class="brands-logotypes__item">
             <a href="#" class="brands-logotypes__link">
-            <img src="img/logo-2.png" width="260" height="100" alt="Логотип кампании GOPRO" class="brands-logotypes__img">
+            <img src="img/logo-2.png" width="260" height="100" alt="Логотип кампании GOPRO" class="brands-logotypes__img brands-logotypes__img_color_b-w">
+            <img src="img/logo-3-color.png" width="260" height="100" alt="Логотип кампании DJI" class="brands-logotypes__img brands-logotypes__img_color_colorful">
           </a>
           </li>
 
           <!-- LOGO VIVE -->
           <li class="brands-logotypes__item">
             <a href="#" class="brands-logotypes__link">
-            <img src="img/logo-4.png" width="260" height="100" alt="Логотип кампании VIVE" class="brands-logotypes__img">
+            <img src="img/logo-4.png" width="260" height="100" alt="Логотип кампании VIVE" class="brands-logotypes__img brands-logotypes__img_color_b-w">
+            <img src="img/logo-4.png" width="260" height="100" alt="Логотип кампании DJI" class="brands-logotypes__img brands-logotypes__img_color_colorful">
           </a>
           </li>
 
@@ -393,6 +401,34 @@
         <img class="contacts__maps" width="560" height="222" src="img/map.png" alt="Карта" tabindex="0">
 
         <a href="#" class="icontacts__link link">Напишите нам</a>
+
+        <!-- WRITE US MODAL -->
+        <div class="modal-write-us modal">
+
+          <form action="" class="modal-form" method="post">
+
+            <label for="modal-user-name">Ваше имя:</label>
+            <input type="text" name="user-name" id="modal-user-name" placeholder="Имя Фамилия" required>
+
+            <label for="modal-user-email">Ваш email:</label>
+            <input type="email" name="user-email" id="modal-user-email" placeholder="email@example.com" required>
+
+            <label for="modal-user-message">Текст письма:</label>
+            <textarea name="user-message" id="modal-user-message" cols="30" rows="5" required>В свободной форме</textarea>
+
+            <button type="submit" class="modal-form__submit">Отправить</button>
+
+          </form>
+          <!-- CLOSE BUTTON -->
+          <button type="button" class="modal__close">&times;</button>
+
+        </div>
+
+        <!-- MAP -->
+        <div class="yandex-map-modal modal" id="YMapsID" style="display: block; width: 960px; height: 560px;">
+           <!-- CLOSE BUTTON -->
+          <button class="modal__close" type="button">&times;</button>
+        </div>
 
       </section>
 
@@ -462,6 +498,9 @@
     </div>
 
   </footer>
+
+  <script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
+  <script src="js/main.js"></script>
 
 </body>
 
