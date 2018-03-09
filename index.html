@@ -13,7 +13,7 @@
 
     <div class="container">
 
-      <h1 class="visually-hidden">Магазин техники Девайc</h1>
+      <h1 class="visually-hidden" tabindex="0">Магазин техники Девайc</h1>
 
       <!-- LOGO, которому зададим абсолютное позиционирование -->
       <a href="#" class="main-header__logo logo">DEVICE</a>
@@ -87,39 +87,41 @@
     <!-- PROMO SECTION -->
     <section class="promo-slider">
 
-      <input type="radio" name="promo-slider-control" id="promo-slider-btn-1" checked>
-      <input type="radio" name="promo-slider-control" id="promo-slider-btn-2">
-      <input type="radio" name="promo-slider-control" id="promo-slider-btn-3">
+      <form action="https://echo.htmlacademy.ru">
+        <input type="radio" name="promo-slider-control" id="promo-slider-btn-1" checked>
+        <input type="radio" name="promo-slider-control" id="promo-slider-btn-2">
+        <input type="radio" name="promo-slider-control" id="promo-slider-btn-3">
+      </form>
 
       <div class="container">
 
         <!-- HIDDEN HEADING -->
-        <h2 class="visually-hidden">Промо слайдер с топ 3 товарами</h2>
+        <h2 class="visually-hidden" tabindex="0">Промо слайдер с топ 3 товарами</h2>
 
         <!-- PROMO SLIDER ITEM 1 -->
         <div class="promo-slider__item">
 
           <!-- IMG SLIDER -->
-          <img src="img/slider-1.png" width="384" height="486" alt="Селфи-палка" class="promo-slider__img">
+          <img src="img/slider-1.png" width="384" height="486" alt="Селфи-палка" class="promo-slider__img" tabindex="0">
 
           <!-- PROMO CONTENT -->
           <div class="promo-slider__content">
 
-            <p class="promo-slider__lead">Делай селфи, как Бен Стиллер!</p>
+            <p class="promo-slider__lead" tabindex="0">Делай селфи, как Бен Стиллер!</p>
 
-            <p class="promo-slider__description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+            <p class="promo-slider__description" tabindex="0">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 
             <!-- DESCRIPTION WITH ADVANTAGE -->
-            <dl class="promo-slider__advantage descripton-list">
+            <dl class="promo-slider__advantage descripton-list" tabindex="0" aria-label="Характеристика товара">
 
-              <dt class="descripton-list__name">Длина палки</dt>
-              <dd class="descripton-list__definition">8,5 м</dd>
+              <dt class="descripton-list__name" tabindex="0">Длина палки</dt>
+              <dd class="descripton-list__definition" tabindex="0">8,5 м</dd>
 
-              <dt class="descripton-list__name">Вес палки</dt>
-              <dd class="descripton-list__definition">5 кг</dd>
+              <dt class="descripton-list__name" tabindex="0">Вес палки</dt>
+              <dd class="descripton-list__definition" tabindex="0">5 кг</dd>
 
-              <dt class="descripton-list__name">Материал</dt>
-              <dd class="descripton-list__definition">Карбон</dd>
+              <dt class="descripton-list__name" tabindex="0">Материал</dt>
+              <dd class="descripton-list__definition" tabindex="0">Карбон</dd>
 
             </dl>
 
@@ -134,20 +136,20 @@
         <div class="promo-slider__item">
 
           <!-- IMG SLIDER -->
-          <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет" class="promo-slider__img">
+          <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет" class="promo-slider__img" tabindex="0">
 
           <!-- PROMO CONTENT -->
           <div class="promo-slider__content">
 
-            <p class="promo-slider__lead">Худеем правильно!</p>
+            <p class="promo-slider__lead" tabindex="0">Худеем правильно!</p>
 
-            <p class="promo-slider__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+            <p class="promo-slider__description" tabindex="0">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
 
             <!-- DESCRIPTION WITH ADVANTAGE -->
-            <dl class="promo-slider__advantage descripton-list">
+            <dl class="promo-slider__advantage descripton-list" tabindex="0" aria-label="Характеристика товара">
 
-              <dt class="descripton-list__name">Без подзарядки</dt>
-              <dd class="descripton-list__definition">48 часов</dd>
+              <dt class="descripton-list__name" tabindex="0">Без подзарядки</dt>
+              <dd class="descripton-list__definition" tabindex="0">48 часов</dd>
 
             </dl>
 
@@ -162,23 +164,23 @@
         <div class="promo-slider__item">
 
           <!-- IMG SLIDER -->
-          <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер" class="promo-slider__img">
+          <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер" class="promo-slider__img" tabindex="0">
 
           <!-- PROMO CONTENT -->
           <div class="promo-slider__content">
 
-            <p class="promo-slider__lead">Порхает как бабочка, жалит как пчела!</p>
+            <p class="promo-slider__lead" tabindex="0">Порхает как бабочка, жалит как пчела!</p>
 
-            <p class="promo-slider__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+            <p class="promo-slider__description" tabindex="0">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
 
             <!-- DESCRIPTION WITH ADVANTAGE -->
-            <dl class="promo-slider__advantage descripton-list">
+            <dl class="promo-slider__advantage descripton-list" tabindex="0" aria-label="Характеристика товара">
 
-              <dt class="descripton-list__name">Дальность полета</dt>
-              <dd class="descripton-list__definition">800 м</dd>
+              <dt class="descripton-list__name" tabindex="0">Дальность полета</dt>
+              <dd class="descripton-list__definition" tabindex="0">800 м</dd>
 
-              <dt class="descripton-list__name">Радиус поражения</dt>
-              <dd class="descripton-list__definition">50 м</dd>
+              <dt class="descripton-list__name" tabindex="0">Радиус поражения</dt>
+              <dd class="descripton-list__definition" tabindex="0">50 м</dd>
 
             </dl>
 
@@ -213,7 +215,7 @@
 
       <div class="container">
 
-        <h2 class="visually-hidden">Навигация по товарам Магазина</h2>
+        <h2 class="visually-hidden" tabindex="0">Навигация по товарам Магазина</h2>
         <!-- Скроем заголовок -->
 
         <ul class="product-nav__list">
@@ -259,39 +261,40 @@
 
     <!-- PURCHASE DETAILS -->
     <section class="purchase-details">
-
-      <input type="radio" name="purchase-slider-control" id="purchase-details-btn-1" checked>
-      <input type="radio" name="purchase-slider-control" id="purchase-details-btn-2">
-      <input type="radio" name="purchase-slider-control" id="purchase-details-btn-3">
+      <form action="https://echo.htmlacademy.ru">
+        <input type="radio" name="purchase-slider-control" id="purchase-details-btn-1" checked>
+        <input type="radio" name="purchase-slider-control" id="purchase-details-btn-2">
+        <input type="radio" name="purchase-slider-control" id="purchase-details-btn-3">
+      </form>
 
       <div class="container">
 
-        <h2 class="visually-hidden">Детали покупки</h2>
+        <h2 class="visually-hidden" tabindex="0">Детали покупки</h2>
 
         <!-- PURCHASE DETAILS ITEM 1 DELIVERY -->
         <div class="purchase-details__item">
 
-          <h3 class="purchase-details__heading">Доставка</h3>
+          <h3 class="purchase-details__heading" tabindex="0">Доставка</h3>
 
-          <p class="purchase-details__description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          <p class="purchase-details__description" tabindex="0">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
 
         </div>
 
         <!-- PURCHASE DETAILS ITEM 2 WARRANTY -->
         <div class="purchase-details__item">
 
-          <h3 class="purchase-details__heading">Гарантия</h3>
+          <h3 class="purchase-details__heading" tabindex="0">Гарантия</h3>
 
-          <p class="purchase-details__description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          <p class="purchase-details__description" tabindex="0">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
 
         </div>
 
         <!-- PURCHASE DETAILS ITEM 3 CREDIT -->
         <div class="purchase-details__item">
 
-          <h3 class="purchase-details__heading">Кредит</h3>
+          <h3 class="purchase-details__heading" tabindex="0">Кредит</h3>
 
-          <p class="purchase-details__description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+          <p class="purchase-details__description" tabindex="0">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
 
         </div>
 
@@ -319,35 +322,35 @@
 
       <div class="container">
 
-        <h2 class="visually-hidden">Логотипы топ 4 производителей товаров</h2>
+        <h2 class="visually-hidden" tabindex="0">Логотипы топ 4 производителей товаров</h2>
 
         <ul class="brands-logotypes__list">
 
           <!-- LOGO DJI -->
           <li class="brands-logotypes__item">
             <a href="#" class="brands-logotypes__link">
-            <img src="img/logo-1.png" width="260" height="100" alt="DJI-logo" class="brands-logotypes__img">
+            <img src="img/logo-1.png" width="260" height="100" alt="Логотип кампании DJI" class="brands-logotypes__img">
           </a>
           </li>
 
           <!-- LOGO SPGADGEST -->
           <li class="brands-logotypes__item">
             <a href="#" class="brands-logotypes__link">
-            <img src="img/logo-3.png" width="260" height="100" alt="SPGADGEST-logo" class="brands-logotypes__img">
+            <img src="img/logo-3.png" width="260" height="100" alt="Логотип кампании SPGADGEST" class="brands-logotypes__img">
           </a>
           </li>
 
           <!-- LOGO GOPRO -->
           <li class="brands-logotypes__item">
             <a href="#" class="brands-logotypes__link">
-            <img src="img/logo-2.png" width="260" height="100" alt="GOPRO-logo" class="brands-logotypes__img">
+            <img src="img/logo-2.png" width="260" height="100" alt="Логотип кампании GOPRO" class="brands-logotypes__img">
           </a>
           </li>
 
           <!-- LOGO VIVE -->
           <li class="brands-logotypes__item">
             <a href="#" class="brands-logotypes__link">
-            <img src="img/logo-4.png" width="260" height="100" alt="VIVE-logo" class="brands-logotypes__img">
+            <img src="img/logo-4.png" width="260" height="100" alt="Логотип кампании VIVE" class="brands-logotypes__img">
           </a>
           </li>
 
@@ -362,17 +365,17 @@
 
       <section class="info-about-us">
 
-        <h2 class="info-about-us__heading">О нас</h2>
+        <h2 class="info-about-us__heading" tabindex="0">О нас</h2>
 
-        <p class="info-about-us__description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p class="info-about-us__description" tabindex="0">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
 
-        <p class="info-about-us__description">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+        <p class="info-about-us__description" tabindex="0">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
 
         <ul class="info-about-us__list list">
 
-          <li class="list__item">Деловые Линии</li>
-          <li class="list__item">Автотрейдинг</li>
-          <li class="list__item">ЖелДорЭкспедиция</li>
+          <li class="list__item" tabindex="0">Деловые Линии</li>
+          <li class="list__item" tabindex="0">Автотрейдинг</li>
+          <li class="list__item" tabindex="0">ЖелДорЭкспедиция</li>
 
         </ul>
 
@@ -383,11 +386,11 @@
       <!-- CONTACTS -->
       <section class="contacts">
 
-        <h2 class="contscts__heading">Контакты</h2>
+        <h2 class="contscts__heading" tabindex="0">Контакты</h2>
 
-        <p class="contscts__description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+        <p class="contscts__description" tabindex="0">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 
-        <img class="contacts__maps" width="560" height="222" src="img/map.png" alt="Карта">
+        <img class="contacts__maps" width="560" height="222" src="img/map.png" alt="Карта" tabindex="0">
 
         <a href="#" class="icontacts__link link">Напишите нам</a>
 
@@ -409,7 +412,7 @@
       <div class="footer__item">
 
         <!-- LOGO -->
-        <a href="" class="footer__logo logo">DEVICE</a>
+        <a href="#" class="footer__logo logo">DEVICE</a>
 
         <!-- USER ACTION -->
         <ul class="footer__user-action user-action">
@@ -428,7 +431,7 @@
       <div class="footer__item">
 
         <!-- ADDRESS -->
-        <address class="footer__address">г. Москва, ул. Строителей, 15</address>
+        <address class="footer__address" tabindex="0">г. Москва, ул. Строителей, 15</address>
 
         <ul class="footer-nav">
           <li class="footer-nav__item"><a href="#" class="footer-nav__link">Доставка</a></li>
@@ -437,7 +440,7 @@
         </ul>
 
         <!-- TEL NUMBER -->
-        <p class="footer__tel-number">Тел.: +7 (495) 495-95-95</p>
+        <p class="footer__tel-number" tabindex="0">Тел.: +7 (495) 495-95-95</p>
 
       </div>
 
@@ -446,9 +449,9 @@
 
         <div class="footer__icon social-icon">
 
-          <span class="social-icon__item">Facebook</span>
-          <span class="social-icon__item">Instagram</span>
-          <span class="social-icon__item">Twitter</span>
+          <a href="#" class="social-icon__item" aria-label="Фейсбук">Facebook</a>
+          <a href="#" class="social-icon__item" arai-label="Инстаграм">Instagram</a>
+          <a href="#" class="social-icon__item" aria-label="Твиттер">Twitter</a>
 
         </div>
 
