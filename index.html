@@ -13,13 +13,13 @@
 
     <div class="container">
 
-      <h1 class="visually-hidden" tabindex="0">Магазин техники Девайc</h1>
+      <h1 class="visually-hidden">Магазин техники Девайc</h1>
 
       <!-- LOGO, которому зададим абсолютное позиционирование -->
-      <a href="#" class="main-header__logo logo">DEVICE</a>
+      <a href="#" class="main-header__logo logo"><img src="img/logo.png" alt="" class="logo__img" width="164" height="36"></a>
 
       <!-- MAIN NAV -->
-      <!-- Здесь будет форма -->
+      <!-- USER SEARCH -->
       <form class="main-header__user-action-form user-action-form">
         <label for="user-search" class="visually-hidden">Поиск по сайту</label>
         <input type="search" name="user-search" class="user-action-form__user-search" id="user-search" placeholder="Поиск по сайту">
@@ -91,41 +91,39 @@
     <!-- PROMO SECTION -->
     <section class="promo-slider">
 
-      <form action="https://echo.htmlacademy.ru">
+      <div class="container">
+
         <input type="radio" name="promo-slider-control" id="promo-slider-btn-1" checked>
         <input type="radio" name="promo-slider-control" id="promo-slider-btn-2">
         <input type="radio" name="promo-slider-control" id="promo-slider-btn-3">
-      </form>
-
-      <div class="container">
 
         <!-- HIDDEN HEADING -->
-        <h2 class="visually-hidden" tabindex="0">Промо слайдер с топ 3 товарами</h2>
+        <h2 class="visually-hidden">Промо слайдер с топ 3 товарами</h2>
 
         <!-- PROMO SLIDER ITEM 1 -->
         <div class="promo-slider__item">
 
           <!-- IMG SLIDER -->
-          <img src="img/slider-1.png" width="384" height="486" alt="Селфи-палка" class="promo-slider__img" tabindex="0">
+          <img src="img/slider-1.png" width="384" height="486" alt="Селфи-палка" class="promo-slider__img">
 
           <!-- PROMO CONTENT -->
           <div class="promo-slider__content">
 
-            <p class="promo-slider__lead" tabindex="0">Делай селфи, как Бен Стиллер!</p>
+            <p class="promo-slider__lead">Делай селфи, как Бен Стиллер!</p>
 
-            <p class="promo-slider__description" tabindex="0">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+            <p class="promo-slider__description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 
             <!-- DESCRIPTION WITH ADVANTAGE -->
-            <dl class="promo-slider__advantage descripton-list" tabindex="0" aria-label="Характеристика товара">
+            <dl class="promo-slider__advantage descripton-list">
 
-              <dt class="descripton-list__name" tabindex="0">Длина палки</dt>
-              <dd class="descripton-list__definition" tabindex="0">8,5 м</dd>
+              <dt class="descripton-list__name">Длина палки</dt>
+              <dd class="descripton-list__definition">8,5 м</dd>
 
-              <dt class="descripton-list__name" tabindex="0">Вес палки</dt>
-              <dd class="descripton-list__definition" tabindex="0">5 кг</dd>
+              <dt class="descripton-list__name">Вес палки</dt>
+              <dd class="descripton-list__definition">5 кг</dd>
 
-              <dt class="descripton-list__name" tabindex="0">Материал</dt>
-              <dd class="descripton-list__definition" tabindex="0">Карбон</dd>
+              <dt class="descripton-list__name">Материал</dt>
+              <dd class="descripton-list__definition">Карбон</dd>
 
             </dl>
 
@@ -140,20 +138,20 @@
         <div class="promo-slider__item">
 
           <!-- IMG SLIDER -->
-          <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет" class="promo-slider__img" tabindex="0">
+          <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет" class="promo-slider__img">
 
           <!-- PROMO CONTENT -->
           <div class="promo-slider__content">
 
-            <p class="promo-slider__lead" tabindex="0">Худеем правильно!</p>
+            <p class="promo-slider__lead">Худеем правильно!</p>
 
-            <p class="promo-slider__description" tabindex="0">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+            <p class="promo-slider__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
 
             <!-- DESCRIPTION WITH ADVANTAGE -->
-            <dl class="promo-slider__advantage descripton-list" tabindex="0" aria-label="Характеристика товара">
+            <dl class="promo-slider__advantage descripton-list">
 
-              <dt class="descripton-list__name" tabindex="0">Без подзарядки</dt>
-              <dd class="descripton-list__definition" tabindex="0">48 часов</dd>
+              <dt class="descripton-list__name">Без подзарядки</dt>
+              <dd class="descripton-list__definition">48 часов</dd>
 
             </dl>
 
@@ -168,23 +166,23 @@
         <div class="promo-slider__item">
 
           <!-- IMG SLIDER -->
-          <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер" class="promo-slider__img" tabindex="0">
+          <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер" class="promo-slider__img">
 
           <!-- PROMO CONTENT -->
           <div class="promo-slider__content">
 
-            <p class="promo-slider__lead" tabindex="0">Порхает как бабочка, жалит как пчела!</p>
+            <p class="promo-slider__lead">Порхает как бабочка, жалит как пчела!</p>
 
-            <p class="promo-slider__description" tabindex="0">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+            <p class="promo-slider__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
 
             <!-- DESCRIPTION WITH ADVANTAGE -->
-            <dl class="promo-slider__advantage descripton-list" tabindex="0" aria-label="Характеристика товара">
+            <dl class="promo-slider__advantage descripton-list">
 
-              <dt class="descripton-list__name" tabindex="0">Дальность полета</dt>
-              <dd class="descripton-list__definition" tabindex="0">800 м</dd>
+              <dt class="descripton-list__name">Дальность полета</dt>
+              <dd class="descripton-list__definition">800 м</dd>
 
-              <dt class="descripton-list__name" tabindex="0">Радиус поражения</dt>
-              <dd class="descripton-list__definition" tabindex="0">50 м</dd>
+              <dt class="descripton-list__name">Радиус поражения</dt>
+              <dd class="descripton-list__definition">50 м</dd>
 
             </dl>
 
@@ -219,7 +217,7 @@
 
       <div class="container">
 
-        <h2 class="visually-hidden" tabindex="0">Навигация по товарам Магазина</h2>
+        <h2 class="visually-hidden">Навигация по товарам Магазина</h2>
         <!-- Скроем заголовок -->
 
         <ul class="product-nav__list">
@@ -273,32 +271,32 @@
 
       <div class="container">
 
-        <h2 class="visually-hidden" tabindex="0">Детали покупки</h2>
+        <h2 class="visually-hidden">Детали покупки</h2>
 
         <!-- PURCHASE DETAILS ITEM 1 DELIVERY -->
         <div class="purchase-details__item">
 
-          <h3 class="purchase-details__heading" tabindex="0">Доставка</h3>
+          <h3 class="purchase-details__heading">Доставка</h3>
 
-          <p class="purchase-details__description" tabindex="0">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          <p class="purchase-details__description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
 
         </div>
 
         <!-- PURCHASE DETAILS ITEM 2 WARRANTY -->
         <div class="purchase-details__item">
 
-          <h3 class="purchase-details__heading" tabindex="0">Гарантия</h3>
+          <h3 class="purchase-details__heading">Гарантия</h3>
 
-          <p class="purchase-details__description" tabindex="0">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          <p class="purchase-details__description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
 
         </div>
 
         <!-- PURCHASE DETAILS ITEM 3 CREDIT -->
         <div class="purchase-details__item">
 
-          <h3 class="purchase-details__heading" tabindex="0">Кредит</h3>
+          <h3 class="purchase-details__heading">Кредит</h3>
 
-          <p class="purchase-details__description" tabindex="0">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+          <p class="purchase-details__description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
 
         </div>
 
@@ -326,7 +324,7 @@
 
       <div class="container">
 
-        <h2 class="visually-hidden" tabindex="0">Логотипы топ 4 производителей товаров</h2>
+        <h2 class="visually-hidden">Логотипы топ 4 производителей товаров</h2>
 
         <ul class="brands-logotypes__list">
 
@@ -341,7 +339,7 @@
           <!-- LOGO SPGADGEST -->
           <li class="brands-logotypes__item">
             <a href="#" class="brands-logotypes__link">
-            <img src="img/logo-3.png" width="260" height="100" alt="Логотип кампании SPGADGEST" class="brands-logotypes__img brands-logotypes__img_color_b-w">
+            <img src="img/logo-2.png" width="260" height="100" alt="Логотип кампании SPGADGEST" class="brands-logotypes__img brands-logotypes__img_color_b-w">
             <img src="img/logo-2-color.png" width="260" height="100" alt="Логотип кампании DJI" class="brands-logotypes__img brands-logotypes__img_color_colorful">
           </a>
           </li>
@@ -349,7 +347,7 @@
           <!-- LOGO GOPRO -->
           <li class="brands-logotypes__item">
             <a href="#" class="brands-logotypes__link">
-            <img src="img/logo-2.png" width="260" height="100" alt="Логотип кампании GOPRO" class="brands-logotypes__img brands-logotypes__img_color_b-w">
+            <img src="img/logo-3.png" width="260" height="100" alt="Логотип кампании GOPRO" class="brands-logotypes__img brands-logotypes__img_color_b-w">
             <img src="img/logo-3-color.png" width="260" height="100" alt="Логотип кампании DJI" class="brands-logotypes__img brands-logotypes__img_color_colorful">
           </a>
           </li>
@@ -373,17 +371,17 @@
 
       <section class="info-about-us">
 
-        <h2 class="info-about-us__heading" tabindex="0">О нас</h2>
+        <h2 class="info-about-us__heading">О нас</h2>
 
-        <p class="info-about-us__description" tabindex="0">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p class="info-about-us__description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
 
-        <p class="info-about-us__description" tabindex="0">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+        <p class="info-about-us__description">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
 
         <ul class="info-about-us__list list">
 
-          <li class="list__item" tabindex="0">Деловые Линии</li>
-          <li class="list__item" tabindex="0">Автотрейдинг</li>
-          <li class="list__item" tabindex="0">ЖелДорЭкспедиция</li>
+          <li class="list__item">Деловые Линии</li>
+          <li class="list__item">Автотрейдинг</li>
+          <li class="list__item">ЖелДорЭкспедиция</li>
 
         </ul>
 
@@ -394,11 +392,11 @@
       <!-- CONTACTS -->
       <section class="contacts">
 
-        <h2 class="contscts__heading" tabindex="0">Контакты</h2>
+        <h2 class="contscts__heading">Контакты</h2>
 
-        <p class="contscts__description" tabindex="0">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+        <p class="contscts__description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 
-        <img class="contacts__maps" width="560" height="222" src="img/map.png" alt="Карта" tabindex="0">
+        <img class="contacts__maps" width="560" height="222" src="img/map.png" alt="Карта">
 
         <a href="#" class="icontacts__link link">Напишите нам</a>
 
@@ -407,14 +405,20 @@
 
           <form action="" class="modal-form" method="post">
 
-            <label for="modal-user-name">Ваше имя:</label>
-            <input type="text" name="user-name" id="modal-user-name" placeholder="Имя Фамилия" required>
+            <div class="container">
+              <label for="modal-user-name">Ваше имя:</label>
+              <input type="text" name="user-name" id="modal-user-name" placeholder="Имя Фамилия" required>
+            </div>
 
-            <label for="modal-user-email">Ваш email:</label>
-            <input type="email" name="user-email" id="modal-user-email" placeholder="email@example.com" required>
+            <div class="container">
+              <label for="modal-user-email">Ваш email:</label>
+              <input type="email" name="user-email" id="modal-user-email" placeholder="email@example.com" required>
+            </div>
 
-            <label for="modal-user-message">Текст письма:</label>
-            <textarea name="user-message" id="modal-user-message" cols="30" rows="5" required>В свободной форме</textarea>
+            <div class="container">
+              <label for="modal-user-message">Текст письма:</label>
+              <textarea name="user-message" id="modal-user-message" cols="30" rows="5" required>В свободной форме</textarea>
+            </div>
 
             <button type="submit" class="modal-form__submit">Отправить</button>
 
@@ -425,8 +429,9 @@
         </div>
 
         <!-- MAP -->
-        <div class="yandex-map-modal modal" id="YMapsID" style="display: block; width: 960px; height: 560px;">
-           <!-- CLOSE BUTTON -->
+        <div class="yandex-map-modal modal">
+          <!-- CLOSE BUTTON -->
+          <iframe src="https://yandex.ru/map-widget/v1/-/CBew6ZwzPA" width="560" height="400" frameborder="0"></iframe>
           <button class="modal__close" type="button">&times;</button>
         </div>
 
@@ -448,7 +453,7 @@
       <div class="footer__item">
 
         <!-- LOGO -->
-        <a href="#" class="footer__logo logo">DEVICE</a>
+        <a href="#" class="footer__logo logo"><img src="img/logo.png" alt="" class="logo__img" width="164" height="36"></a>
 
         <!-- USER ACTION -->
         <ul class="footer__user-action user-action">
@@ -467,7 +472,7 @@
       <div class="footer__item">
 
         <!-- ADDRESS -->
-        <address class="footer__address" tabindex="0">г. Москва, ул. Строителей, 15</address>
+        <address class="footer__address">г. Москва, ул. Строителей, 15</address>
 
         <ul class="footer-nav">
           <li class="footer-nav__item"><a href="#" class="footer-nav__link">Доставка</a></li>
@@ -476,7 +481,7 @@
         </ul>
 
         <!-- TEL NUMBER -->
-        <p class="footer__tel-number" tabindex="0">Тел.: +7 (495) 495-95-95</p>
+        <p class="footer__tel-number">Тел.: +7 (495) 495-95-95</p>
 
       </div>
 
@@ -486,7 +491,7 @@
         <div class="footer__icon social-icon">
 
           <a href="#" class="social-icon__item" aria-label="Фейсбук">Facebook</a>
-          <a href="#" class="social-icon__item" arai-label="Инстаграм">Instagram</a>
+          <a href="#" class="social-icon__item" aria-label="Инстаграм">Instagram</a>
           <a href="#" class="social-icon__item" aria-label="Твиттер">Twitter</a>
 
         </div>
@@ -498,9 +503,6 @@
     </div>
 
   </footer>
-
-  <script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
-  <script src="js/main.js"></script>
 
 </body>
 
