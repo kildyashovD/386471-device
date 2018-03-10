@@ -119,6 +119,12 @@
 
         <div class="container">
 
+          <div class="content__header sorting">
+
+            <h3 class="sorting__heading">Фильтр: </h3>
+
+          </div>
+
           <!-- SORT THE PRODUCTS -->
           <div class="content__header sorting">
 
@@ -137,18 +143,59 @@
 
           </div>
 
-          <div class="content__header sorting">
-
-            <h3 class="sorting__heading">Фильтр: </h3>
-
-          </div>
-
         </div>
 
       </header>
 
       <!-- CONTENT -->
       <div class="product-container__content">
+
+        <!-- ASIDE FILTER -->
+        <aside class="products-container__filters filters">
+
+          <form action="https://echo.htmlacademy.ru" method="post" class="filters__form form-filters">
+
+            <fieldset class="form-filters__item">
+              <legend class="form-filters__heading">Стоимость</legend>
+              <input type="range" name="price-count" min="0" max="10000" step="100">
+            </fieldset>
+
+            <fieldset class="form-filters__item">
+              <legend class="form-filters__heading">Цвет</legend>
+
+              <label for="filters-color-black">Черный</label>
+              <input type="checkbox" name="color-black" id="filters-color-black" checked>
+
+              <label for="filters-color-white">Белый</label>
+              <input type="checkbox" name="color-white" id="filters-color-white">
+
+              <label for="filters-color-blue">Синий</label>
+              <input type="checkbox" name="color-blue" id="filters-color-blue" checked>
+
+              <label for="filters-color-red">Красный</label>
+              <input type="checkbox" name="color-red" id="filters-color-red" checked>
+
+              <label for="filters-color-pink">Розовый</label>
+              <input type="checkbox" name="color-pink" id="filters-color-pink">
+
+            </fieldset>
+
+            <fieldset class="form-filters__item">
+              <legend class="form-filters__heading">Bluetooth</legend>
+
+              <label for="bluetooth-true">Есть</label>
+              <input type="radio" name="bluetooth-check" id="bluetooth-true" checked>
+
+              <label for="bluetooth-false">Нет</label>
+              <input type="radio" name="bluetooth-check" id="bluetooth-false">
+
+            </fieldset>
+
+            <button type="submit">Показать</button>
+
+          </form>
+
+        </aside>
 
         <div class="container">
 
@@ -232,55 +279,6 @@
           </div>
 
         </div>
-
-        <!-- ASIDE FILTER -->
-        <aside class="products-container__filters filters">
-
-          <h3 class="filters__heading">Фильтр: </h3>
-
-          <form action="https://echo.htmlacademy.ru" method="post" class="filters__form form-filters">
-
-            <fieldset class="form-filters__item">
-              <legend class="form-filters__heading">Стоимость</legend>
-              <input type="range" name="price-count" min="0" max="10000" step="100">
-            </fieldset>
-
-            <fieldset class="form-filters__item">
-              <legend class="form-filters__heading">Цвет</legend>
-
-              <label for="filters-color-black">Черный</label>
-              <input type="checkbox" name="color-black" id="filters-color-black" checked>
-
-              <label for="filters-color-white">Белый</label>
-              <input type="checkbox" name="color-white" id="filters-color-white">
-
-              <label for="filters-color-blue">Синий</label>
-              <input type="checkbox" name="color-blue" id="filters-color-blue" checked>
-
-              <label for="filters-color-red">Красный</label>
-              <input type="checkbox" name="color-red" id="filters-color-red" checked>
-
-              <label for="filters-color-pink">Розовый</label>
-              <input type="checkbox" name="color-pink" id="filters-color-pink">
-
-            </fieldset>
-
-            <fieldset class="form-filters__item">
-              <legend class="form-filters__heading">Bluetooth</legend>
-
-              <label for="bluetooth-true">Есть</label>
-              <input type="radio" name="bluetooth-check" id="bluetooth-true" checked>
-
-              <label for="bluetooth-false">Нет</label>
-              <input type="radio" name="bluetooth-check" id="bluetooth-false">
-
-            </fieldset>
-
-            <button type="submit">Показать</button>
-
-          </form>
-
-        </aside>
 
       </div>
 
