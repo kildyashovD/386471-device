@@ -13,14 +13,18 @@
 
     <div class="container">
 
-      <h1>Магазин техники Девайc</h1>
+      <h1 class="visually-hidden">Магазин техники Девайc</h1>
 
       <!-- LOGO, которому зададим абсолютное позиционирование -->
-      <a href="#" class="main-header__logo logo">DEVICE</a>
+      <a href="#" class="main-header__logo logo"><img src="img/logo.png" alt="" class="logo__img" width="164" height="36"></a>
 
       <!-- MAIN NAV -->
-      <!-- Здесь будет форма -->
-      <span class="user-search">Поиск по сайту</span>
+      <!-- USER SEARCH -->
+      <form class="main-header__user-action-form user-action-form">
+        <label for="user-search" class="visually-hidden">Поиск по сайту</label>
+        <input type="search" name="user-search" class="user-action-form__user-search" id="user-search" placeholder="Поиск по сайту">
+        <button type="submit">Найти</button>
+      </form>
 
       <!-- USER ACTION -->
       <nav class="main-header__user-action">
@@ -87,20 +91,20 @@
     <!-- PROMO SECTION -->
     <section class="promo-slider">
 
-      <input type="radio" name="promo-slider-control" id="promo-slider-btn-1" checked>
-      <input type="radio" name="promo-slider-control" id="promo-slider-btn-2">
-      <input type="radio" name="promo-slider-control" id="promo-slider-btn-3">
-
       <div class="container">
 
+        <input type="radio" name="promo-slider-control" id="promo-slider-btn-1" checked>
+        <input type="radio" name="promo-slider-control" id="promo-slider-btn-2">
+        <input type="radio" name="promo-slider-control" id="promo-slider-btn-3">
+
         <!-- HIDDEN HEADING -->
-        <h2>Промо слайдер с топ 3 товарами</h2>
+        <h2 class="visually-hidden">Промо слайдер с топ 3 товарами</h2>
 
         <!-- PROMO SLIDER ITEM 1 -->
         <div class="promo-slider__item">
 
           <!-- IMG SLIDER -->
-          <img src="http://via.placeholder.com/384x486" alt="Селфи-палка" class="promo-slider__img">
+          <img src="img/slider-1.png" width="384" height="486" alt="Селфи-палка" class="promo-slider__img">
 
           <!-- PROMO CONTENT -->
           <div class="promo-slider__content">
@@ -134,7 +138,7 @@
         <div class="promo-slider__item">
 
           <!-- IMG SLIDER -->
-          <img src="http://via.placeholder.com/384x486" alt="Фитнес-браслет" class="promo-slider__img">
+          <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет" class="promo-slider__img">
 
           <!-- PROMO CONTENT -->
           <div class="promo-slider__content">
@@ -162,7 +166,7 @@
         <div class="promo-slider__item">
 
           <!-- IMG SLIDER -->
-          <img src="http://via.placeholder.com/526x334" alt="Квадрокоптер" class="promo-slider__img">
+          <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер" class="promo-slider__img">
 
           <!-- PROMO CONTENT -->
           <div class="promo-slider__content">
@@ -213,43 +217,43 @@
 
       <div class="container">
 
-        <h2>Навигация по товарам Магазина</h2>
+        <h2 class="visually-hidden">Навигация по товарам Магазина</h2>
         <!-- Скроем заголовок -->
 
         <ul class="product-nav__list">
           <li class="product-nav__item">
             <a href="" class="product-nav__link">
-                        <img src="http://via.placeholder.com/160x160" alt="Виртуальная реальность" class="product-nav__img">
+                        <img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность" class="product-nav__img">
                         <h3 class="product-nav__heading">Виртуальная реальность</h3>
                     </a>
           </li>
           <li class="product-nav__item">
             <a href="" class="product-nav__link">
-                        <img src="http://via.placeholder.com/160x160" alt="Моноподы для селфи" class="product-nav__img">
+                        <img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи" class="product-nav__img">
                         <h3 class="product-nav__heading">Моноподы для селфи</h3>
                     </a>
           </li>
           <li class="product-nav__item">
             <a href="" class="product-nav__link">
-                        <img src="http://via.placeholder.com/160x160" alt="Экшн-камеры" class="product-nav__img">
+                        <img src="img/popular-3.svg" width="71" height="87" alt="Экшн-камеры" class="product-nav__img">
                         <h3 class="product-nav__heading">Экшн-камеры</h3>
                     </a>
           </li>
           <li class="product-nav__item">
             <a href="" class="product-nav__link">
-                        <img src="http://via.placeholder.com/160x160" alt="Фитнес-браслеты" class="product-nav__img">
+                        <img src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты" class="product-nav__img">
                         <h3 class="product-nav__heading">Фитнес-браслеты</h3>
                     </a>
           </li>
           <li class="product-nav__item">
             <a href="" class="product-nav__link">
-                        <img src="http://via.placeholder.com/160x160" alt="Умные часы" class="product-nav__img">
+                        <img src="img/popular-5.svg" width="56" height="98" alt="Умные часы" class="product-nav__img">
                         <h3 class="product-nav__heading">Умные часы</h3>
                     </a>
           </li>
           <li class="product-nav__item">
             <a href="" class="product-nav__link">
-                        <img src="http://via.placeholder.com/160x160" alt="Квадрокоптеры" class="product-nav__img">
+                        <img src="img/poppular-6.svg" width="132" height="69" alt="Квадрокоптеры" class="product-nav__img">
                         <h3 class="product-nav__heading">Квадрокоптеры</h3>
                     </a>
           </li>
@@ -259,14 +263,15 @@
 
     <!-- PURCHASE DETAILS -->
     <section class="purchase-details">
-
-      <input type="radio" name="purchase-slider-control" id="purchase-details-btn-1" checked>
-      <input type="radio" name="purchase-slider-control" id="purchase-details-btn-2">
-      <input type="radio" name="purchase-slider-control" id="purchase-details-btn-3">
+      <form action="https://echo.htmlacademy.ru">
+        <input type="radio" name="purchase-slider-control" id="purchase-details-btn-1" checked>
+        <input type="radio" name="purchase-slider-control" id="purchase-details-btn-2">
+        <input type="radio" name="purchase-slider-control" id="purchase-details-btn-3">
+      </form>
 
       <div class="container">
 
-        <h2>Детали покупки</h2>
+        <h2 class="visually-hidden">Детали покупки</h2>
 
         <!-- PURCHASE DETAILS ITEM 1 DELIVERY -->
         <div class="purchase-details__item">
@@ -319,35 +324,39 @@
 
       <div class="container">
 
-        <h2>Логотипы топ 4 производителей товаров</h2>
+        <h2 class="visually-hidden">Логотипы топ 4 производителей товаров</h2>
 
         <ul class="brands-logotypes__list">
 
           <!-- LOGO DJI -->
           <li class="brands-logotypes__item">
             <a href="#" class="brands-logotypes__link">
-            <img src="http://via.placeholder.com/260x100" alt="DJI-logo" class="brands-logotypes__img">
+            <img src="img/logo-1.png" width="260" height="100" alt="Логотип кампании DJI" class="brands-logotypes__img brands-logotypes__img_color_b-w">
+            <img src="img/logo-1-color.png" width="260" height="100" alt="Логотип кампании DJI" class="brands-logotypes__img brands-logotypes__img_color_colorful">
           </a>
           </li>
 
           <!-- LOGO SPGADGEST -->
           <li class="brands-logotypes__item">
             <a href="#" class="brands-logotypes__link">
-            <img src="http://via.placeholder.com/260x100" alt="SPGADGEST-logo" class="brands-logotypes__img">
+            <img src="img/logo-2.png" width="260" height="100" alt="Логотип кампании SPGADGEST" class="brands-logotypes__img brands-logotypes__img_color_b-w">
+            <img src="img/logo-2-color.png" width="260" height="100" alt="Логотип кампании DJI" class="brands-logotypes__img brands-logotypes__img_color_colorful">
           </a>
           </li>
 
           <!-- LOGO GOPRO -->
           <li class="brands-logotypes__item">
             <a href="#" class="brands-logotypes__link">
-            <img src="http://via.placeholder.com/260x100" alt="GOPRO-logo" class="brands-logotypes__img">
+            <img src="img/logo-3.png" width="260" height="100" alt="Логотип кампании GOPRO" class="brands-logotypes__img brands-logotypes__img_color_b-w">
+            <img src="img/logo-3-color.png" width="260" height="100" alt="Логотип кампании DJI" class="brands-logotypes__img brands-logotypes__img_color_colorful">
           </a>
           </li>
 
           <!-- LOGO VIVE -->
           <li class="brands-logotypes__item">
             <a href="#" class="brands-logotypes__link">
-            <img src="http://via.placeholder.com/260x100" alt="VIVE-logo" class="brands-logotypes__img">
+            <img src="img/logo-4.png" width="260" height="100" alt="Логотип кампании VIVE" class="brands-logotypes__img brands-logotypes__img_color_b-w">
+            <img src="img/logo-4.png" width="260" height="100" alt="Логотип кампании DJI" class="brands-logotypes__img brands-logotypes__img_color_colorful">
           </a>
           </li>
 
@@ -387,9 +396,44 @@
 
         <p class="contscts__description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 
-        <span class="contacts__maps">Здесь будет карта</span>
+        <img class="contacts__maps" width="560" height="222" src="img/map.png" alt="Карта">
 
         <a href="#" class="icontacts__link link">Напишите нам</a>
+
+        <!-- WRITE US MODAL -->
+        <div class="modal-write-us modal">
+
+          <form action="" class="modal-form" method="post">
+
+            <div class="container">
+              <label for="modal-user-name">Ваше имя:</label>
+              <input type="text" name="user-name" id="modal-user-name" placeholder="Имя Фамилия" required>
+            </div>
+
+            <div class="container">
+              <label for="modal-user-email">Ваш email:</label>
+              <input type="email" name="user-email" id="modal-user-email" placeholder="email@example.com" required>
+            </div>
+
+            <div class="container">
+              <label for="modal-user-message">Текст письма:</label>
+              <textarea name="user-message" id="modal-user-message" cols="30" rows="5" required>В свободной форме</textarea>
+            </div>
+
+            <button type="submit" class="modal-form__submit">Отправить</button>
+
+          </form>
+          <!-- CLOSE BUTTON -->
+          <button type="button" class="modal__close">&times;</button>
+
+        </div>
+
+        <!-- MAP -->
+        <div class="yandex-map-modal modal">
+          <!-- CLOSE BUTTON -->
+          <iframe src="https://yandex.ru/map-widget/v1/-/CBew6ZwzPA" width="560" height="400" frameborder="0"></iframe>
+          <button class="modal__close" type="button">&times;</button>
+        </div>
 
       </section>
 
@@ -402,14 +446,14 @@
 
     <div class="container">
 
-      <h2>Здесь будет подвал</h2>
+      <h2 class="visually-hidden">Здесь будет подвал</h2>
       <!-- Скроем заголовок -->
 
       <!-- LOGO AND USER ACTION -->
       <div class="footer__item">
 
         <!-- LOGO -->
-        <a href="" class="footer__logo logo">DEVICE</a>
+        <a href="#" class="footer__logo logo"><img src="img/logo.png" alt="" class="logo__img" width="164" height="36"></a>
 
         <!-- USER ACTION -->
         <ul class="footer__user-action user-action">
@@ -446,9 +490,9 @@
 
         <div class="footer__icon social-icon">
 
-          <span class="social-icon__item">Facebook</span>
-          <span class="social-icon__item">Instagram</span>
-          <span class="social-icon__item">Twitter</span>
+          <a href="#" class="social-icon__item" aria-label="Фейсбук">Facebook</a>
+          <a href="#" class="social-icon__item" aria-label="Инстаграм">Instagram</a>
+          <a href="#" class="social-icon__item" aria-label="Твиттер">Twitter</a>
 
         </div>
 

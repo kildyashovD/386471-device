@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -16,11 +18,15 @@
       <h1>Магазин техники Девайс</h1>
 
       <!-- LOGO которому зададим абсолютное позиционирование -->
-      <a href="index.html" class="main-header__logo logo">DEVICE</a>
+      <a href="index.html" class="main-header__logo logo"><img src="img/logo.png" alt="" class="logo__img" width="164" height="36"></a>
 
       <!-- MAIN NAV -->
-      <!-- Здесь будет форма -->
-      <span class="user-search">Поиск по сайту</span>
+      <!-- USER SEARCH -->
+      <form class="main-header__user-action-form user-action-form">
+        <label for="user-search" class="visually-hidden">Поиск по сайту</label>
+        <input type="search" name="user-search" class="user-action-form__user-search" id="user-search" placeholder="Поиск по сайту">
+        <button type="submit">Найти</button>
+      </form>
 
       <!-- USER ACTION -->
       <nav class="main-header__user-action">
@@ -105,13 +111,19 @@
     <!-- РАЗДЕЛ С ТОВАРАМИ -->
     <section class="products-container">
 
-      <h2>Раздел с товаром</h2>
+      <h2 class="visually-hidden">Раздел с товаром</h2>
       <!-- Его мы также скроем -->
 
       <!-- Заголовок с фильтрацией -->
       <header class="products-container__header">
 
         <div class="container">
+
+          <div class="content__header sorting">
+
+            <h3 class="sorting__heading">Фильтр: </h3>
+
+          </div>
 
           <!-- SORT THE PRODUCTS -->
           <div class="content__header sorting">
@@ -120,20 +132,14 @@
 
             <ul class="sorting__list">
 
-              <li class="sorting__item">По цене</li>
-              <li class="sorting__item">По типу</li>
-              <li class="sorting__item">По популярности</li>
+              <li class="sorting__item"><a href="#" class="sorting__link">По цене</a></li>
+              <li class="sorting__item"><a href="#" class="sorting__link">По типу</a></li>
+              <li class="sorting__item"><a href="#" class="sorting__link">По популярности</a></li>
 
             </ul>
 
-            <a href="#" class="sorting__icon-up">Сортировать к большему значению</a>
-            <a href="#" class="sorting__icon-down">Сортировать к меньшему значению</a>
-
-          </div>
-
-          <div class="content__header sorting">
-
-            <h3 class="sorting__heading">Фильтр: </h3>
+            <a href="#" class="sorting__icon-up-link"><img src="img/icon-up-dir.svg" alt="Сортировать к большему значению" class="sorting__icon-up-img"></a>
+            <a href="#" class="sorting__icon-down"><img src="img/icon-down-dir.svg" alt="Сортировать к меньшему значению" class="sorting__icon-up-img"></a>
 
           </div>
 
@@ -144,6 +150,53 @@
       <!-- CONTENT -->
       <div class="product-container__content">
 
+        <!-- ASIDE FILTER -->
+        <aside class="products-container__filters filters">
+
+          <form action="https://echo.htmlacademy.ru" method="post" class="filters__form form-filters">
+
+            <fieldset class="form-filters__item">
+              <legend class="form-filters__heading">Стоимость</legend>
+              <input type="range" name="price-count" min="0" max="10000" step="100">
+            </fieldset>
+
+            <fieldset class="form-filters__item">
+              <legend class="form-filters__heading">Цвет</legend>
+
+              <label for="filters-color-black">Черный</label>
+              <input type="checkbox" name="color-black" id="filters-color-black" checked>
+
+              <label for="filters-color-white">Белый</label>
+              <input type="checkbox" name="color-white" id="filters-color-white">
+
+              <label for="filters-color-blue">Синий</label>
+              <input type="checkbox" name="color-blue" id="filters-color-blue" checked>
+
+              <label for="filters-color-red">Красный</label>
+              <input type="checkbox" name="color-red" id="filters-color-red" checked>
+
+              <label for="filters-color-pink">Розовый</label>
+              <input type="checkbox" name="color-pink" id="filters-color-pink">
+
+            </fieldset>
+
+            <fieldset class="form-filters__item">
+              <legend class="form-filters__heading">Bluetooth</legend>
+
+              <label for="bluetooth-true">Есть</label>
+              <input type="radio" name="bluetooth-check" id="bluetooth-true" checked>
+
+              <label for="bluetooth-false">Нет</label>
+              <input type="radio" name="bluetooth-check" id="bluetooth-false">
+
+            </fieldset>
+
+            <button type="submit">Показать</button>
+
+          </form>
+
+        </aside>
+
         <div class="container">
 
           <!-- PRODUCT CART -->
@@ -152,7 +205,7 @@
             <!-- PRODUCT 1 -->
             <div class="products-cart__item">
 
-              <img src="http://via.placeholder.com/360x380" alt="Селфи-палка" class="products-cart__img">
+              <img src="img/item-1.jpg" width="360" height="380" alt="Селфи-палка" class="products-cart__img">
 
               <a href="#" class="products-cart__name">Любительская селфи-палка</a>
               <span class="products-cart__price">500 руб.</span>
@@ -166,7 +219,7 @@
             <!-- PRODUCT 2 -->
             <div class="products-cart__item">
 
-              <img src="http://via.placeholder.com/360x380" alt="Селфи-палка" class="products-cart__img">
+              <img src="img/item-2.jpg" width="360" height="380" alt="Селфи-палка" class="products-cart__img">
 
               <a href="#" class="products-cart__name">Профессиональная селфи-палка</a>
               <span class="products-cart__price">1 500 руб.</span>
@@ -181,7 +234,7 @@
             <!-- PRODUCT 3 -->
             <div class="products-cart__item">
 
-              <img src="http://via.placeholder.com/360x380" alt="Селфи-палка" class="products-cart__img">
+              <img src="img/item-3.jpg" width="360" height="380" alt="Селфи-палка" class="products-cart__img">
 
               <a href="#" class="products-cart__name">Непотопляемая селфи-палка</a>
               <span class="products-cart__price">2 500 руб.</span>
@@ -195,7 +248,7 @@
             <!-- PRODUCT 4 -->
             <div class="products-cart__item">
 
-              <img src="http://via.placeholder.com/360x380" alt="Селфи-палка" class="products-cart__img">
+              <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка" class="products-cart__img">
 
               <a href="#" class="products-cart__name">Селфи-палка «Следуй за мной»</a>
               <span class="products-cart__price">4 900 руб.</span>
@@ -227,24 +280,6 @@
 
         </div>
 
-        <!-- ASIDE FILTER -->
-        <aside class="products-container__filters filters">
-
-          <h3 class="filters__heading">Фильтр: </h3>
-
-          <span class="">Стоимость</span>
-          <!-- Тут будет RANGE SLIDERS ФОРМА -->
-
-          <span class="">Цвет</span>
-          <!-- Тут будет фильтрация по цвету ФОРМА -->
-
-          <span class="">Bluetooth</span>
-          <!-- Тут будет фильтрация по Bluetooth ФОРМА -->
-
-          <a href="#" class="filters__show-link">Показать</a>
-
-        </aside>
-
       </div>
 
     </section>
@@ -262,7 +297,7 @@
       <div class="footer__item">
 
         <!-- LOGO -->
-        <a href="" class="footer__logo logo">DEVICE</a>
+        <a href="" class="footer__logo logo"><img src="img/logo.png" alt="" class="logo__img" width="164" height="36"></a>
 
         <!-- USER ACTION -->
         <ul class="footer__user-action user-action">
@@ -301,9 +336,9 @@
 
         <div class="footer__icon social-icon">
 
-          <span class="social-icon__item">Facebook</span>
-          <span class="social-icon__item">Instagram</span>
-          <span class="social-icon__item">Twitter</span>
+          <a href="#" class="social-icon__item" aria-label="Фейсбук">Facebook</a>
+          <a href="#" class="social-icon__item" aria-label="Инстаграм">Instagram</a>
+          <a href="#" class="social-icon__item" aria-label="Твиттер">Twitter</a>
 
         </div>
 
