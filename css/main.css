@@ -55,7 +55,39 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
+.btn {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.btn,
+.contacts a,
+.nfo-about-us a,
+.promo-slider__content a {
+  color: rgb(0, 0, 0);
+
+  background-color: rgb(240, 197, 46);
+}
+
+.btn:active,
+.contacts a:active,
+.nfo-about-us a:active,
+.promo-slider__content a:active {
+  color: rgba(0, 0, 0, 0.3);;
+}
 
 
 /*------------------------------------*\
@@ -67,16 +99,10 @@ a {
 }
 
 .user-action,
-.catalog__list,
 .site-nav,
-.slider-control,
-.product-nav__list,
-.brands-logotypes__list,
-.footer-nav,
-.site-nav__catalog,
-.info-about-us__list,
-.pagination__list {
-	list-style: none;
+.catalog,
+.catalog__list {
+  list-style: none;
 }
 
 .user-action a,
@@ -84,6 +110,66 @@ a {
   color: rgb(0, 0, 0);
 }
 
+.site-nav {
+	letter-spacing: 3px;
+}
+
+.user-action,
+.user-action-form,
+.catalog {
+  font-family: "Open Sans Light", Arial, sans-serif;
+}
+
+.catalog {
+  line-height: 36px;
+  font-size: 15px;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.user-action,
+.user-action-form {
+  line-height: 30px;
+}
+
+.site-nav__item {
+  line-height: 24px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.site-nav a:hover,
+.user-action a:hover {
+  opacity: 0.6;
+}
+
+.site-nav a:active,
+.user-action a:active {
+  opacity: 0.3;
+}
+
+.user-action-form__btn {
+  background-color: transparent;
+  visibility: hidden;
+}
+
+.user-action-form__user-search:focus + .user-action-form__btn {
+  visibility: visible;
+}
+
+.user-action-form__btn:hover {
+  color: rgb(233, 233, 233);
+
+  background-color: rgb(0, 0, 0);
+}
+
+.user-action-form__btn:active {
+  color: rgb(106, 106, 106);
+
+  background-color: rgb(0, 0, 0);
+
+  visibility: visible;
+}
 
 
 
@@ -100,4 +186,55 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+
+
+
+/*------------------------------------*\
+  #PROMO-SLIDER
+\*------------------------------------*/
+
+.promo-slider__lead {
+  font-size: 47px;
+  line-height: 56px;
+}
+
+.promo-slider__description {
+  font-family: "Open Sans Light", Arial, sans-serif;
+  line-height: 30px;
+}
+
+.descripton-list__definition {
+  font-family: "Gilroy Light", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+}
+
+.descripton-list__name {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.slider-control {
+  list-style: none;
+}
+
+/*------------------------------------*\
+  #PRODUCT-NAVIGATION
+\*------------------------------------*/
+
+.product-nav__list {
+  list-style: none;
+  font-size: 18px;
+}
+
+.product-nav__item a {
+  color: rgb(0, 0, 0);
+}
+
+.product-nav__item a:focus {
+  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }

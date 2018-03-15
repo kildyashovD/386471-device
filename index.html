@@ -25,7 +25,7 @@
       <form class="main-header__user-action-form user-action-form">
         <label for="user-search" class="visually-hidden">Поиск по сайту</label>
         <input type="search" name="user-search" class="user-action-form__user-search" id="user-search" placeholder="Поиск по сайту">
-        <button type="submit">Найти</button>
+        <button type="submit" class="user-action-form__btn btn">Найти</button>
       </form>
 
       <!-- USER ACTION -->
@@ -95,9 +95,9 @@
 
       <div class="container">
 
-        <input type="radio" name="promo-slider-control" id="promo-slider-btn-1" checked>
-        <input type="radio" name="promo-slider-control" id="promo-slider-btn-2">
-        <input type="radio" name="promo-slider-control" id="promo-slider-btn-3">
+        <input type="radio" name="promo-slider-control" id="promo-slider-btn-1" class="visually-hidden" checked>
+        <input type="radio" name="promo-slider-control" id="promo-slider-btn-2" class="visually-hidden">
+        <input type="radio" name="promo-slider-control" id="promo-slider-btn-3" class="visually-hidden">
 
         <!-- HIDDEN HEADING -->
         <h2 class="visually-hidden">Промо слайдер с топ 3 товарами</h2>
@@ -130,7 +130,7 @@
             </dl>
 
             <!-- SLIDE LINK -->
-            <a href="#" class="promo-slider__link">Подробнее</a>
+            <a href="#" class="promo-slider__link btn">Подробнее</a>
 
           </div>
 
@@ -158,7 +158,7 @@
             </dl>
 
             <!-- SLIDE LINK -->
-            <a href="" class="promo-slider__link">Подробнее</a>
+            <a href="" class="promo-slider__link btn">Подробнее</a>
 
           </div>
 
@@ -189,7 +189,7 @@
             </dl>
 
             <!-- SLIDE LINK -->
-            <a href="#" class="promo-slider__link link">Подробнее</a>
+            <a href="#" class="promo-slider__link btn">Подробнее</a>
 
           </div>
 
@@ -197,8 +197,6 @@
 
         <!-- SLIDE CONTROL -->
         <ul class="promo-slider__control slider-control">
-
-
 
           <li class="slider-control__item">
             <label for="promo-slider-btn-1" class="slider-control__btn" tabindex="0"></label>
@@ -386,7 +384,7 @@
 
         </ul>
 
-        <a href="" class="info-about-us__link link">Подробнее о нас</a>
+        <a href="" class="info-about-us__link btn">Подробнее о нас</a>
 
       </section>
 
@@ -399,7 +397,7 @@
 
         <img class="contacts__maps" width="560" height="222" src="img/map.png" alt="Карта">
 
-        <a href="#" class="icontacts__link link">Напишите нам</a>
+        <a href="#" class="icontacts__link btn">Напишите нам</a>
 
         <!-- WRITE US MODAL -->
         <div class="modal-write-us modal">
@@ -421,7 +419,7 @@
               <textarea name="user-message" id="modal-user-message" cols="30" rows="5" required>В свободной форме</textarea>
             </div>
 
-            <button type="submit" class="modal-form__submit">Отправить</button>
+            <button type="submit" class="modal-form__submit btn">Отправить</button>
 
           </form>
           <!-- CLOSE BUTTON -->
