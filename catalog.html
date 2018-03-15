@@ -119,7 +119,7 @@
 
         <div class="container">
 
-          <div class="content__header sorting">
+          <div class="content__header">
 
             <h3 class="sorting__heading">Фильтр: </h3>
 
@@ -163,31 +163,31 @@
             <fieldset class="form-filters__item">
               <legend class="form-filters__heading">Цвет</legend>
 
+              <input type="checkbox" name="color-black" class="form-filters__ckeckbox" id="filters-color-black" checked>
               <label for="filters-color-black">Черный</label>
-              <input type="checkbox" name="color-black" id="filters-color-black" checked>
 
+              <input type="checkbox" name="color-white" class="form-filters__ckeckbox" id="filters-color-white">
               <label for="filters-color-white">Белый</label>
-              <input type="checkbox" name="color-white" id="filters-color-white">
 
+              <input type="checkbox" name="color-blue" class="form-filters__ckeckbox" id="filters-color-blue" checked>
               <label for="filters-color-blue">Синий</label>
-              <input type="checkbox" name="color-blue" id="filters-color-blue" checked>
 
+              <input type="checkbox" name="color-red" class="form-filters__ckeckbox" id="filters-color-red" checked>
               <label for="filters-color-red">Красный</label>
-              <input type="checkbox" name="color-red" id="filters-color-red" checked>
 
+              <input type="checkbox" name="color-pink" class="form-filters__ckeckbox" id="filters-color-pink">
               <label for="filters-color-pink">Розовый</label>
-              <input type="checkbox" name="color-pink" id="filters-color-pink">
 
             </fieldset>
 
             <fieldset class="form-filters__item">
               <legend class="form-filters__heading">Bluetooth</legend>
 
+              <input type="radio" name="bluetooth-check" class="form-filters__radio" id="bluetooth-true" checked>
               <label for="bluetooth-true">Есть</label>
-              <input type="radio" name="bluetooth-check" id="bluetooth-true" checked>
 
+              <input type="radio" name="bluetooth-check" class="form-filters__radio" id="bluetooth-false">
               <label for="bluetooth-false">Нет</label>
-              <input type="radio" name="bluetooth-check" id="bluetooth-false">
 
             </fieldset>
 
@@ -333,7 +333,6 @@
 
       <!-- SOCIAL ICONS -->
       <div class="footer__item">
-
         <div class="footer__icon social-icon">
 
           <a href="#" class="social-icon__item" aria-label="Фейсбук">Facebook</a>
