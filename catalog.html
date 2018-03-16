@@ -15,7 +15,7 @@
 
     <div class="container">
 
-      <h1>Магазин техники Девайс</h1>
+      <h1 class="visually-hidden">Магазин техники Девайс</h1>
 
       <!-- LOGO которому зададим абсолютное позиционирование -->
       <a href="index.html" class="main-header__logo logo"><img src="img/logo.png" alt="" class="logo__img" width="164" height="36"></a>
@@ -25,7 +25,7 @@
       <form class="main-header__user-action-form user-action-form">
         <label for="user-search" class="visually-hidden">Поиск по сайту</label>
         <input type="search" name="user-search" class="user-action-form__user-search" id="user-search" placeholder="Поиск по сайту">
-        <button type="submit">Найти</button>
+        <button type="submit" class="user-action-form__btn">Найти</button>
       </form>
 
       <!-- USER ACTION -->
@@ -191,7 +191,7 @@
 
             </fieldset>
 
-            <button type="submit">Показать</button>
+            <button type="submit" class="form-filters__btn btn">Показать</button>
 
           </form>
 
@@ -212,7 +212,7 @@
 
               <a href="#" class="products-cart__compare">Добавить к сравнению</a>
 
-              <a href="#" class="products-cart__add">В корзину</a>
+              <a href="#" class="products-cart__add btn">В корзину</a>
 
             </div>
 
@@ -226,7 +226,7 @@
 
               <a href="#" class="products-cart__compare">Добавить к сравнению</a>
 
-              <a href="#" class="products-cart__add">В корзину</a>
+              <a href="#" class="products-cart__add btn">В корзину</a>
 
             </div>
 
@@ -241,7 +241,7 @@
 
               <a href="#" class="products-cart__compare">Добавить к сравнению</a>
 
-              <a href="#" class="products-cart__add">В корзину</a>
+              <a href="#" class="products-cart__add btn">В корзину</a>
 
             </div>
 
@@ -255,7 +255,7 @@
 
               <a href="#" class="products-cart__compare">Добавить к сравнению</a>
 
-              <a href="#" class="products-cart__add">В корзину</a>
+              <a href="#" class="products-cart__add btn">В корзину</a>
 
             </div>
 
@@ -268,7 +268,7 @@
 
             <ul class="pagination__list list">
 
-              <li class="list__item"><a href="" class="pagination__item">1</a></li>
+              <li class="list__item"><a href="" class="pagination__item pagination__item_active">1</a></li>
               <li class="list__item"><a href="" class="pagination__item">2</a></li>
               <li class="list__item"><a href="" class="pagination__item">3</a></li>
 
@@ -290,25 +290,24 @@
 
     <div class="container">
 
-      <h2>Здесь будет подвал</h2>
-      <!-- Скроем заголовок -->
+      <h2 class="visually-hidden">Здесь будет подвал</h2>
 
       <!-- LOGO AND USER ACTION -->
       <div class="footer__item">
 
         <!-- LOGO -->
-        <a href="" class="footer__logo logo"><img src="img/logo.png" alt="" class="logo__img" width="164" height="36"></a>
+        <a href="" class="footer__logo logo"><img src="img/logo-yellow.png" alt="" class="logo__img" width="164" height="36"></a>
 
         <!-- USER ACTION -->
-        <ul class="footer__user-action user-action">
+        <ul class="footer__user-action footer-user-action">
 
-          <li class="user-action__item"><a href="#" class="user-action__account">Валентин Петухов</a></li>
+          <li class="footer-user-action__item"><a href="#" class="footer-user-action__account">Валентин Петухов</a></li>
 
-          <li class="user-action__item"><a href="#" class="user-action__logout">Выйти</a></li>
+          <li class="footer-user-action__item"><a href="#" class="footer-user-action__logout">Выйти</a></li>
 
-          <li class="user-action__item"><a href="#" class="user-action__compair">Сравнить</a></li>
+          <li class="footer-user-action__item"><a href="#" class="footer-user-action__compair">Сравнить</a></li>
 
-          <li class="user-action__item"><a href="#" class="user-actions__cart">Корзина</a></li>
+          <li class="footer-user-action__item"><a href="#" class="footer-user-actions__cart">Корзина</a></li>
 
         </ul>
 
