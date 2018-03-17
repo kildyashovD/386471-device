@@ -166,8 +166,26 @@ a {
   visibility: hidden;
 }
 
+.user-action-form__user-search {
+  opacity: 0.3;
+  background-color: transparent;
+  border: none;
+}
+
+.user-action-form__user-search:hover {
+  opacity: 0.6;
+}
+
+.user-action-form__user-search:focus{
+  opacity: 1;
+  outline: inherit;
+
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
 .user-action-form__user-search:focus + .user-action-form__btn {
   visibility: visible;
+  border: 2px solid rgb(0, 0, 0);
 }
 
 .user-action-form__btn:hover {
@@ -176,7 +194,6 @@ a {
   background-color: rgb(0, 0, 0);
 }
 
-.user-action-form__btn :focus,
 .user-action-form__btn:active {
   color: rgb(106, 106, 106);
 
