@@ -68,6 +68,9 @@ a {
 }
 
 .btn {
+  padding: 14px 44px;
+  /* временно добавил*/
+
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 4px;
@@ -110,6 +113,11 @@ html {
 
   width: 1160px;
   margin: auto;
+}
+
+.container_flex {
+  display: flex;
+  flex-direction: row;
 }
 
 .bg-yellow {
@@ -223,7 +231,7 @@ html {
 }
 
 .main-header__site-nav {
-  margin-top: 48px;
+  margin-top: 35px;
   width: 100%;
 }
 
@@ -343,23 +351,54 @@ html {
   #PROMO-SLIDER
 \*------------------------------------*/
 
+.promo-slider {
+  position: relative;
+  min-height: 496px;
+}
+
+#promo-slide-1 .promo-slider__img{
+  margin-left: 91px;
+}
+
+#promo-slide-2 .promo-slider__img{
+  margin-left: 116px;
+}
+
+#promo-slide-3 .promo-slider__img{
+  margin-left: 31px;
+}
+
 .promo-slider__lead {
+  margin-top: 40px;
+  margin-bottom: 0;
+  width: 390px;
+  position: relative;
+  z-index: 1;
+
   font-size: 47px;
-  line-height: 56px;
+  line-height: 70px;
+}
+
+.promo-slider__lead_full-width {
+  width: 100%;
 }
 
 .promo-slider__description {
   font-family: "Open Sans Light", Arial, sans-serif;
   line-height: 30px;
+
+  width: 480px;
+  margin-top: 32px;
+  margin-bottom: 50px;
 }
 
-.descripton-list__definition {
+.advantage-description__definition {
   font-family: "Gilroy Light", Arial, sans-serif;
   font-size: 36px;
   line-height: 48px;
 }
 
-.descripton-list__name {
+.advantage-description__name {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 20px;
@@ -367,6 +406,88 @@ html {
 
 .slider-control {
   list-style: none;
+  padding: 0;
+}
+
+.promo-slider__item {
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+
+  position: relative;
+  top: -100px;
+  left: 0;
+}
+
+.promo-slider__content {
+  position: relative;
+  width: 500px;
+  margin-right: 60px;
+}
+
+#promo-slide-1 .promo-slider__content::after {
+  content: "01";
+  position: absolute;
+  top: 33px;
+  right: 0;
+
+  font-size: 179.2px;
+  color: rgb(255, 255, 255);
+}
+
+#promo-slide-2 .promo-slider__content::after {
+  content: "02";
+  position: absolute;
+  top: 33px;
+  right: 0;
+
+  font-size: 179.2px;
+  color: rgb(255, 255, 255);
+}
+
+#promo-slide-3 .promo-slider__content::after {
+  content: "03";
+  position: absolute;
+  top: 33px;
+  right: 0;
+
+  font-size: 179.2px;
+  color: rgb(255, 255, 255);
+}
+
+#promo-slider-btn-1:checked ~ #promo-slide-1,
+#promo-slider-btn-2:checked ~ #promo-slide-2,
+#promo-slider-btn-3:checked ~ #promo-slide-3 {
+  display: flex;
+}
+
+.promo-slider__advantage {
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 60px;
+}
+
+.promo-slider__advantage .container {
+  display: flex;
+  flex-direction: column-reverse;
+
+  width: 160px;
+  margin: 0;
+}
+
+.promo-slider__advantage .advantage-description__item_margin-left {
+	margin-left: -20px;
+}
+
+.advantage-description__definition {
+  margin-left: 0;
+}
+
+.promo-slider__control {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 
@@ -378,11 +499,26 @@ html {
 \*------------------------------------*/
 
 .product-nav__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding: 0;
+
   list-style: none;
   font-size: 18px;
 }
 
+.product-nav__item {
+  width: 160px;
+}
+
 .product-nav__item a {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
   color: rgb(0, 0, 0);
 }
 
@@ -434,6 +570,21 @@ html {
   #PURCHASE-DETAILS
 \*------------------------------------*/
 
+.purchase-details {
+  min-height: 288px;
+
+  background-color: #e5e5e5;
+}
+
+.purchase-details .container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.purchase-details__item {
+  display: none;
+}
+
 .purchase-details__heading {
   font-size: 47px;
   line-height: 48px;
@@ -466,6 +617,11 @@ html {
   background-color: rgb(0, 0, 0);
 }
 
+#purchase-details-btn-1:checked ~ #delivery,
+#purchase-details-btn-2:checked ~ #warranty,
+#purchase-details-btn-3:checked ~ #credit {
+  display: block;
+}
 
 
 
@@ -474,15 +630,19 @@ html {
   #BRANDS-LOGOTYPES
 \*------------------------------------*/
 
+.brands-logotypes__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  list-style: none;
+}
+
 .brands-logotypes__link {
   display: block;
   position: relative;
 
   height: auto;
-}
-
-.brands-logotypes__list {
-  list-style: none;
 }
 
 .brands-logotypes__img_color_b-w {
@@ -514,6 +674,10 @@ html {
   #ABOUT-US
 \*------------------------------------*/
 
+.info-about-us {
+  width: 50%;
+}
+
 .info-about-us__heading {
   font-size: 47px;
   line-height: 48px;
@@ -531,6 +695,10 @@ html {
 /*------------------------------------*\
   #CONTACTS
 \*------------------------------------*/
+
+.contacts {
+  width: 50%;
+}
 
 .contacts__heading {
   font-size: 47px;

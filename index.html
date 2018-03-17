@@ -103,7 +103,7 @@
         <h2 class="visually-hidden">Промо слайдер с топ 3 товарами</h2>
 
         <!-- PROMO SLIDER ITEM 1 -->
-        <div class="promo-slider__item">
+        <div class="promo-slider__item" id="promo-slide-1">
 
           <!-- IMG SLIDER -->
           <img src="img/slider-1.png" width="384" height="486" alt="Селфи-палка" class="promo-slider__img">
@@ -115,29 +115,36 @@
 
             <p class="promo-slider__description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 
-            <!-- DESCRIPTION WITH ADVANTAGE -->
-            <dl class="promo-slider__advantage descripton-list">
-
-              <dt class="descripton-list__name">Длина палки</dt>
-              <dd class="descripton-list__definition">8,5 м</dd>
-
-              <dt class="descripton-list__name">Вес палки</dt>
-              <dd class="descripton-list__definition">5 кг</dd>
-
-              <dt class="descripton-list__name">Материал</dt>
-              <dd class="descripton-list__definition">Карбон</dd>
-
-            </dl>
-
             <!-- SLIDE LINK -->
             <a href="#" class="promo-slider__link btn">Подробнее</a>
+
+            <!-- DESCRIPTION WITH ADVANTAGE -->
+            <dl class="promo-slider__advantage advantage-description">
+
+              <div class="container">
+                <dt class="advantage-description__name">Длина палки</dt>
+                <dd class="advantage-description__definition">8,5 м</dd>
+              </div>
+
+              <div class="container">
+                <dt class="advantage-description__name">Вес палки</dt>
+                <dd class="advantage-description__definition">5 кг</dd>
+              </div>
+
+
+              <div class="container advantage-description__item_margin-left">
+                <dt class="advantage-description__name">Материал</dt>
+                <dd class="advantage-description__definition">Карбон</dd>
+              </div>
+
+            </dl>
 
           </div>
 
         </div>
 
         <!-- PROMO SLIDER ITEM 2 -->
-        <div class="promo-slider__item">
+        <div class="promo-slider__item" id="promo-slide-2">
 
           <!-- IMG SLIDER -->
           <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет" class="promo-slider__img">
@@ -149,23 +156,24 @@
 
             <p class="promo-slider__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
 
-            <!-- DESCRIPTION WITH ADVANTAGE -->
-            <dl class="promo-slider__advantage descripton-list">
-
-              <dt class="descripton-list__name">Без подзарядки</dt>
-              <dd class="descripton-list__definition">48 часов</dd>
-
-            </dl>
-
             <!-- SLIDE LINK -->
             <a href="" class="promo-slider__link btn">Подробнее</a>
+
+            <!-- DESCRIPTION WITH ADVANTAGE -->
+            <dl class="promo-slider__advantage advantage-description">
+
+              <div class="container">
+                <dt class="advantage-description__name">Без подзарядки</dt>
+                <dd class="advantage-description__definition">48 часов</dd>
+              </div>
+            </dl>
 
           </div>
 
         </div>
 
         <!-- PROMO SLIDER ITEM 3 -->
-        <div class="promo-slider__item">
+        <div class="promo-slider__item" id="promo-slide-3">
 
           <!-- IMG SLIDER -->
           <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер" class="promo-slider__img">
@@ -173,23 +181,27 @@
           <!-- PROMO CONTENT -->
           <div class="promo-slider__content">
 
-            <p class="promo-slider__lead">Порхает как бабочка, жалит как пчела!</p>
+            <p class="promo-slider__lead promo-slider__lead_full-width">Порхает как бабочка, жалит как пчела!</p>
 
             <p class="promo-slider__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
 
-            <!-- DESCRIPTION WITH ADVANTAGE -->
-            <dl class="promo-slider__advantage descripton-list">
-
-              <dt class="descripton-list__name">Дальность полета</dt>
-              <dd class="descripton-list__definition">800 м</dd>
-
-              <dt class="descripton-list__name">Радиус поражения</dt>
-              <dd class="descripton-list__definition">50 м</dd>
-
-            </dl>
-
             <!-- SLIDE LINK -->
             <a href="#" class="promo-slider__link btn">Подробнее</a>
+
+            <!-- DESCRIPTION WITH ADVANTAGE -->
+            <dl class="promo-slider__advantage advantage-description">
+
+              <div class="container">
+                <dt class="advantage-description__name">Дальность полета</dt>
+                <dd class="advantage-description__definition">800 м</dd>
+              </div>
+
+              <div class="container">
+                <dt class="advantage-description__name">Радиус поражения</dt>
+                <dd class="advantage-description__definition">50 м</dd>
+              </div>
+
+            </dl>
 
           </div>
 
@@ -273,7 +285,7 @@
         <input type="radio" name="purchase-slider-control" id="purchase-details-btn-3" class="visually-hidden purchase-slider-control_checked">
 
         <!-- PURCHASE DETAILS ITEM 1 DELIVERY -->
-        <div class="purchase-details__item">
+        <div class="purchase-details__item" id="delivery">
 
           <h3 class="purchase-details__heading">Доставка</h3>
 
@@ -282,7 +294,7 @@
         </div>
 
         <!-- PURCHASE DETAILS ITEM 2 WARRANTY -->
-        <div class="purchase-details__item">
+        <div class="purchase-details__item" id="warranty">
 
           <h3 class="purchase-details__heading">Гарантия</h3>
 
@@ -291,7 +303,7 @@
         </div>
 
         <!-- PURCHASE DETAILS ITEM 3 CREDIT -->
-        <div class="purchase-details__item">
+        <div class="purchase-details__item" id="credit">
 
           <h3 class="purchase-details__heading">Кредит</h3>
 
@@ -366,7 +378,7 @@
 
     <!-- ABOUT US -->
 
-    <div class="container">
+    <div class="container container_flex">
 
       <section class="info-about-us">
 
