@@ -176,6 +176,7 @@ a {
   background-color: rgb(0, 0, 0);
 }
 
+.user-action-form__btn :focus,
 .user-action-form__btn:active {
   color: rgb(106, 106, 106);
 
@@ -284,6 +285,14 @@ a {
 .breadcrumbs__link,
 .breadcrumbs__item {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs__link:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs__link:active {
+  color: rgba(0, 0, 0, 0.1);
 }
 
 
