@@ -91,7 +91,30 @@ a {
   ;
 }
 
+*,
+* before,
+* after {
+  box-sizing: inherit;
+}
 
+html {
+  box-sizing: border-box;
+}
+
+.content-box-component {
+  box-sizing: content-box;
+}
+
+.container {
+  position: relative;
+
+  width: 1160px;
+  margin: auto;
+}
+
+.bg-yellow {
+  background-color: rgb(247, 226, 150);
+}
 
 
 
@@ -100,7 +123,26 @@ a {
 \*------------------------------------*/
 
 .main-header {
-  background-color: rgb(247, 226, 150);
+  position: relative;
+
+  margin-top: 40px;
+  min-height: 299px;
+}
+
+.main-header_flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.main-header_padding {
+  padding: 40px 60px;
+}
+
+.main-header__logo {
+  position: absolute;
+  top: -20px;
+  left: 60px;
 }
 
 .logo:hover {
@@ -114,7 +156,11 @@ a {
 .user-action,
 .site-nav,
 .catalog,
-.catalog__list {
+.catalog__list,
+.sub-catalog {
+  padding: 0;
+  margin: 0;
+
   list-style: none;
 }
 
@@ -124,7 +170,27 @@ a {
 }
 
 .site-nav {
+  display: flex;
+  flex-direction: row;
+
   letter-spacing: 4px;
+}
+
+.site-nav__item:first-child {
+  width: 50%;
+}
+
+.site-nav__item:nth-child(2) {
+  width: 180px;
+  padding-left: 20px;
+}
+
+.site-nav__item:nth-child(3) {
+  width: 220px;
+}
+
+.site-nav__item:last-child {
+  widows: 120px;
 }
 
 .user-action,
@@ -134,15 +200,31 @@ a {
 }
 
 .catalog {
+  display: flex;
+  flex-direction: row;
+
   line-height: 36px;
   font-size: 15px;
   text-transform: none;
   letter-spacing: normal;
 }
 
+.sub-catalog {
+  width: 240px;
+}
+
+.catalog__item:nth-child(2) {
+  width: 160px;
+}
+
 .user-action,
 .user-action-form {
   line-height: 30px;
+}
+
+.main-header__site-nav {
+  margin-top: 48px;
+  width: 100%;
 }
 
 .site-nav__item {
@@ -161,6 +243,38 @@ a {
   opacity: 0.3;
 }
 
+.main-header__user-action-form {
+  width: 50%;
+}
+
+.main-header__user-action {
+  width: 50%;
+}
+
+.user-action {
+  display: flex;
+  flex-direction: row;
+}
+
+.user-action__item a {
+  display: block;
+}
+
+.user-action__login {
+  width: 300px;
+  padding-left: 46px;
+}
+
+.user-action__compair {
+  width: 120px;
+  padding-left: 26px;
+}
+
+.user-actions__cart {
+  width: 100px;
+  padding-left: 37px;
+}
+
 .user-action-form__btn {
   background-color: transparent;
   visibility: hidden;
@@ -176,7 +290,7 @@ a {
   opacity: 0.6;
 }
 
-.user-action-form__user-search:focus{
+.user-action-form__user-search:focus {
   opacity: 1;
   outline: inherit;
 
