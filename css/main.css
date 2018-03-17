@@ -137,7 +137,7 @@ html {
   flex-direction: row;
   flex-wrap: wrap;
 
-  padding: 40px 60px;
+  padding: 43px 60px;
   min-height: 299px;
 
   background-color: rgb(247, 226, 150);
@@ -145,7 +145,7 @@ html {
 
 .main-header__logo {
   position: absolute;
-  top: -20px;
+  top: -19px;
   left: 60px;
 }
 
@@ -227,12 +227,11 @@ html {
 }
 
 .main-header__site-nav {
-  margin-top: 35px;
+  margin-top: 30px;
   width: 100%;
 }
 
 .site-nav__item {
-  line-height: 24px;
   font-size: 18px;
   text-transform: uppercase;
 }
@@ -260,12 +259,7 @@ html {
   flex-direction: row;
 }
 
-.user-action__item a {
-  display: block;
-}
-
 .user-action__login {
-  width: 300px;
   padding-left: 46px;
 }
 
@@ -277,6 +271,10 @@ html {
 .user-actions__cart {
   width: 100px;
   padding-left: 37px;
+}
+
+.user-action__item:first-child {
+  width: 300px;
 }
 
 .user-action-form__btn {
@@ -354,6 +352,7 @@ html {
 
 #promo-slide-1 .promo-slider__img {
   margin-left: 91px;
+  margin-top: -32px;
 }
 
 #promo-slide-2 .promo-slider__img {
@@ -384,7 +383,7 @@ html {
   line-height: 30px;
 
   width: 480px;
-  margin-top: 32px;
+  margin-top: 19px;
   margin-bottom: 50px;
 }
 
@@ -395,6 +394,8 @@ html {
 }
 
 .advantage-description__name {
+  padding-top: 6px;
+
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 20px;
@@ -461,7 +462,7 @@ html {
   display: flex;
   flex-direction: row;
 
-  margin-top: 60px;
+  margin-top: 57px;
 }
 
 .promo-slider__advantage .container {
@@ -495,7 +496,7 @@ html {
 \*------------------------------------*/
 
 .product-nav {
-  margin-top: 35px;
+  margin-top: 24px;
 }
 
 .product-nav__list {
@@ -552,7 +553,7 @@ html {
 }
 
 .product-nav__heading {
-  font-size: 18px;
+  font-size: 14px;
 }
 
 
@@ -599,8 +600,8 @@ html {
 \*------------------------------------*/
 
 .purchase-details {
-  margin-top: 168px;
-  min-height: 288px;
+  margin-top: 184px;
+  height: 288px;
 
   background-color: #e5e5e5;
 }
@@ -728,8 +729,8 @@ html {
 \*------------------------------------*/
 
 .info-about-us {
-  width: 50%;
-  margin-top: 93px;
+  width: 51.5%;
+  margin-top: 65px;
 }
 
 .info-about-us__heading {
@@ -740,7 +741,7 @@ html {
 }
 
 .info-about-us__description {
-  margin-top: 61px;
+  margin-top: 43px;
   margin-bottom: 0;
 
   font-family: "Open Sans Light", Arial, sans-serif;
@@ -748,16 +749,17 @@ html {
 }
 
 .info-about-us__description:nth-child(3) {
-  margin-top: 44px;
+  margin-top: 30px;
 }
 
 .info-about-us__list {
-  margin-top: 47px;
-  margin-bottom: 68px;
+  margin-top: 73px;
+  margin-bottom: 70px;
+  padding-left: 36px;
 }
 
 .info-about-us__list .list__item:not(:last-child) {
-	margin-bottom: 25px;
+  margin-bottom: 17px;
 }
 
 
@@ -769,8 +771,8 @@ html {
 \*------------------------------------*/
 
 .contacts {
-  width: 50%;
-  margin-top: 93px;
+  width: 48.5%;
+  margin-top: 65px;
 }
 
 .contacts__heading {
@@ -783,15 +785,15 @@ html {
 
 .contacts__description {
   padding: 0;
-  margin-top: 61px;
-  margin-bottom: 44px;
+  margin-top: 43px;
+  margin-bottom: 39px;
 
   font-family: "Open Sans Light", Arial, sans-serif;
   line-height: 30px;
 }
 
 .contacts__maps {
-	margin-bottom: 70px;
+  margin-bottom: 70px;
 }
 
 
@@ -975,16 +977,39 @@ html {
 \*------------------------------------*/
 
 .footer {
+  padding-top: 76px;
   margin-top: 78px;
+  min-height: 323px;
 
   color: rgb(255, 255, 255);
 
   background-color: rgb(70, 70, 70);
 }
 
+.footer__item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer__item:nth-child(3) {
+  margin-top: 21px;
+}
+
 .footer-nav,
 .footer-user-action {
   list-style: none;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-top: 6px;
+  padding-left: 0;
+  width: 440px;
 }
 
 .footer__address,
@@ -1008,6 +1033,15 @@ html {
   opacity: 0.3;
 }
 
+.footer-user-action {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  padding-left: 0;
+  width: 300px;
+}
+
 .footer-user-action a {
   font-family: "Open Sans Light", Arial, sans-serif;
   color: rgba(255, 255, 255, 0.7);
@@ -1023,6 +1057,10 @@ html {
 
 .footer-user-action .footer-user-action__logout {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.footer__tel-number {
+  margin: 0;
 }
 
 .social-icon a,
