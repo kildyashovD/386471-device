@@ -70,7 +70,6 @@ a {
 .btn {
   padding: 14px 44px;
   /* временно добавил*/
-
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 4px;
@@ -120,9 +119,6 @@ html {
   flex-direction: row;
 }
 
-.bg-yellow {
-  background-color: rgb(247, 226, 150);
-}
 
 
 
@@ -134,17 +130,17 @@ html {
   position: relative;
 
   margin-top: 40px;
-  min-height: 299px;
 }
 
-.main-header_flex {
+.main-header .container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-}
 
-.main-header_padding {
   padding: 40px 60px;
+  min-height: 299px;
+
+  background-color: rgb(247, 226, 150);
 }
 
 .main-header__logo {
@@ -353,30 +349,30 @@ html {
 
 .promo-slider {
   position: relative;
-  min-height: 496px;
+  min-height: auto;
 }
 
-#promo-slide-1 .promo-slider__img{
+#promo-slide-1 .promo-slider__img {
   margin-left: 91px;
 }
 
-#promo-slide-2 .promo-slider__img{
+#promo-slide-2 .promo-slider__img {
   margin-left: 116px;
 }
 
-#promo-slide-3 .promo-slider__img{
+#promo-slide-3 .promo-slider__img {
   margin-left: 31px;
 }
 
 .promo-slider__lead {
-  margin-top: 40px;
+  margin-top: 47px;
   margin-bottom: 0;
   width: 390px;
   position: relative;
   z-index: 1;
 
   font-size: 47px;
-  line-height: 70px;
+  line-height: 56px;
 }
 
 .promo-slider__lead_full-width {
@@ -415,7 +411,7 @@ html {
   justify-content: space-between;
 
   position: relative;
-  top: -100px;
+  top: -78px;
   left: 0;
 }
 
@@ -477,7 +473,7 @@ html {
 }
 
 .promo-slider__advantage .advantage-description__item_margin-left {
-	margin-left: -20px;
+  margin-left: -20px;
 }
 
 .advantage-description__definition {
@@ -498,12 +494,17 @@ html {
   #PRODUCT-NAVIGATION
 \*------------------------------------*/
 
+.product-nav {
+  margin-top: 35px;
+}
+
 .product-nav__list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 
   padding: 0;
+  margin-top: 0;
 
   list-style: none;
   font-size: 18px;
@@ -522,9 +523,36 @@ html {
   color: rgb(0, 0, 0);
 }
 
-.product-nav__item a:focus {
-  opacity: 0.3;
+.product-nav__link:focus {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.product-nav__link:focus .product-nav__img {
+  opacity: 0.3;
+}
+
+.product-nav__item:nth-child(2) .product-nav__img {
+  margin-top: 42px;
+}
+
+.product-nav__link .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  min-height: 160px;
+
+  background-color: rgba(240, 197, 46, 0.5);
+}
+
+.product-nav__link:hover .container {
+  background-color: rgba(240, 197, 46, 1)
+}
+
+.product-nav__heading {
+  font-size: 18px;
 }
 
 
@@ -634,6 +662,8 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  padding-left: 0;
 
   list-style: none;
 }
