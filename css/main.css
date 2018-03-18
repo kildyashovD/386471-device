@@ -279,8 +279,11 @@ a {
   color: rgb(0, 0, 0);
 }
 
-.product-nav__item a:focus {
+.product-nav__link:focus .product-nav__img {
   opacity: 0.3;
+}
+
+.product-nav__link:focus {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -395,7 +398,7 @@ a {
 }
 
 .brands-logotypes__img_color_b-w:hover + .brands-logotypes__img_color_colorful,
-.brands-logotypes__img_color_b-w:focus + .brands-logotypes__img_color_colorful {
+.brands-logotypes__link:focus .brands-logotypes__img_color_colorful {
   opacity: 1;
 }
 
@@ -490,20 +493,20 @@ a {
   line-height: 40px;
 }
 
-.sorting__icon-up-link,
-.sorting__icon-down {
+.sorting__icon-up-img,
+.sorting__icon-down-img {
   opacity: 0.2;
 }
 
-.sorting__icon-up-img:hover,
-.sorting__icon-up-img:focus,
-.sorting__icon-down-img:hover,
-.sorting__icon-down-img:focus {
+.sorting__icon-up-link:hover .sorting__icon-up-img,
+.sorting__icon-up-link:focus .sorting__icon-up-img,
+.sorting__icon-down-link:hover .sorting__icon-down-img,
+.sorting__icon-down-link:focus .sorting__icon-down-img {
   opacity: 0.4;
 }
 
-.sorting__icon-up-link:active,
-.sorting__icon-down:active {
+.sorting__icon-up-link:active .sorting__icon-up-img,
+.sorting__icon-down-link:active .sorting__icon-down-img {
   opacity: 1;
 }
 
