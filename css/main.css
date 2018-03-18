@@ -306,6 +306,15 @@ html {
   width: 300px;
 }
 
+.catalog-page .user-action__item:first-child {
+  width: 197px;
+  padding-left: 47px;
+}
+
+.catalog-page .user-action__item:nth-child(2) {
+  width: 104px;
+}
+
 .user-action-form__btn {
   background-color: transparent;
   visibility: hidden;
