@@ -97,17 +97,17 @@ a {
 * before,
 * after {
   -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .content-box-component {
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
 }
 
 .container {
@@ -123,8 +123,8 @@ html {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 
@@ -146,10 +146,10 @@ html {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 
   padding: 43px 60px;
   min-height: 299px;
@@ -193,8 +193,8 @@ html {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 
   letter-spacing: 4px;
 }
@@ -228,8 +228,8 @@ html {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 
   line-height: 36px;
   font-size: 15px;
@@ -284,8 +284,8 @@ html {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .user-action__login {
@@ -376,7 +376,8 @@ html {
 
 .promo-slider {
   position: relative;
-  min-height: auto;
+
+  margin-bottom: 24px;
 }
 
 #promo-slide-1 .promo-slider__img {
@@ -441,11 +442,11 @@ html {
   display: none;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 
   position: relative;
   top: -78px;
@@ -502,8 +503,8 @@ html {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 
   margin-top: 57px;
 }
@@ -514,8 +515,8 @@ html {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
 
   width: 160px;
   margin: 0;
@@ -544,7 +545,7 @@ html {
 \*------------------------------------*/
 
 .product-nav {
-  margin-top: 24px;
+  margin-bottom: 176px;
 }
 
 .product-nav__list {
@@ -553,11 +554,11 @@ html {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 
   padding: 0;
   margin-top: 0;
@@ -597,14 +598,14 @@ html {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 
   width: 100%;
   min-height: 160px;
@@ -643,8 +644,8 @@ html {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 
   padding-left: 0;
 
@@ -689,8 +690,8 @@ html {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 
   height: 100%;
 }
@@ -701,8 +702,8 @@ html {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 
   width: auto;
 
@@ -718,11 +719,11 @@ html {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 
   margin-left: 50px;
   padding: 0;
@@ -752,10 +753,10 @@ html {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 
@@ -771,13 +772,13 @@ html {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 
   width: 832px;
   margin-top: 18px;
@@ -851,8 +852,8 @@ html {
 \*------------------------------------*/
 
 .purchase-details {
-  margin-top: 176px;
   height: 288px;
+  margin-bottom: 94px;
 
   background-color: #e5e5e5;
 }
@@ -863,8 +864,8 @@ html {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
 
   position: relative;
   top: -100px;
@@ -935,7 +936,7 @@ html {
 \*------------------------------------*/
 
 .brands-logotypes {
-  margin-top: 94px;
+  margin-bottom: 80px;
 }
 
 .brands-logotypes__list {
@@ -944,13 +945,14 @@ html {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 
   padding-left: 0;
+  margin: 0;
 
   list-style: none;
 }
@@ -993,36 +995,40 @@ html {
 
 .info-about-us {
   width: 51.5%;
-  margin-top: 65px;
 }
 
 .info-about-us__heading {
-  margin-top: 58px;
+  padding-top: 58px;
+  margin: 0;
 
   font-size: 47px;
   line-height: 48px;
 }
 
 .info-about-us__description {
-  margin-top: 43px;
-  margin-bottom: 0;
+  padding-top: 43px;
+  padding-bottom: 0;
+  margin: 0;
 
   font-family: "Open Sans Light", Arial, sans-serif;
   line-height: 30px;
 }
 
 .info-about-us__description:nth-child(3) {
-  margin-top: 30px;
+  padding-top: 30px;
+  margin: 0;
 }
 
 .info-about-us__list {
-  margin-top: 73px;
-  margin-bottom: 70px;
+  padding-top: 73px;
+  padding-bottom: 70px;
   padding-left: 36px;
+  margin: 0;
 }
 
 .info-about-us__list .list__item:not(:last-child) {
-  margin-bottom: 17px;
+  padding-bottom: 17px;
+  margin: 0;
 }
 
 
@@ -1035,21 +1041,21 @@ html {
 
 .contacts {
   width: 48.5%;
-  margin-top: 65px;
 }
 
 .contacts__heading {
-  margin-top: 58px;
-  margin-bottom: 0;
+  padding-top: 58px;
+  padding-bottom: 0;
+  margin: 0;
 
   font-size: 47px;
   line-height: 48px;
 }
 
 .contacts__description {
-  padding: 0;
-  margin-top: 43px;
-  margin-bottom: 39px;
+  margin: 0;
+  padding-top: 43px;
+  padding-bottom: 39px;
 
   font-family: "Open Sans Light", Arial, sans-serif;
   line-height: 30px;
@@ -1105,8 +1111,8 @@ html {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 
   border: none;
 }
@@ -1138,11 +1144,11 @@ html {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 
   width: 772px;
   height: 70px;
@@ -1155,11 +1161,11 @@ html {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 
   width: 160px;
 
@@ -1259,8 +1265,8 @@ html {
 \*------------------------------------*/
 
 .footer {
-  padding-top: 76px;
-  margin-top: 78px;
+  padding-top: 65px;
+  margin-top: 88px;
   min-height: 323px;
 
   color: rgb(255, 255, 255);
@@ -1278,13 +1284,13 @@ html {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .footer__item:nth-child(3) {
@@ -1302,11 +1308,11 @@ html {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 
   margin-top: 6px;
   padding-left: 0;
@@ -1339,8 +1345,8 @@ html {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 
   margin: 0;
   padding-left: 0;
