@@ -8,16 +8,16 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body class="catalog-page">
 
   <!-- HEADER -->
   <header class="main-header">
 
     <div class="container">
 
-      <h1 class="visually-hidden">Магазин техники Девайс</h1>
+      <h1 class="visually-hidden">Магазин техники Девайc</h1>
 
-      <!-- LOGO которому зададим абсолютное позиционирование -->
+      <!-- LOGO, которому зададим абсолютное позиционирование -->
       <a href="index.html" class="main-header__logo logo"><img src="img/logo.png" alt="" class="logo__img" width="164" height="36"></a>
 
       <!-- MAIN NAV -->
@@ -33,7 +33,9 @@
 
         <ul class="user-action">
 
-          <li class="user-action__item"><a href="#" class="user-action__login">Войти</a></li>
+          <li class="user-action__item"><a href="#" class="user-action__account">Валентин Петухов</a></li>
+
+          <li class="user-action__item"><a href="#" class="user-action__logout">Выйти</a></li>
 
           <li class="user-action__item"><a href="#" class="user-action__compair">Сравнить</a></li>
 
@@ -43,7 +45,7 @@
       </nav>
 
       <!-- SITE NAVIGATON -->
-      <nav class="main-header__site-nev">
+      <nav class="main-header__site-nav">
         <ul class="site-nav">
 
           <li class="site-nav__item"><a href="#" class="site-nav__link">Каталог товаров</a>
@@ -53,11 +55,11 @@
 
               <li class="catalog__item">
 
-                <ul class="catalog__list">
+                <ul class="sub-catalog__list sub-catalog">
 
-                  <li class="catalog__item"><a href="#" class="catalog__link">Виртуальная реальность</a></li>
-                  <li class="catalog__item"><a href="#" class="catalog__link">Моноподы для селфи</a></li>
-                  <li class="catalog__item"><a href="#" class="catalog__link">Экшн-камеры</a></li>
+                  <li class="sub-catalog__item"><a href="#" class="sub-catalog__link">Виртуальная реальность</a></li>
+                  <li class="sub-catalog__item"><a href="#" class="sub-catalog__link">Моноподы для селфи</a></li>
+                  <li class="sub-catalog__item"><a href="#" class="sub-catalog__link">Экшн-камеры</a></li>
 
                 </ul>
 
@@ -84,19 +86,20 @@
         </ul>
 
       </nav>
+
     </div>
   </header>
 
   <main class="main-content">
 
     <!-- PRODUCT NAV & BREADCRUMBS -->
-    <nav class="product-nav">
+    <nav class="breadcrumbs-nav">
 
       <div class="container">
 
-        <h2 class="product-nav__current-product">Моноподы для селфи</h2>
+        <h2 class="breadcrumbs-nav__current-product">Моноподы для селфи</h2>
 
-        <ul class="product-nav__breadcrumbs breadcrumbs">
+        <ul class="breadcrumbs-nav__item breadcrumbs">
 
           <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
           <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Каталог товаров</a></li>
@@ -138,8 +141,12 @@
 
             </ul>
 
-            <a href="#" class="sorting__icon-up-link"><img src="img/icon-up-dir.svg" alt="Сортировать к большему значению" class="sorting__icon-up-img"></a>
-            <a href="#" class="sorting__icon-down-link"><img src="img/icon-down-dir.svg" alt="Сортировать к меньшему значению" class="sorting__icon-down-img"></a>
+            <div class="container">
+
+              <a href="#" class="sorting__icon-up-link"><img src="img/icon-up-dir.svg" alt="Сортировать к большему значению" class="sorting__icon-up-img"></a>
+              <a href="#" class="sorting__icon-down"><img src="img/icon-down-dir.svg" alt="Сортировать к меньшему значению" class="sorting__icon-up-img"></a>
+
+            </div>
 
           </div>
 
@@ -150,54 +157,54 @@
       <!-- CONTENT -->
       <div class="product-container__content">
 
-        <!-- ASIDE FILTER -->
-        <aside class="products-container__filters filters">
-
-          <form action="https://echo.htmlacademy.ru" method="post" class="filters__form form-filters">
-
-            <fieldset class="form-filters__item">
-              <legend class="form-filters__heading">Стоимость</legend>
-              <input type="range" name="price-count" min="0" max="10000" step="100">
-            </fieldset>
-
-            <fieldset class="form-filters__item">
-              <legend class="form-filters__heading">Цвет</legend>
-
-              <input type="checkbox" name="color-black" class="form-filters__ckeckbox" id="filters-color-black" checked>
-              <label for="filters-color-black">Черный</label>
-
-              <input type="checkbox" name="color-white" class="form-filters__ckeckbox" id="filters-color-white">
-              <label for="filters-color-white">Белый</label>
-
-              <input type="checkbox" name="color-blue" class="form-filters__ckeckbox" id="filters-color-blue" checked>
-              <label for="filters-color-blue">Синий</label>
-
-              <input type="checkbox" name="color-red" class="form-filters__ckeckbox" id="filters-color-red" checked>
-              <label for="filters-color-red">Красный</label>
-
-              <input type="checkbox" name="color-pink" class="form-filters__ckeckbox" id="filters-color-pink">
-              <label for="filters-color-pink">Розовый</label>
-
-            </fieldset>
-
-            <fieldset class="form-filters__item">
-              <legend class="form-filters__heading">Bluetooth</legend>
-
-              <input type="radio" name="bluetooth-check" class="form-filters__radio" id="bluetooth-true" checked>
-              <label for="bluetooth-true">Есть</label>
-
-              <input type="radio" name="bluetooth-check" class="form-filters__radio" id="bluetooth-false">
-              <label for="bluetooth-false">Нет</label>
-
-            </fieldset>
-
-            <button type="submit" class="form-filters__btn btn">Показать</button>
-
-          </form>
-
-        </aside>
-
         <div class="container">
+
+          <!-- ASIDE FILTER -->
+          <aside class="products-container__filters filters">
+
+            <form action="https://echo.htmlacademy.ru" method="post" class="filters__form form-filters">
+
+              <fieldset class="form-filters__item">
+                <legend class="form-filters__heading">Стоимость</legend>
+                <input type="range" name="price-count" min="0" max="10000" step="100">
+              </fieldset>
+
+              <fieldset class="form-filters__item">
+                <legend class="form-filters__heading">Цвет</legend>
+
+                <input type="checkbox" name="color-black" class="form-filters__ckeckbox visually-hidden" id="filters-color-black" checked>
+                <label for="filters-color-black">Черный</label>
+
+                <input type="checkbox" name="color-white" class="form-filters__ckeckbox visually-hidden" id="filters-color-white">
+                <label for="filters-color-white">Белый</label>
+
+                <input type="checkbox" name="color-blue" class="form-filters__ckeckbox visually-hidden" id="filters-color-blue" checked>
+                <label for="filters-color-blue">Синий</label>
+
+                <input type="checkbox" name="color-red" class="form-filters__ckeckbox visually-hidden" id="filters-color-red" checked>
+                <label for="filters-color-red">Красный</label>
+
+                <input type="checkbox" name="color-pink" class="form-filters__ckeckbox visually-hidden" id="filters-color-pink">
+                <label for="filters-color-pink">Розовый</label>
+
+              </fieldset>
+
+              <fieldset class="form-filters__item">
+                <legend class="form-filters__heading">Bluetooth</legend>
+
+                <input type="radio" name="bluetooth-check" class="form-filters__radio visually-hidden" id="bluetooth-true" checked>
+                <label for="bluetooth-true">Есть</label>
+
+                <input type="radio" name="bluetooth-check" class="form-filters__radio visually-hidden" id="bluetooth-false">
+                <label for="bluetooth-false">Нет</label>
+
+              </fieldset>
+
+              <button type="submit" class="form-filters__btn btn">Показать</button>
+
+            </form>
+
+          </aside>
 
           <!-- PRODUCT CART -->
           <div class="products-cart">
@@ -259,22 +266,22 @@
 
             </div>
 
-          </div>
+            <!-- PAGINATION -->
+            <div class="products-container__pagination pagination">
 
-          <!-- PAGINATION -->
-          <div class="products-container__pagination pagination">
+              <a href="#" class="pagination__back">Назад</a>
 
-            <a href="#" class="pagination__back">Назад</a>
+              <ul class="pagination__list list">
 
-            <ul class="pagination__list list">
+                <li class="list__item"><a href="" class="pagination__item pagination__item_active">1</a></li>
+                <li class="list__item"><a href="" class="pagination__item">2</a></li>
+                <li class="list__item"><a href="" class="pagination__item">3</a></li>
 
-              <li class="list__item"><a href="" class="pagination__item pagination__item_active">1</a></li>
-              <li class="list__item"><a href="" class="pagination__item">2</a></li>
-              <li class="list__item"><a href="" class="pagination__item">3</a></li>
+              </ul>
 
-            </ul>
+              <a href="#" class="pagination__next">Вперед</a>
 
-            <a href="#" class="pagination__next">Вперед</a>
+            </div>
 
           </div>
 
