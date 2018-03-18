@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 @font-face {
-  font-family: "Gilroy ExtraBold";
+  font-family: "Gilroy";
   src: url("../fonts/gilroyextrabold.woff") format("woff"),
   url("../fonts/gilroyextrabold.woff2") format("woff2");
   font-weight: 700;
@@ -11,7 +11,7 @@
 }
 
 @font-face {
-  font-family: "Gilroy Light";
+  font-family: "Gilroy";
   src: url("../fonts/gilroylight.woff") format("woff"),
   url("../fonts/gilroylight.woff2") format("woff2");
   font-weight: 300;
@@ -27,7 +27,7 @@
 }
 
 @font-face {
-  font-family: "Open Sans Light";
+  font-family: "Open Sans";
   src: url("../fonts/opensanslight.woff") format("woff"),
   url("../fonts/opensanslight.woff2") format("woff2");
   font-weight: 300;
@@ -46,7 +46,8 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 700;
   font-size: 15px;
   line-height: 24px;
   color: rgb(0, 0, 0);
@@ -85,10 +86,9 @@ a {
 
 .btn:active,
 .contacts a:active,
-.nfo-about-us a:active,
+.info-about-us a:active,
 .promo-slider__content a:active {
   color: rgba(0, 0, 0, 0.3);
-  ;
 }
 
 
@@ -103,7 +103,8 @@ a {
   background-color: rgb(247, 226, 150);
 }
 
-.logo:hover {
+.logo:hover,
+.logo:focus {
   opacity: 0.6;
 }
 
@@ -130,7 +131,8 @@ a {
 .user-action,
 .user-action-form,
 .catalog {
-  font-family: "Open Sans Light", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
 }
 
 .catalog {
@@ -152,7 +154,9 @@ a {
 }
 
 .site-nav a:hover,
-.user-action a:hover {
+.site-nav a:focus,
+.user-action a:hover,
+.user-action a:focus {
   opacity: 0.6;
 }
 
@@ -176,7 +180,7 @@ a {
   opacity: 0.6;
 }
 
-.user-action-form__user-search:focus{
+.user-action-form__user-search:focus {
   opacity: 1;
   outline: inherit;
 
@@ -188,7 +192,8 @@ a {
   border: 2px solid rgb(0, 0, 0);
 }
 
-.user-action-form__btn:hover {
+.user-action-form__btn:hover,
+.user-action-form__btn:focus {
   color: rgb(233, 233, 233);
 
   background-color: rgb(0, 0, 0);
@@ -235,12 +240,14 @@ a {
 }
 
 .promo-slider__description {
-  font-family: "Open Sans Light", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
   line-height: 30px;
 }
 
 .descripton-list__definition {
-  font-family: "Gilroy Light", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 300;
   font-size: 36px;
   line-height: 48px;
 }
@@ -295,7 +302,8 @@ a {
 }
 
 .breadcrumbs__item {
-  font-family: "Open Sans Light", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
   font-size: 14px;
 }
 
@@ -304,7 +312,8 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.breadcrumbs__link:hover {
+.breadcrumbs__link:hover,
+.breadcrumbs__link:focus {
   color: rgba(0, 0, 0, 0.6);
 }
 
@@ -326,7 +335,8 @@ a {
 }
 
 .purchase-details__description {
-  font-family: "Open Sans Light", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
   line-height: 30px;
 }
 
@@ -384,11 +394,13 @@ a {
   opacity: 0;
 }
 
-.brands-logotypes__img_color_b-w:hover + .brands-logotypes__img_color_colorful {
+.brands-logotypes__img_color_b-w:hover + .brands-logotypes__img_color_colorful,
+.brands-logotypes__img_color_b-w:focus + .brands-logotypes__img_color_colorful {
   opacity: 1;
 }
 
-.brands-logotypes__img_color_colorful:hover {
+.brands-logotypes__img_color_colorful:hover,
+.brands-logotypes__img_color_colorful:focus {
   opacity: 1;
 }
 
@@ -406,7 +418,8 @@ a {
 }
 
 .info-about-us__description {
-  font-family: "Open Sans Light", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
   line-height: 30px;
 }
 
@@ -424,7 +437,8 @@ a {
 }
 
 .contacts__description {
-  font-family: "Open Sans Light", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
   line-height: 30px;
 }
 
@@ -452,7 +466,8 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.sorting__link:hover {
+.sorting__link:hover,
+.sorting__link:focus {
   color: rgba(0, 0, 0, 0.6);
 }
 
@@ -469,7 +484,8 @@ a {
 }
 
 .form-filters__item label {
-  font-family: "Open Sans Light", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
   font-size: 14px;
   line-height: 40px;
 }
@@ -479,8 +495,10 @@ a {
   opacity: 0.2;
 }
 
-.sorting__icon-up-link:hover,
-.sorting__icon-down:hover {
+.sorting__icon-up-img:hover,
+.sorting__icon-up-img:focus,
+.sorting__icon-down-img:hover,
+.sorting__icon-down-img:focus {
   opacity: 0.4;
 }
 
@@ -495,19 +513,22 @@ a {
 }
 
 .products-cart__price {
-  font-family: "Gilroy Light", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 300;
   font-size: 16px;
   color: rgb(70, 70, 70);
 }
 
 .products-cart__compare {
-  font-family: "Open Sans Light", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
   font-size: 13px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.5);
 }
 
-.products-cart__compare:hover {
+.products-cart__compare:hover,
+.products-cart__compare:focus {
   color: rgba(0, 0, 0, 1);
 }
 
@@ -528,7 +549,9 @@ a {
 }
 
 .pagination__back:hover,
-.pagination__next:hover {
+.pagination__back:focus,
+.pagination__next:hover,
+.pagination__next:focus {
   background-color: rgb(217, 217, 217);
 }
 
@@ -601,7 +624,8 @@ a {
 
 .footer__address,
 .footer__tel-number {
-  font-family: "Open Sans Light", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
   line-height: 30px;
   font-style: normal;
 }
@@ -612,7 +636,8 @@ a {
   color: rgb(255, 255, 255);
 }
 
-.footer-nav a:hover {
+.footer-nav a:hover,
+.footer-nav a:focus {
   opacity: 0.6;
 }
 
@@ -621,11 +646,13 @@ a {
 }
 
 .footer-user-action a {
-  font-family: "Open Sans Light", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
   color: rgba(255, 255, 255, 0.7);
 }
 
-.footer-user-action a:hover {
+.footer-user-action a:hover,
+.footer-user-action a:focus {
   color: rgb(255, 255, 255);
 }
 
