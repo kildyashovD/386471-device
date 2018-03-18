@@ -25,7 +25,7 @@
       <form class="main-header__user-action-form user-action-form">
         <label for="user-search" class="visually-hidden">Поиск по сайту</label>
         <input type="search" name="user-search" class="user-action-form__user-search" id="user-search" placeholder="Поиск по сайту">
-        <button type="submit">Найти</button>
+        <button type="submit" class="user-action-form__btn">Найти</button>
       </form>
 
       <!-- USER ACTION -->
@@ -95,9 +95,9 @@
 
       <div class="container">
 
-        <input type="radio" name="promo-slider-control" id="promo-slider-btn-1" checked>
-        <input type="radio" name="promo-slider-control" id="promo-slider-btn-2">
-        <input type="radio" name="promo-slider-control" id="promo-slider-btn-3">
+        <input type="radio" name="promo-slider-control" id="promo-slider-btn-1" class="visually-hidden" checked>
+        <input type="radio" name="promo-slider-control" id="promo-slider-btn-2" class="visually-hidden">
+        <input type="radio" name="promo-slider-control" id="promo-slider-btn-3" class="visually-hidden">
 
         <!-- HIDDEN HEADING -->
         <h2 class="visually-hidden">Промо слайдер с топ 3 товарами</h2>
@@ -130,7 +130,7 @@
             </dl>
 
             <!-- SLIDE LINK -->
-            <a href="#" class="promo-slider__link">Подробнее</a>
+            <a href="#" class="promo-slider__link btn">Подробнее</a>
 
           </div>
 
@@ -158,7 +158,7 @@
             </dl>
 
             <!-- SLIDE LINK -->
-            <a href="" class="promo-slider__link">Подробнее</a>
+            <a href="" class="promo-slider__link btn">Подробнее</a>
 
           </div>
 
@@ -189,7 +189,7 @@
             </dl>
 
             <!-- SLIDE LINK -->
-            <a href="#" class="promo-slider__link link">Подробнее</a>
+            <a href="#" class="promo-slider__link btn">Подробнее</a>
 
           </div>
 
@@ -197,8 +197,6 @@
 
         <!-- SLIDE CONTROL -->
         <ul class="promo-slider__control slider-control">
-
-
 
           <li class="slider-control__item">
             <label for="promo-slider-btn-1" class="slider-control__btn" tabindex="0"></label>
@@ -225,39 +223,39 @@
         <ul class="product-nav__list">
           <li class="product-nav__item">
             <a href="" class="product-nav__link">
-                        <img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность" class="product-nav__img">
-                        <h3 class="product-nav__heading">Виртуальная реальность</h3>
-                    </a>
+              <img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность" class="product-nav__img">
+              <h3 class="product-nav__heading">Виртуальная реальность</h3>
+            </a>
           </li>
           <li class="product-nav__item">
             <a href="" class="product-nav__link">
-                        <img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи" class="product-nav__img">
-                        <h3 class="product-nav__heading">Моноподы для селфи</h3>
-                    </a>
+              <img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи" class="product-nav__img">
+              <h3 class="product-nav__heading">Моноподы для селфи</h3>
+            </a>
           </li>
           <li class="product-nav__item">
             <a href="" class="product-nav__link">
-                        <img src="img/popular-3.svg" width="71" height="87" alt="Экшн-камеры" class="product-nav__img">
-                        <h3 class="product-nav__heading">Экшн-камеры</h3>
-                    </a>
+              <img src="img/popular-3.svg" width="71" height="87" alt="Экшн-камеры" class="product-nav__img">
+              <h3 class="product-nav__heading">Экшн-камеры</h3>
+            </a>
           </li>
           <li class="product-nav__item">
             <a href="" class="product-nav__link">
-                        <img src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты" class="product-nav__img">
-                        <h3 class="product-nav__heading">Фитнес-браслеты</h3>
-                    </a>
+              <img src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты" class="product-nav__img">
+              <h3 class="product-nav__heading">Фитнес-браслеты</h3>
+            </a>
           </li>
           <li class="product-nav__item">
             <a href="" class="product-nav__link">
-                        <img src="img/popular-5.svg" width="56" height="98" alt="Умные часы" class="product-nav__img">
-                        <h3 class="product-nav__heading">Умные часы</h3>
-                    </a>
+              <img src="img/popular-5.svg" width="56" height="98" alt="Умные часы" class="product-nav__img">
+              <h3 class="product-nav__heading">Умные часы</h3>
+            </a>
           </li>
           <li class="product-nav__item">
             <a href="" class="product-nav__link">
-                        <img src="img/poppular-6.svg" width="132" height="69" alt="Квадрокоптеры" class="product-nav__img">
-                        <h3 class="product-nav__heading">Квадрокоптеры</h3>
-                    </a>
+              <img src="img/poppular-6.svg" width="132" height="69" alt="Квадрокоптеры" class="product-nav__img">
+              <h3 class="product-nav__heading">Квадрокоптеры</h3>
+            </a>
           </li>
         </ul>
       </div>
@@ -266,13 +264,13 @@
     <!-- PURCHASE DETAILS -->
     <section class="purchase-details">
 
-      <input type="radio" name="purchase-slider-control" id="purchase-details-btn-1" checked>
-      <input type="radio" name="purchase-slider-control" id="purchase-details-btn-2">
-      <input type="radio" name="purchase-slider-control" id="purchase-details-btn-3">
-
       <div class="container">
 
         <h2 class="visually-hidden">Детали покупки</h2>
+
+        <input type="radio" name="purchase-slider-control" id="purchase-details-btn-1" class="visually-hidden purchase-slider-control_checked" checked>
+        <input type="radio" name="purchase-slider-control" id="purchase-details-btn-2" class="visually-hidden purchase-slider-control_checked">
+        <input type="radio" name="purchase-slider-control" id="purchase-details-btn-3" class="visually-hidden purchase-slider-control_checked">
 
         <!-- PURCHASE DETAILS ITEM 1 DELIVERY -->
         <div class="purchase-details__item">
@@ -305,13 +303,13 @@
         <ul class="purchase-details__control slider-control">
 
           <li class="slider-control__item">
-            <label for="purchase-details-btn-1" class="slider-control__btn" tabindex="0"></label>
+            <label for="purchase-details-btn-1" class="slider-control__btn-text" id="purchase-details-control-1" tabindex="0">Доставка</label>
           </li>
           <li class="slider-control__item">
-            <label for="purchase-details-btn-2" class="slider-control__btn" tabindex="0"></label>
+            <label for="purchase-details-btn-2" class="slider-control__btn-text" id="purchase-details-control-2" tabindex="0">Гарантия</label>
           </li>
           <li class="slider-control__item">
-            <label for="purchase-details-btn-3" class="slider-control__btn" tabindex="0"></label>
+            <label for="purchase-details-btn-3" class="slider-control__btn-text" id="purchase-details-control-3" tabindex="0">Кредит</label>
           </li>
 
         </ul>
@@ -357,7 +355,7 @@
           <li class="brands-logotypes__item">
             <a href="#" class="brands-logotypes__link">
             <img src="img/logo-4.png" width="260" height="100" alt="Логотип кампании VIVE" class="brands-logotypes__img brands-logotypes__img_color_b-w">
-            <img src="img/logo-4.png" width="260" height="100" alt="Логотип кампании DJI" class="brands-logotypes__img brands-logotypes__img_color_colorful">
+            <img src="img/logo-4-color.png" width="260" height="100" alt="Логотип кампании DJI" class="brands-logotypes__img brands-logotypes__img_color_colorful">
           </a>
           </li>
 
@@ -386,20 +384,20 @@
 
         </ul>
 
-        <a href="" class="info-about-us__link link">Подробнее о нас</a>
+        <a href="" class="info-about-us__link btn">Подробнее о нас</a>
 
       </section>
 
       <!-- CONTACTS -->
       <section class="contacts">
 
-        <h2 class="contscts__heading">Контакты</h2>
+        <h2 class="contacts__heading">Контакты</h2>
 
-        <p class="contscts__description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+        <p class="contacts__description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 
         <img class="contacts__maps" width="560" height="222" src="img/map.png" alt="Карта">
 
-        <a href="#" class="icontacts__link link">Напишите нам</a>
+        <a href="#" class="icontacts__link btn">Напишите нам</a>
 
         <!-- WRITE US MODAL -->
         <div class="modal-write-us modal">
@@ -421,7 +419,7 @@
               <textarea name="user-message" id="modal-user-message" cols="30" rows="5" required>В свободной форме</textarea>
             </div>
 
-            <button type="submit" class="modal-form__submit">Отправить</button>
+            <button type="submit" class="modal-form__submit btn">Отправить</button>
 
           </form>
           <!-- CLOSE BUTTON -->
@@ -454,16 +452,16 @@
       <div class="footer__item">
 
         <!-- LOGO -->
-        <a href="#" class="footer__logo logo"><img src="img/logo.png" alt="" class="logo__img" width="164" height="36"></a>
+        <a href="#" class="footer__logo logo"><img src="img/logo-yellow.png" alt="" class="logo__img" width="164" height="36"></a>
 
         <!-- USER ACTION -->
-        <ul class="footer__user-action user-action">
+        <ul class="footer__user-action footer-user-action">
 
-          <li class="user-action__item"><a href="#" class="user-action__login">Войти</a></li>
+          <li class="footer-user-action__item"><a href="#" class="footer-user-action__login">Войти</a></li>
 
-          <li class="user-action__item"><a href="#" class="user-action__compair">Сравнить</a></li>
+          <li class="footer-user-action__item"><a href="#" class="footer-user-action__compair">Сравнить</a></li>
 
-          <li class="user-action__item"><a href="#" class="user-actions__cart">Корзина</a></li>
+          <li class="footer-user-action__item"><a href="#" class="footer-user-actions__cart">Корзина</a></li>
 
         </ul>
 
