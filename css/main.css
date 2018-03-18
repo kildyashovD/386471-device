@@ -191,14 +191,13 @@ html {
 
 /* ----- USER-ACTION & SITE-NAV ----- */
 
-.main-header__site-nav {
-  margin-top: 30px;
-  width: 100%;
-}
-
 .user-action {
   display: flex;
   flex-direction: row;
+}
+
+.main-header__user-action {
+	width: 50%;
 }
 
 .user-action__item:first-child {
@@ -234,6 +233,11 @@ html {
 }
 
 /* ----- SITE NAV ----- */
+
+.main-header__site-nav {
+  margin-top: 30px;
+  width: 100%;
+}
 
 .site-nav {
   display: -webkit-box;
