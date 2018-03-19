@@ -1487,11 +1487,21 @@ html {
 }
 
 .catalog-page .footer-user-action {
-  width: 493px;
+  width: 520px;
 }
 
-.catalog-page .footer-user-action__account {
-  padding-left: 10px;
+.catalog-page .footer-user-action__item:first-child {
+  width: 200px;
+  padding-left: 68px;
+}
+
+.catalog-page .footer-user-action__item:nth-child(2) {
+  width: 80px;
+}
+
+.catalog-page .footer-user-action__item:nth-child(3) {
+  width: 120px;
+  padding-left: 8px;
 }
 
 .footer-user-action a {
