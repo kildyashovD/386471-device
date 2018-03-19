@@ -1447,7 +1447,8 @@ html {
 }
 
 .footer__item:nth-child(3) {
-  margin-top: 21px;
+  padding-top: 17px;
+  margin: 0;
 }
 
 .footer-nav,
@@ -1455,44 +1456,7 @@ html {
   list-style: none;
 }
 
-.footer-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin-top: 6px;
-  padding-left: 0;
-  width: 440px;
-}
-
-.footer__address,
-.footer__tel-number {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 300;
-  line-height: 30px;
-  font-style: normal;
-}
-
-.footer-nav a {
-  font-size: 18px;
-  letter-spacing: 4px;
-  color: rgb(255, 255, 255);
-}
-
-.footer-nav a:hover,
-.footer-nav a:focus {
-  opacity: 0.6;
-}
-
-.footer-nav a:active {
-  opacity: 0.3;
-}
+/* ----- FOOTER-USER-ACTION ----- */
 
 .footer-user-action {
   display: -webkit-box;
@@ -1543,9 +1507,62 @@ html {
   color: rgba(255, 255, 255, 0.3);
 }
 
+/* ----- FOOTER-NAV ----- */
+
+.footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 6px;
+  padding-left: 0;
+  width: 440px;
+}
+
+.footer-nav__item {
+	width: 140px;
+}
+
+.footer-nav__item:nth-child(2) {
+  width: 160px;
+}
+
+.footer-nav a {
+  font-size: 18px;
+  letter-spacing: 4px;
+  color: rgb(255, 255, 255);
+}
+
+.footer-nav a:hover,
+.footer-nav a:focus {
+  opacity: 0.6;
+}
+
+.footer-nav a:active {
+  opacity: 0.3;
+}
+
+/* ----- FOOTER-ADRESS & TEL ----- */
+
+.footer__address,
+.footer__tel-number {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  line-height: 30px;
+  font-style: normal;
+}
+
 .footer__tel-number {
   margin: 0;
 }
+
+/* ----- SOCIAL-ICON ----- */
 
 .social-icon a,
 .html-logo {
