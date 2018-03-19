@@ -187,8 +187,13 @@ html {
 /* ----- USER-ACTION & SITE-NAV ----- */
 
 .user-action {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .main-header__user-action {
@@ -710,8 +715,12 @@ html {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  align-items: center;
-  flex-grow: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 
   width: auto;
 }
@@ -977,7 +986,9 @@ html {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
   width: 772px;
   height: 70px;
@@ -1298,20 +1309,35 @@ html {
   padding: 117px 100px 92px 100px;
   z-index: 1;
 
-  box-shadow: 0px 1px 15px 10px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 1px 15px 10px rgba(0, 0, 0, 0.2);
+
+          box-shadow: 0px 1px 15px 10px rgba(0, 0, 0, 0.2);
   background-color: rgb(255, 255, 255);
 }
 
 .modal-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .modal-form .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .modal-form .container:first-child,
@@ -1363,7 +1389,9 @@ html {
   left: 240px;
   z-index: 2;
 
-  box-shadow: 0px 1px 15px 10px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 1px 15px 10px rgba(0, 0, 0, 0.2);
+
+          box-shadow: 0px 1px 15px 10px rgba(0, 0, 0, 0.2);
 }
 
 
