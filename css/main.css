@@ -1078,7 +1078,7 @@ html {
 \*------------------------------------*/
 
 .purchase-details {
-  height: 288px;
+  min-height: 288px;
   margin-bottom: 94px;
   background-color: #e5e5e5;
 }
