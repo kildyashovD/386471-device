@@ -396,12 +396,13 @@ html {
   margin-bottom: 24px;
 
   min-height: 458px;
+  width: 1160px;
+  margin: auto;
 }
 
 .promo-slider > .container {
   position: absolute;
   top: 0;
-  left: 140px;
 }
 
 #promo-slide-1 .promo-slider__img {
@@ -1077,7 +1078,7 @@ html {
 \*------------------------------------*/
 
 .purchase-details {
-  height: 288px;
+  min-height: 288px;
   margin-bottom: 94px;
   background-color: #e5e5e5;
 }
