@@ -65,7 +65,10 @@ a {
 
 .btn {
   display: inline-block;
+
+  position: relative;
   padding: 14px 44px 14px 44px;
+
   /* временно добавил*/
   font-size: 18px;
   line-height: 24px;
@@ -73,12 +76,32 @@ a {
   text-transform: uppercase;
 }
 
+.btn::before {
+  display: block;
+
+  position: absolute;
+  top: 40%;
+  left: 0;
+  content: "";
+  height: 8px;
+  width: 100%;
+  z-index: -1;
+  transition: 0.3s;
+
+  background-color: rgb(240, 197, 46);
+}
+
+.btn:hover::before {
+  top: 0;
+  height: 100%;
+  transition: 0.3s;
+}
+
 .btn,
 .contacts__link,
 .nfo-about-us a,
 .promo-slider__content a {
   color: rgb(0, 0, 0);
-  background-color: rgb(240, 197, 46);
 }
 
 .btn:active,
@@ -203,6 +226,10 @@ html {
   opacity: 0.3;
   background-color: transparent;
   border: none;
+
+  background-image: url("../img/search.svg");
+  background-repeat: no-repeat;
+  background-position: left;
 }
 
 .user-action-form__user-search:hover {
@@ -273,11 +300,50 @@ html {
 }
 
 .user-action__item {
-  margin-left: 20px;
+  margin-left: 38px;
 }
 
+/* ----- PSEUDO ELEMENTS FOR USER ACTION ----- */
 
-/* ----- USER ACTION IN CATALOG-PAgE ----- */
+.user-action__login::before,
+.user-action__account::before {
+  display: inline-block;
+  content: "";
+  width: 14px;
+  height: 14px;
+  margin-right: 13px;
+
+  background-image: url(../img/user.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.user-action__compair::before {
+  display: inline-block;
+  content: "";
+  width: 14px;
+  height: 14px;
+  margin-right: 13px;
+
+  background-image: url(../img/compare.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.user-action__cart::before {
+  display: inline-block;
+  content: "";
+  width: 14px;
+  height: 14px;
+  margin-right: 13px;
+
+  background-image: url(../img/cart.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /* ----- SITE NAV ----- */
 
@@ -300,6 +366,20 @@ html {
 .site-nav__item:first-child {
   width: 50%;
   margin-right: 20px;
+}
+
+.site-nav__item:first-child .site-nav__link::after {
+  display: inline-block;
+  content: "";
+  width: 12px;
+  height: 12px;
+  margin-left: 16px;
+
+  background-image: url("../img/plus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.3;
 }
 
 .site-nav__item {
@@ -329,10 +409,21 @@ html {
 
 /* ----- CATALOG ----- */
 
+.site-nav__item:first-child:hover .catalog {
+  display: flex;
+
+  width: 100%;
+  height: 54.8%;
+  padding-left: 60px;
+
+  z-index: 2;
+  background-color: #f7e296;
+}
+
 .catalog {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: none;
   /* временно */
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -340,7 +431,7 @@ html {
   flex-direction: row;
 
   position: absolute;
-  width: 100%;
+  left: 0;
 
   line-height: 36px;
   font-size: 15px;
@@ -437,15 +528,10 @@ html {
 .promo-slider__lead {
   margin-top: 47px;
   margin-bottom: 0;
-  width: 390px;
   position: relative;
   z-index: 1;
   font-size: 47px;
   line-height: 56px;
-}
-
-.promo-slider__lead_full-width {
-  width: 100%;
 }
 
 .promo-slider__description {
@@ -617,7 +703,7 @@ html {
   opacity: 0.3;
 }
 
- .product-nav__img_marg-top {
+.product-nav__img_marg-top {
   margin-top: 42px;
 }
 
@@ -1105,16 +1191,28 @@ html {
   min-height: 319px;
 }
 
-.purchase-details__item {
+.purchase-details__delivery,
+.purchase-details__warranty,
+.purchase-details__credit {
   display: none;
+
+  padding-left: 116px;
+  padding-top: 75px;
+  width: 75.4%;
 }
 
 .purchase-details__heading {
+  margin-top: 0;
+  margin-bottom: 30px;
+
   font-size: 47px;
   line-height: 48px;
 }
 
 .purchase-details__description {
+  padding-right: 334px;
+  margin-top: 0;
+
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   line-height: 30px;
@@ -1122,18 +1220,23 @@ html {
 
 .purchase-details__control {
   margin: 0;
+  padding-top: 73px;
+
   border-right: 7px solid rgb(0, 0, 0);
 }
 
-.purchase-details__control .slider-control__item {
-  width: 30%;
+.purchase-details__control {
+  width: 24.6%;
 }
 
 .slider-control__btn-text {
   display: block;
+
   position: relative;
   width: 100%;
+  padding: 14px 25px;
   z-index: 1;
+
   font-size: 18px;
   letter-spacing: 4px;
   text-transform: uppercase;
