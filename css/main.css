@@ -437,15 +437,10 @@ html {
 .promo-slider__lead {
   margin-top: 47px;
   margin-bottom: 0;
-  width: 390px;
   position: relative;
   z-index: 1;
   font-size: 47px;
   line-height: 56px;
-}
-
-.promo-slider__lead_full-width {
-  width: 100%;
 }
 
 .promo-slider__description {
