@@ -617,7 +617,7 @@ html {
   opacity: 0.3;
 }
 
-.product-nav__item:nth-child(2) .product-nav__img {
+ .product-nav__img_marg-top {
   margin-top: 42px;
 }
 
@@ -1232,16 +1232,16 @@ html {
   line-height: 48px;
 }
 
+.info-about-us__heading + .info-about-us__description {
+  margin-top: 47px;
+}
+
 .info-about-us__description {
-  margin-top: 43px;
+  margin-top: 30px;
   margin-bottom: 0;
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   line-height: 30px;
-}
-
-.info-about-us__description:nth-child(3) {
-  margin-top: 30px;
 }
 
 .info-about-us__list {
