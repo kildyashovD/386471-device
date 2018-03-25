@@ -872,7 +872,7 @@ html {
 }
 
 .content__header {
-	position: relative;
+  position: relative;
 }
 
 .content__header:first-child .sorting__heading {
@@ -966,6 +966,8 @@ html {
 .products-container__filters {
   position: relative;
   width: 28.3%;
+  padding: 69px 60px;
+  z-index: 0;
 }
 
 .products-container__filters::before {
@@ -997,10 +999,6 @@ html {
   background-color: rgb(238, 238, 238);
 }
 
-.form-filters__heading {
-  font-size: 18px;
-}
-
 .form-filters__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1009,14 +1007,91 @@ html {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+
+  position: relative;
+  padding-bottom: 40px;
+
   border: none;
 }
 
+.form-filters__item::before {
+  content: "";
+
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 0;
+  left: 0;
+
+  background-color: rgb(0, 0, 0);
+}
+
+.form-filters__heading {
+  padding-top: 15px;
+
+  font-size: 18px;
+}
+
 .form-filters__item label {
+  position: relative;
+  padding-left: 25px;
+
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 40px;
+}
+
+.form-filters__color label::before {
+  box-sizing: border-box;
+
+  content: "";
+
+  position: absolute;
+  top: 10px;
+  left: -15px;
+  height: 26px;
+  width: 26px;
+
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.form-filters__ckeckbox:checked + label::before {
+  border: none;
+
+  background-image: url("../img/checkbox-on.svg");
+}
+
+.form-filters__bluetooth label::before {
+  box-sizing: border-box;
+
+  content: "";
+
+  position: absolute;
+  top: 10px;
+  left: -15px;
+  height: 26px;
+  width: 26px;
+
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.form-filters__radio:checked + label::before {
+  border: none;
+
+  background-image: url("../img/radio-on.svg");
+}
+
+.form-filters__btn {
+  background-color: transparent;
+
+  font-family: inherit;
+  font-weight: 700;
+  border: none;
 }
 
 
@@ -1063,9 +1138,11 @@ html {
 
 .products-cart__add {
   visibility: hidden;
+
   position: absolute;
   top: 180px;
   left: 80px;
+  z-index: 1;
 }
 
 .products-cart__compare {
@@ -1590,7 +1667,7 @@ html {
 }
 
 .modal-form__message {
-	min-height: 160px;
+  min-height: 160px;
 }
 
 /* ----- MODAL-CLOSE-BTN ----- */
