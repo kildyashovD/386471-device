@@ -310,6 +310,11 @@ html {
   margin-left: 38px;
 }
 
+.user-action__logout {
+  margin-left: 0;
+  flex-grow: 1;
+}
+
 /* ----- PSEUDO ELEMENTS FOR USER ACTION ----- */
 
 .user-action__login::before,
@@ -785,7 +790,20 @@ html {
   font-weight: 300;
   font-size: 14px;
   margin: 0;
-  margin-right: 39px;
+  margin-right: 9px;
+}
+
+.breadcrumbs .breadcrumbs__item + .breadcrumbs__item::before {
+  display: inline-block;
+  content: "";
+
+  width: 15px;
+  height: 13px;
+  margin-right: 15px;
+
+  background-image: url("../img/nav-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 8px 5px;
 }
 
 .breadcrumbs__link,
@@ -853,8 +871,25 @@ html {
   margin-left: 72px;
 }
 
+.content__header {
+	position: relative;
+}
+
 .content__header:first-child .sorting__heading {
   padding: 25px 0 0 60px;
+}
+
+.content__header:first-child::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: -328px;
+
+  height: 100%;
+  width: 100%;
+
+  background-color: inherit;
 }
 
 .sorting__list {
@@ -929,7 +964,21 @@ html {
 /* ----- ASIDE FILTERS ----- */
 
 .products-container__filters {
+  position: relative;
   width: 28.3%;
+}
+
+.products-container__filters::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: -328px;
+
+  height: 100%;
+  width: 100%;
+
+  background-color: inherit;
 }
 
 .product-container__content .container {
