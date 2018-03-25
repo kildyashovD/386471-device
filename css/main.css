@@ -52,14 +52,21 @@ a {
   text-decoration: none;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
+
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-  clip: rect(0, 0, 0, 0);
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
@@ -1601,6 +1608,19 @@ html {
 
 .footer-user-action a:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-user-action__login::before {
+  display: inline-block;
+
+  content: "";
+  width: 14px;
+  height: 12px;
+
+  background-image: url("../img/user-yellow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .footer-user-action .footer-user-action__logout {
