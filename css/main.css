@@ -463,24 +463,6 @@ html {
 
 
 /*------------------------------------*\
-  #SLIDER-CONTROL
-\*------------------------------------*/
-
-.slider-control__btn {
-  display: block;
-  width: 12px;
-  height: 12px;
-  background-image: url("../img/slider-button-empty.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-
-
-
-
-/*------------------------------------*\
   #PROMO-SLIDER
 \*------------------------------------*/
 
@@ -649,6 +631,22 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.slider-control__btn {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-image: url("../img/slider-button-empty.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#promo-slider-btn-1:checked ~ .slider-control #promo-slider-control-btn-1,
+#promo-slider-btn-2:checked ~ .slider-control #promo-slider-control-btn-2,
+#promo-slider-btn-3:checked ~ .slider-control #promo-slider-control-btn-3 {
+  background-image: url("../img/slider-button.svg");
 }
 
 
@@ -1208,6 +1206,45 @@ html {
   width: 75.4%;
 }
 
+.purchase-details__delivery::after {
+  content: "";
+
+  position: absolute;
+  width: 136px;
+  height: 164px;
+  top: 85px;
+  right: 65px;
+
+
+  background-image: url("../img/delivery.svg");
+}
+
+.purchase-details__warranty::after {
+  content: "";
+
+  position: absolute;
+  width: 171px;
+  height: 194px;
+  top: 61px;
+  right: 45px;
+
+
+  background-image: url("../img/warranty.svg");
+}
+
+.purchase-details__credit::after {
+  content: "";
+
+  position: absolute;
+  width: 156px;
+  height: 186px;
+  top: 61px;
+  right: 45px;
+
+
+  background-image: url("../img/credit.svg");
+}
+
 .purchase-details__heading {
   margin-top: 0;
   margin-bottom: 30px;
@@ -1592,7 +1629,7 @@ html {
 }
 
 .footer-user-action__item {
-  margin-left: 65px;
+  margin-left: 38px;
 }
 
 .footer-user-action a {
@@ -1615,9 +1652,38 @@ html {
 
   content: "";
   width: 14px;
-  height: 12px;
+  height: 14px;
+  margin-right: 12px;
 
   background-image: url("../img/user-yellow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.footer-user-action__compair::before {
+  display: inline-block;
+
+  content: "";
+  width: 14px;
+  height: 14px;
+  margin-right: 12px;
+
+  background-image: url("../img/compare-yellow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.footer-user-action__cart::before {
+  display: inline-block;
+
+  content: "";
+  width: 14px;
+  height: 14px;
+  margin-right: 12px;
+
+  background-image: url("../img/cart-yellow.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
