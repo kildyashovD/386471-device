@@ -1817,7 +1817,8 @@ html {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.footer-user-action__login::before {
+.footer-user-action__login::before,
+.footer-user-action__account::before {
   display: inline-block;
 
   content: "";
@@ -1881,10 +1882,6 @@ html {
 
 .footer-nav__item {
   margin-right: 42px;
-}
-
-.footer-user-action__logout {
-  margin-left: -45px;
 }
 
 .footer-nav a {
