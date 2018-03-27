@@ -930,11 +930,6 @@ html {
   background-color: rgb(220, 220, 220);
 }
 
-.sorting__icon {
-  margin-left: auto;
-}
-
-
 .sorting__link {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
@@ -950,24 +945,42 @@ html {
   color: rgba(0, 0, 0, 1);
 }
 
-.sorting__icon-up-img,
-.sorting__icon-down-img {
+.sorting__icon {
+  margin-left: auto;
+}
+
+.sorting__icon-up-link,
+.sorting__icon-down-link {
+  display: inline-block;
+
+  width: 11px;
+  height: 10px;
+
   opacity: 0.2;
 }
 
 .sorting__icon-up-link {
   margin-right: 16px;
+  background-image: url("../img/icon-up-dir.svg");
+  background-repeat: no-repeat;
+  background-position: 0;
 }
 
-.sorting__icon-up-link:hover .sorting__icon-up-img,
-.sorting__icon-up-link:focus .sorting__icon-up-img,
-.sorting__icon-down-link:hover .sorting__icon-down-img,
-.sorting__icon-down-link:focus .sorting__icon-down-img {
+.sorting__icon-down-link {
+  background-image: url("../img/icon-down-dir.svg");
+  background-repeat: no-repeat;
+  background-position: 0;
+}
+
+.sorting__icon-up-link:hover,
+.sorting__icon-up-link:focus,
+.sorting__icon-down-link:hover,
+.sorting__icon-down-link:focus {
   opacity: 0.4;
 }
 
-.sorting__icon-up-link:active .sorting__icon-up-img,
-.sorting__icon-down-link:active .sorting__icon-down-img {
+.sorting__icon-up-link:active,
+.sorting__icon-down-link:active {
   opacity: 1;
 }
 
@@ -1168,11 +1181,17 @@ html {
 }
 
 .products-cart__name {
+  display: inline-block;
+
+  max-width: 260px;
+
   font-size: 18px;
   color: rgb(0, 0, 0);
 }
 
 .products-cart__price {
+  float: right;
+
   font-family: "Gilroy Light", Arial, sans-serif;
   font-size: 16px;
   color: rgb(70, 70, 70);
@@ -1191,11 +1210,6 @@ html {
 
 .products-cart__compare:active {
   color: rgba(0, 0, 0, 0.2);
-}
-
-.products-cart__name {
-  font-size: 18px;
-  color: rgb(0, 0, 0);
 }
 
 .products-cart__price {
