@@ -217,18 +217,29 @@ html {
 
 /* ----- USER-ACTION-FORM ----- */
 
+.user-action-form {
+  margin-top: -8px;
+}
+
 .main-header__user-action-form {
   width: 50%;
   margin-right: 20px;
 }
 
 .user-action-form__btn {
-  background-color: transparent;
   visibility: hidden;
+
+  padding: 14px 19px;
+  margin-left: -5px;
+
+  background-color: transparent;
+  border: 2px solid rgba(0, 0, 0, 0);
 }
 
 .user-action-form__user-search {
   padding-left: 38px;
+  padding-bottom: 14px;
+  width: 355px;
 
   opacity: 0.3;
   background-color: transparent;
@@ -236,7 +247,8 @@ html {
 
   background-image: url("../img/search.svg");
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: left 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
 }
 
 .user-action-form__user-search:hover {
@@ -246,12 +258,12 @@ html {
 .user-action-form__user-search:focus {
   opacity: 1;
   outline: inherit;
-  border-bottom: 2px solid rgb(0, 0, 0);
+  border-bottom: 2px solid rgba(0, 0, 0, 1);
 }
 
 .user-action-form__user-search:focus + .user-action-form__btn {
   visibility: visible;
-  border: 2px solid rgb(0, 0, 0);
+  border: 2px solid rgba(0, 0, 0, 1);
 }
 
 .user-action-form__btn:hover,
@@ -321,46 +333,43 @@ html {
 .user-action__account::before {
   display: inline-block;
   content: "";
-  width: 14px;
-  height: 14px;
+  width: 13px;
+  height: 12px;
   margin-right: 13px;
 
   background-image: url(../img/user.svg);
-  background-position: center;
+  background-position: 0;
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .user-action__compair::before {
   display: inline-block;
   content: "";
-  width: 14px;
-  height: 14px;
+  width: 10px;
+  height: 10px;
   margin-right: 13px;
 
   background-image: url(../img/compare.svg);
-  background-position: center;
+  background-position: 0;
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .user-action__cart::before {
   display: inline-block;
   content: "";
-  width: 14px;
-  height: 14px;
+  width: 12px;
+  height: 12px;
   margin-right: 13px;
 
   background-image: url(../img/cart.svg);
-  background-position: center;
+  background-position: 0;
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 /* ----- SITE NAV ----- */
 
 .main-header__site-nav {
-  margin-top: 30px;
+  margin-top: 20px;
   width: 100%;
 }
 
@@ -383,14 +392,13 @@ html {
 .site-nav__item:first-child .site-nav__link::after {
   display: inline-block;
   content: "";
-  width: 12px;
-  height: 12px;
+  width: 16px;
+  height: 16px;
   margin-left: 16px;
 
   background-image: url("../img/plus.svg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: 0;
   opacity: 0.3;
 }
 
