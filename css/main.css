@@ -1323,7 +1323,7 @@ html {
   flex-direction: row-reverse;
 
   position: relative;
-  top: -100px;
+  top: -104px;
   left: 0;
 }
 
@@ -1394,10 +1394,21 @@ html {
 }
 
 .purchase-details__control {
+  position: relative;
   margin: 0;
-  padding-top: 73px;
+  padding-top: 81px;
+}
 
-  border-right: 7px solid rgb(0, 0, 0);
+.purchase-details__control::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 7px;
+  height: 320px;
+
+  background-color: rgb(0, 0, 0);
 }
 
 .purchase-details__control {
@@ -1408,13 +1419,19 @@ html {
   display: block;
 
   position: relative;
-  width: 100%;
-  padding: 14px 25px;
+  width: 160px;
+  padding: 8px 0;
+  margin-bottom: 24px;
   z-index: 1;
 
   font-size: 18px;
   letter-spacing: 4px;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.slider-control__btn-text.btn::before {
+  width: 100%;
 }
 
 .slider-control__btn-text:focus {
@@ -1427,6 +1444,18 @@ html {
 #purchase-details-btn-3:checked ~ .slider-control #purchase-details-control-3 {
   color: rgb(247, 225, 132);
   background-color: rgb(0, 0, 0);
+}
+
+#purchase-details-btn-1:checked ~ .slider-control #purchase-details-control-1.btn::before,
+#purchase-details-btn-2:checked ~ .slider-control #purchase-details-control-2.btn::before,
+#purchase-details-btn-3:checked ~ .slider-control #purchase-details-control-3.btn::before {
+  top: 0;
+  width: 280px;
+  height: 100%;
+
+  background-color: rgb(0, 0, 0);
+
+  transition: 0s;
 }
 
 #purchase-details-btn-1:checked ~ #delivery,
@@ -1502,6 +1531,7 @@ html {
 .info-about-us {
   position: relative;
   padding-top: 58px;
+  padding-right: 120px;
   width: 51.5%;
 }
 
@@ -1538,7 +1568,26 @@ html {
 .info-about-us__list {
   margin-top: 73px;
   margin-bottom: 56px;
-  margin-left: 36px;
+  padding-left: 35px;
+
+  list-style: none;
+}
+
+.list__item {
+  position: relative;
+}
+
+.info-about-us__list .list__item::before {
+  content: "";
+
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  top: 9px;
+  left: -34px;
+
+  border: 2px solid rgb(230, 230, 230);
+  border-radius: 50%;
 }
 
 .info-about-us__list .list__item:not(:last-child) {
