@@ -14,7 +14,7 @@ writeUsModal.addEventListener("click", writeUsShow, true);
 var writeUsCloseBtn = document.getElementById("write-us-close");
 writeUsCloseBtn.addEventListener("click", writeUsClose, true);
 
-// YANDEX MAP
+// YANDEX MAP MODAL
 
 function yandexMapShow() {
   document.getElementById("maps-modal").style.display = "block";
