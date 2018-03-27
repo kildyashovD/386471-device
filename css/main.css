@@ -1907,42 +1907,39 @@ html {
   display: inline-block;
 
   content: "";
-  width: 14px;
-  height: 14px;
-  margin-right: 12px;
+  width: 13px;
+  height: 12px;
+  margin-right: 14px;
 
   background-image: url("../img/user-yellow.svg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: 0;
 }
 
 .footer-user-action__compair::before {
   display: inline-block;
 
   content: "";
-  width: 14px;
-  height: 14px;
-  margin-right: 12px;
+  width: 10px;
+  height: 10px;
+  margin-right: 13px;
 
   background-image: url("../img/compare-yellow.svg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: 0;
 }
 
 .footer-user-action__cart::before {
   display: inline-block;
 
   content: "";
-  width: 14px;
-  height: 14px;
-  margin-right: 12px;
+  width: 12px;
+  height: 12px;
+  margin-right: 13px;
 
   background-image: url("../img/cart-yellow.svg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: 0;
 }
 
 .footer-user-action .footer-user-action__logout {
