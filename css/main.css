@@ -1833,6 +1833,11 @@ html {
   margin-left: 38px;
 }
 
+.catalog-page .footer-user-action__item:first-child {
+  margin-left: 0;
+  margin-right: -15px;
+}
+
 .footer-user-action a {
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
