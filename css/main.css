@@ -1452,6 +1452,7 @@ html {
 }
 
 .slider-control__btn-text.btn::before {
+  top: 15px;
   width: 100%;
 }
 
