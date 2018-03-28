@@ -1,10 +1,13 @@
 // MODAL WRITE US
 
-function writeUsShow() {
+function writeUsShow(evt) {
+  evt.preventDefault();
+
   document.getElementById("write-us-modal").style.display = "block";
 }
 
-function writeUsClose() {
+function writeUsClose(evt) {
+  evt.preventDefault();
   document.getElementById("write-us-modal").style.display = "none";
 }
 
@@ -16,11 +19,13 @@ writeUsCloseBtn.addEventListener("click", writeUsClose, true);
 
 // YANDEX MAP MODAL
 
-function yandexMapShow() {
+function yandexMapShow(evt) {
+  evt.preventDefault();
   document.getElementById("maps-modal").style.display = "block";
 }
 
-function yandexMapClose() {
+function yandexMapClose(evt) {
+  evt.preventDefault();
   document.getElementById("maps-modal").style.display = "none";
 }
 
