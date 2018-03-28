@@ -335,8 +335,8 @@ html {
 
 /* ----- PSEUDO ELEMENTS FOR USER ACTION ----- */
 
-.user-action__login::before,
-.user-action__account::before {
+.user-action__login-link::before,
+.user-action__account-link::before {
   display: inline-block;
   content: "";
   width: 13px;
@@ -348,7 +348,7 @@ html {
   background-repeat: no-repeat;
 }
 
-.user-action__compare::before {
+.user-action__compare-link::before {
   display: inline-block;
   content: "";
   width: 10px;
@@ -360,7 +360,7 @@ html {
   background-repeat: no-repeat;
 }
 
-.user-action__cart::before {
+.user-action__cart-link::before {
   display: inline-block;
   content: "";
   width: 12px;
@@ -901,10 +901,10 @@ html {
 
   position: absolute;
   top: 0;
-  left: -328px;
+  left: -150%;
 
   height: 100%;
-  width: 100%;
+  width: 150%;
 
   background-color: inherit;
 }
@@ -1005,10 +1005,10 @@ html {
 
   position: absolute;
   top: 0;
-  left: -328px;
+  left: -150%;
 
   height: 100%;
-  width: 100%;
+  width: 150%;
 
   background-color: inherit;
 }
