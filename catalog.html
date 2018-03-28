@@ -166,7 +166,28 @@
 
               <fieldset class="form-filters__item">
                 <legend class="form-filters__heading">Стоимость</legend>
-                <input type="range" name="price-count" min="0" max="10000" step="100">
+
+                <div class="range-filter">
+                  <div class="range-filter__controls">
+
+                    <div class="range-filter__scale">
+                      <div class="range-filter__bar"></div>
+                    </div>
+
+                    <div class="range-filter__toggle toggle-min"></div>
+                    <div class="range-filter__toggle toggle-max"></div>
+
+                  </div>
+
+                  <div class="range-filter__price-controls">
+
+                    <label class="range-filter__min-price">от <input name="min-price" type="text" value="0"></label>
+
+                    <label class="range-filter__max-price">до <input name="max-price" type="text" value="10000"></label>
+
+                  </div>
+                </div>
+
               </fieldset>
 
               <fieldset class="form-filters__item form-filters__color">

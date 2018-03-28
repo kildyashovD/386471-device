@@ -1064,7 +1064,9 @@ html {
   flex-direction: column;
 
   position: relative;
-  padding-bottom: 40px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 28px;
 
   border: none;
 }
@@ -1083,19 +1085,104 @@ html {
 
 .form-filters__heading {
   padding-top: 15px;
+  margin-bottom: 14px;
 
   font-size: 18px;
 }
 
-.form-filters__item label {
+/* ----- RANGE-FILTERS ----- */
+
+.range-filter {
+	margin-top: -25px;
+}
+
+.range-filter__controls {
   position: relative;
-  padding-left: 25px;
+}
+
+.range-filter__scale {
+  position: relative;
+  margin: 0;
+  margin: 43px 0 15px 0;
+  padding: 0;
+  width: 100%;
+  height: 2px;
+
+  background-color: rgb(219, 219, 219);
+}
+
+.range-filter__bar {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 115px;
+  height: 2px;
+
+  background-color: rgb(145, 201, 47);
+}
+
+.range-filter__toggle {
+  width: 22px;
+  height: 22px;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.toggle-min,
+.toggle-max {
+  position: absolute;
+  top: -9px;
+}
+
+.toggle-min {
+  left: 10px;
+}
+
+.toggle-max {
+  right: 66px;
+}
+
+.range-filter label {
+  display: inline-block;
+
+  padding: 0;
+  margin: 0;
+  width: 90px;
+
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.range-filter input {
+  width: 60px;
+
+  background-color: transparent;
+  border: none;
+
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+/* ----- RANGE-FILTERS-COLOR & BLUETOOTH */
+
+.form-filters__color label,
+.form-filters__bluetooth label {
+  position: relative;
+  padding-left: 30px;
 
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 40px;
 }
+
+
 
 .form-filters__color label::before {
   -webkit-box-sizing: border-box;
@@ -1105,7 +1192,7 @@ html {
 
   position: absolute;
   top: 10px;
-  left: -15px;
+  left: 0;
   height: 26px;
   width: 26px;
 
@@ -1127,8 +1214,8 @@ html {
   content: "";
 
   position: absolute;
-  top: 10px;
-  left: -15px;
+  top: 7px;
+  left: 0;
   height: 26px;
   width: 26px;
 
