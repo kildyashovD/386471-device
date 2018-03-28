@@ -65,7 +65,9 @@ input[type="radio"].visually-hidden {
 
   white-space: nowrap;
 
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -93,6 +95,8 @@ input[type="radio"].visually-hidden {
   height: 8px;
   width: 100%;
   z-index: -1;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 
   background-color: rgb(240, 197, 46);
@@ -101,6 +105,8 @@ input[type="radio"].visually-hidden {
 .btn:hover::before {
   top: 0;
   height: 100%;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -305,7 +311,9 @@ html {
 }
 
 .main-header__user-action {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .user-action {
@@ -316,11 +324,14 @@ html {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .user-action__item:first-child {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   margin-left: 0;
 }
 
@@ -330,7 +341,9 @@ html {
 
 .user-action__logout {
   margin-left: 0;
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 /* ----- PSEUDO ELEMENTS FOR USER ACTION ----- */
@@ -416,7 +429,9 @@ html {
 }
 
 .site-nav__item:last-child {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   text-align: right;
   margin-right: -4px;
 }
@@ -437,6 +452,8 @@ html {
 
 .site-nav__link:first-child:hover + .catalog,
 .catalog:hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
   width: 100%;
@@ -576,7 +593,8 @@ html {
   -webkit-box-direction: reverse;
   -ms-flex-direction: column-reverse;
   flex-direction: column-reverse;
-  flex-basis: 160px;
+  -ms-flex-preferred-size: 160px;
+      flex-basis: 160px;
 
   margin: 0;
 }
@@ -606,8 +624,12 @@ html {
 /* ----- PROMO-SLIDER-CONTROL ----- */
 
 .promo-slider__control {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 
   position: absolute;
   top: 202px;
@@ -703,7 +725,9 @@ html {
 }
 
 .product-nav__item {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   margin: 0 20px;
 }
 
@@ -1073,7 +1097,8 @@ html {
 }
 
 .form-filters__color label::before {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 
   content: "";
 
@@ -1095,7 +1120,8 @@ html {
 }
 
 .form-filters__bluetooth label::before {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 
   content: "";
 
@@ -1154,7 +1180,8 @@ html {
 
 .products-cart__item {
   position: relative;
-  flex-basis: 360px;
+  -ms-flex-preferred-size: 360px;
+      flex-basis: 360px;
   margin-bottom: 45px;
 }
 
@@ -1481,6 +1508,10 @@ html {
 
   background-color: rgb(0, 0, 0);
 
+  -webkit-transition: 0s;
+
+  -o-transition: 0s;
+
   transition: 0s;
 }
 
@@ -1743,7 +1774,9 @@ html {
 }
 
 .modal-form .container {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 
   width: 48%;
   margin: 0;
@@ -1805,7 +1838,9 @@ html {
   height: 2px;
 
   background-color: rgba(255, 255, 255, 1);
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .modal__close::after {
@@ -1818,7 +1853,9 @@ html {
   height: 2px;
 
   background-color: rgba(255, 255, 255, 1);
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 
@@ -1982,7 +2019,9 @@ html {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 
   margin-top: 6px;
   padding-left: 0;
@@ -2026,7 +2065,9 @@ html {
 /* ----- SOCIAL-ICON ----- */
 
 .social-icon {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 
   position: relative;
 
