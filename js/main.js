@@ -2,14 +2,17 @@
 
 function writeUsShow(evt) {
   evt.preventDefault();
-
   document.getElementById("write-us-modal").style.display = "block";
+  modalOverlay.style.display = "block";
 }
 
 function writeUsClose(evt) {
   evt.preventDefault();
   document.getElementById("write-us-modal").style.display = "none";
+  modalOverlay.style.display = "none";
 }
+
+var modalOverlay = document.querySelector(".modal-overlay");
 
 var writeUsModal = document.getElementById("write-us-modal-show");
 writeUsModal.addEventListener("click", writeUsShow, true);
@@ -22,11 +25,13 @@ writeUsCloseBtn.addEventListener("click", writeUsClose, true);
 function yandexMapShow(evt) {
   evt.preventDefault();
   document.getElementById("maps-modal").style.display = "block";
+  modalOverlay.style.display = "block";
 }
 
 function yandexMapClose(evt) {
   evt.preventDefault();
   document.getElementById("maps-modal").style.display = "none";
+  modalOverlay.style.display = "none";
 }
 
 var yandexMapModalBtn = document.getElementById("maps-modal-link");

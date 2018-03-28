@@ -447,12 +447,13 @@
 
             <div class="container">
               <label for="modal-user-message">Текст письма:</label>
-              <textarea name="user-message" class="modal-form__message" id="modal-user-message" cols="30" rows="5" required>В свободной форме</textarea>
+              <textarea name="user-message" class="modal-form__message" id="modal-user-message" cols="30" rows="5" placeholder="В свободной форме" required></textarea>
             </div>
 
             <button type="submit" class="modal-form__submit btn">Отправить</button>
 
           </form>
+
           <!-- CLOSE BUTTON -->
           <button type="button" class="modal__close" id="write-us-close"></button>
 
@@ -460,12 +461,15 @@
 
         <!-- MAP -->
         <div class="yandex-map-modal modal" id="maps-modal">
-          <!-- CLOSE BUTTON -->
           <iframe src="https://yandex.ru/map-widget/v1/-/CBew6ZwzPA" width="960" height="559" frameborder="0"></iframe>
+
+          <!-- CLOSE BUTTON -->
           <button class="modal__close" id="maps-modal-close" type="button"></button>
         </div>
 
       </section>
+
+      <div class="modal-overlay"></div>
 
     </div>
 
