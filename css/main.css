@@ -435,7 +435,7 @@ html {
 
 /* ----- CATALOG ----- */
 
-.site-nav__item:first-child:hover .catalog {
+.site-nav__link:first-child:hover + .catalog {
   display: flex;
 
   width: 100%;
