@@ -348,7 +348,7 @@ html {
   background-repeat: no-repeat;
 }
 
-.user-action__compair::before {
+.user-action__compare::before {
   display: inline-block;
   content: "";
   width: 10px;
@@ -435,7 +435,8 @@ html {
 
 /* ----- CATALOG ----- */
 
-.site-nav__link:first-child:hover + .catalog {
+.site-nav__link:first-child:hover + .catalog,
+.catalog:hover {
   display: flex;
 
   width: 100%;
@@ -1936,7 +1937,7 @@ html {
   background-position: 0;
 }
 
-.footer-user-action__compair::before {
+.footer-user-action__compare::before {
   display: inline-block;
 
   content: "";
