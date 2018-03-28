@@ -1456,6 +1456,10 @@ html {
   width: 100%;
 }
 
+.slider-control__btn-text.btn:hover::before {
+  top: 0;
+}
+
 .slider-control__btn-text:focus {
   color: rgb(247, 225, 132);
   outline: none;
