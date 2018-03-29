@@ -1273,6 +1273,27 @@ html {
   margin-bottom: 45px;
 }
 
+.products-cart__new-product::after {
+  box-sizing: border-box;
+
+  content: "new";
+
+  position: absolute;
+  top: 29px;
+  right: 27px;
+  width: 60px;
+  height: 60px;
+  padding-top: 18px;
+
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgb(216, 216, 216);
+
+  border: 2px solid rgb(216, 216, 216);
+  border-radius: 50%;
+}
+
 .products-cart__img {
   margin-bottom: 25px;
 }
@@ -1663,6 +1684,46 @@ html {
 .brands-logotypes__img_color_colorful:hover,
 .brands-logotypes__img_color_colorful:focus {
   opacity: 1;
+}
+
+
+
+
+/*------------------------------------*\
+  #ABOUT-US
+\*------------------------------------*/
+
+@keyframes bounce {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+.bounce {
+  animation-name: bounce;
+  animation-duration: .75s;
 }
 
 
