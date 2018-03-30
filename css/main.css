@@ -240,7 +240,7 @@ html {
 }
 
 .user-action-form__btn {
-  visibility: hidden;
+  display: none;
 
   padding: 14px 19px;
   margin-left: -5px;
@@ -320,7 +320,7 @@ html {
 }
 
 .user-action-form__user-search:focus + .user-action-form__btn {
-  visibility: visible;
+  display: inline-block;
   border: 2px solid rgba(0, 0, 0, 1);
 }
 
@@ -497,6 +497,7 @@ html {
 /* ----- CATALOG ----- */
 
 .site-nav__link:first-child:hover + .catalog,
+.site-nav__link:first-child:focus-within,
 .catalog:hover {
   display: -webkit-box;
   display: -ms-flexbox;
