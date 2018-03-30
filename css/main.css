@@ -1,3 +1,4 @@
+
 /*------------------------------------*\
   #Подключаем шрифты
 \*------------------------------------*/
@@ -264,6 +265,18 @@ html {
   border-bottom: 2px solid rgba(0, 0, 0, 0);
 }
 
+.user-action-form__user-search::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.user-action-form__user-search:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.user-action-form__user-search::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .user-action-form__user-search::placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
@@ -274,6 +287,18 @@ html {
 
 .user-action-form__user-search:-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.user-action-form__user-search:hover::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.user-action-form__user-search:hover:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.user-action-form__user-search:hover::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .user-action-form__user-search:hover::placeholder {
@@ -1148,7 +1173,8 @@ html {
 
   border: 8px solid #ffffff;
   background-color: #ababab;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
+  -webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
+          box-shadow: 0 2px 1px 0 #cfcfcf;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -1295,7 +1321,8 @@ html {
 }
 
 .products-cart__new-product::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 
   content: "new";
 
@@ -1718,41 +1745,87 @@ html {
   #BOUNCE-ANIMATION
 \*------------------------------------*/
 
+@-webkit-keyframes bounce {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+            transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+            transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+            transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+            transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
 @keyframes bounce {
   from,
   60%,
   75%,
   90%,
   to {
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
   }
 
   0% {
     opacity: 0;
-    transform: translate3d(0, -3000px, 0);
+    -webkit-transform: translate3d(0, -3000px, 0);
+            transform: translate3d(0, -3000px, 0);
   }
 
   60% {
     opacity: 1;
-    transform: translate3d(0, 25px, 0);
+    -webkit-transform: translate3d(0, 25px, 0);
+            transform: translate3d(0, 25px, 0);
   }
 
   75% {
-    transform: translate3d(0, -10px, 0);
+    -webkit-transform: translate3d(0, -10px, 0);
+            transform: translate3d(0, -10px, 0);
   }
 
   90% {
-    transform: translate3d(0, 5px, 0);
+    -webkit-transform: translate3d(0, 5px, 0);
+            transform: translate3d(0, 5px, 0);
   }
 
   to {
-    transform: none;
+    -webkit-transform: none;
+            transform: none;
   }
 }
 
 .bounce {
-  animation-name: bounce;
-  animation-duration: .75s;
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: .75s;
+          animation-duration: .75s;
 }
 
 
