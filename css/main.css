@@ -2286,6 +2286,10 @@ html {
   box-shadow: 0px 1px 15px 10px rgba(0, 0, 0, 0.2);
 }
 
+.yandex-map-modal iframe {
+  border: none;
+}
+
 
 
 
