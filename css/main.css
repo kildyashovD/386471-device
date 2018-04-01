@@ -640,7 +640,7 @@ html {
 .promo-slider__content {
   position: relative;
   width: 48%;
-  padding-right: 60px;
+  padding-right: 54px;
 }
 
 .promo-slider__content::before {
@@ -670,7 +670,7 @@ html {
 .promo-slider__description {
   margin-top: 19px;
   margin-bottom: 37px;
-  padding-right: 15px;
+  padding-right: 20px;
 
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
