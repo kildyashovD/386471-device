@@ -643,6 +643,19 @@ html {
   padding-right: 60px;
 }
 
+.promo-slider__content::before {
+  content: "";
+
+  position: absolute;
+  width: 100px;
+  height: 7px;
+  top: 5px;
+  left: 0;
+
+
+  background-color: rgb(255, 255, 255);
+}
+
 .promo-slider__lead {
   margin-top: 47px;
   margin-bottom: 0;
