@@ -1670,7 +1670,7 @@ html {
 }
 
 .slider-control__btn-text:active {
-  color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0c);
 }
 
 #purchase-details-btn-1:checked ~ .slider-control #purchase-details-control-1,
