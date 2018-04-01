@@ -561,8 +561,16 @@ html {
 
 .site-nav__link:hover + .catalog,
 .site-nav__link:focus + .catalog,
-.catalog:focus-within,
 .catalog:hover {
+  visibility: visible;
+
+  padding-bottom: 40px;
+
+  z-index: 2;
+  background-color: #f7e296;
+}
+
+.catalog:focus-within {
   visibility: visible;
 
   padding-bottom: 40px;
