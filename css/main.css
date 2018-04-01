@@ -869,7 +869,7 @@ html {
   align-items: center;
 
   width: 100%;
-  min-height: 160px;
+  height: 160px;
 
   background-color: rgba(240, 197, 46, 0.5);
 }
