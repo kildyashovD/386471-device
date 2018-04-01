@@ -1669,9 +1669,8 @@ html {
   top: 0;
 }
 
-.slider-control__btn-text:focus {
-  color: rgb(247, 225, 132);
-  outline: none;
+.slider-control__btn-text:active {
+  color: rgb(0, 0, 0);
 }
 
 #purchase-details-btn-1:checked ~ .slider-control #purchase-details-control-1,
