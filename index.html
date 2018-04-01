@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body class="main-page">
 
   <!-- HEADER -->
   <header class="main-header">
@@ -23,7 +23,7 @@
 
       <!-- MAIN NAV -->
       <!-- USER SEARCH -->
-      <form class="main-header__user-action-form user-action-form">
+      <form method="get" action="https://echo.htmlacademy.ru" class="main-header__user-action-form user-action-form">
         <label for="user-search" class="visually-hidden">Поиск по сайту</label>
         <input type="search" name="user-search" class="user-action-form__user-search" id="user-search" placeholder="Поиск по сайту">
         <button type="submit" class="user-action-form__btn">Найти</button>
@@ -416,7 +416,7 @@
 
         </ul>
 
-        <a href="#" class="info-about-us__link btn">Подробнее о нас</a>
+        <a href="#" class="info-about-us__link btn btn_fix-width">Подробнее о нас</a>
 
       </section>
 
@@ -429,7 +429,7 @@
 
         <a href="#" class="contacts__maps-link" id="maps-modal-link"><img class="contacts__maps-img" width="560" height="222" src="img/map.png" alt="Карта"></a>
 
-        <a href="#" class="contacts__link btn" id="write-us-modal-show">Напишите нам</a>
+        <a href="#" class="contacts__link btn btn_fix-width" id="write-us-modal-show">Напишите нам</a>
 
         <!-- WRITE US MODAL -->
         <div class="modal-write-us modal bounce" id="write-us-modal">
