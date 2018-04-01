@@ -81,7 +81,7 @@ input[type="radio"].visually-hidden {
   /* временно добавил*/
   font-size: 18px;
   line-height: 24px;
-  letter-spacing: 4px;
+  letter-spacing: 3.6px;
   text-transform: uppercase;
   vertical-align: baseline;
 }
@@ -258,10 +258,9 @@ html {
 .user-action-form__user-search {
   padding-left: 38px;
   width: 355px;
-  min-height: 47px;
+  min-height: 48px;
 
   color: rgb(0, 0, 0);
-  line-height: 43px;
 
   background-color: transparent;
   background-image: url("../img/search.svg");
@@ -398,7 +397,7 @@ html {
 }
 
 .user-action__item {
-  margin-left: 38px;
+  margin-left: 40px;
 }
 
 .user-action__logout {
@@ -477,7 +476,7 @@ html {
   -ms-flex-direction: row;
   flex-direction: row;
 
-  letter-spacing: 4px;
+  letter-spacing: 3.6px;
 }
 
 .site-nav__item:first-child {
@@ -492,7 +491,7 @@ html {
 
   width: 20px;
   height: 20px;
-  margin-left: 5px;
+  margin-left: 11px;
 
   vertical-align: baseline;
 
@@ -505,7 +504,7 @@ html {
 
 .site-nav__item {
   position: relative;
-  margin-right: 30px;
+  margin-right: 34px;
 
   font-size: 18px;
   text-transform: uppercase;
@@ -552,7 +551,7 @@ html {
   width: 1160px;
   padding-top: 19px;
   padding-left: 60px;
-  padding-bottom: 43px;
+  padding-bottom: 41px;
 
   z-index: 2;
 
@@ -652,16 +651,18 @@ html {
 
   font-size: 47px;
   line-height: 56px;
+  letter-spacing: 0.6px;
 }
 
 .promo-slider__description {
   margin-top: 19px;
   margin-bottom: 37px;
-  padding-right: 20px;
+  padding-right: 15px;
 
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   line-height: 30px;
+  letter-spacing: 0.15px;
 }
 
 .promo-slider__advantage {
@@ -910,11 +911,12 @@ html {
 }
 
 .breadcrumbs-nav__current-product {
-  font-size: 47px;
-  line-height: 48px;
-
   margin: 0;
   margin-bottom: 24px;
+
+  font-size: 47px;
+  line-height: 48px;
+  letter-spacing: 0.6px;
 }
 
 .breadcrumbs {
@@ -1017,6 +1019,7 @@ html {
   font-size: 16px;
   letter-spacing: 4px;
   text-transform: uppercase;
+  letter-spacing: 3.6px;
 }
 
 .sorting .sorting__heading {
@@ -1057,7 +1060,7 @@ html {
   justify-content: space-between;
 
   margin: 0;
-  margin-left: 15px;
+  margin-left: 20px;
   padding: 0;
 
   list-style: none;
@@ -1186,7 +1189,7 @@ html {
 
 .form-filters__heading {
   width: 100%;
-  padding-top: 15px;
+  padding-top: 13px;
   margin-bottom: 14px;
 
   font-size: 18px;
@@ -1466,6 +1469,7 @@ html {
 
   font-size: 18px;
   color: rgb(0, 0, 0);
+  letter-spacing: 0.2px;
   vertical-align: baseline;
 }
 
@@ -1680,6 +1684,7 @@ html {
 
   font-size: 47px;
   line-height: 48px;
+  letter-spacing: 0.6px;
 }
 
 .purchase-details__description {
@@ -1688,7 +1693,8 @@ html {
 
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
-  line-height: 30px;
+  line-height: 32px;
+  letter-spacing: 0.22px
 }
 
 .purchase-details__control {
@@ -1927,7 +1933,7 @@ html {
 .info-about-us {
   position: relative;
   padding-top: 58px;
-  padding-right: 120px;
+  padding-right: 115px;
   width: 51.5%;
 }
 
@@ -1945,8 +1951,10 @@ html {
 
 .info-about-us__heading {
   margin: 0;
+
   font-size: 47px;
   line-height: 48px;
+  letter-spacing: 0.6px;
 }
 
 .info-about-us__heading + .info-about-us__description {
@@ -1956,9 +1964,11 @@ html {
 .info-about-us__description {
   margin-top: 30px;
   margin-bottom: 0;
+
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   line-height: 30px;
+  letter-spacing: 0.12px;
 }
 
 .info-about-us__list {
@@ -1971,6 +1981,8 @@ html {
 
 .list__item {
   position: relative;
+
+  letter-spacing: 0.75px;
 }
 
 .info-about-us__list .list__item::before {
@@ -2018,16 +2030,20 @@ html {
 
 .contacts__heading {
   margin: 0;
+
   font-size: 47px;
   line-height: 48px;
+  letter-spacing: 0.6px;
 }
 
 .contacts__description {
   margin-top: 43px;
   margin-bottom: 39px;
+
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   line-height: 30px;
+  letter-spacing: 0.12px;
 }
 
 .contacts__maps-link {
@@ -2470,6 +2486,7 @@ html {
   flex-grow: 1;
 
   position: relative;
+  padding-left: 6px;
 
   text-align: center;
 }
