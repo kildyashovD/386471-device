@@ -1,3 +1,4 @@
+
 /*------------------------------------*\
   #Подключаем шрифты
 \*------------------------------------*/
@@ -284,16 +285,10 @@ html {
   border-bottom: 2px solid rgba(0, 0, 0, 0);
 }
 
-.user-action-form__user-search::-webkit-input-placeholder,
-.user-action-form__user-search::-ms-input-placeholder,
-.user-action-form__user-search::placeholder,
-.user-action-form__user-search::-ms-input-placeholder,
-.user-action-form__user-search:-ms-input-placeholder,
-.user-action-form__user-search:-ms-input-placeholder {
+.user-action-form__user-search::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
 
-/*
 .user-action-form__user-search:-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
@@ -313,18 +308,11 @@ html {
 .user-action-form__user-search:-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
-*/
 
-.user-action-form__user-search:hover::-webkit-input-placeholder,
-.user-action-form__user-search:hover:-ms-input-placeholder,
-.user-action-form__user-search:hover::-ms-input-placeholder,
-.user-action-form__user-search:hover::placeholder,
-.user-action-form__user-search:hover::-ms-input-placeholder,
-.user-action-form__user-search:hover:-ms-input-placeholder {
+.user-action-form__user-search:hover::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.6);
 }
 
-/*
 .user-action-form__user-search:hover:-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.6);
 }
@@ -344,7 +332,6 @@ html {
 .user-action-form__user-search:hover:-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.6);
 }
-*/
 
 .user-action-form__user-search:focus {
   opacity: 1;
@@ -594,9 +581,7 @@ html {
   visibility: visible;
 }
 
-.catalog:focus-within {
-  visibility: visible;
-
+.catalog {
   padding-bottom: 40px;
 
   z-index: 2;
@@ -853,9 +838,9 @@ html {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: stretch;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
 
   padding: 0;
   margin: 0;
@@ -1119,6 +1104,10 @@ html {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.sorting__link_active {
+  color: rgba(0, 0, 0, 1);
+}
+
 .sorting__link:hover,
 .sorting__link:focus {
   color: rgba(0, 0, 0, 0.6);
@@ -1142,6 +1131,10 @@ html {
   vertical-align: baseline;
 
   opacity: 0.2;
+}
+
+.sorting__icon_active {
+  opacity: 1;
 }
 
 .sorting__icon-up-link {
@@ -1328,7 +1321,7 @@ html {
   color: rgba(0, 0, 0, 0.2);
 }
 
-/* ----- RANGE-FILTERS-COLOR & BLUETOOTH */
+/* ----- FILTERS-COLOR & BLUETOOTH */
 
 .form-filters__color label,
 .form-filters__bluetooth label {
@@ -1363,7 +1356,22 @@ html {
   opacity: 0.6;
 }
 
+.form-filters__ckeckbox:disabled + label,
+.form-filters__radio:disabled + label {
+  opacity: 0.25;
+}
+
+.form-filters__ckeckbox:focus + label::before,
+.form-filters__radio:focus + label::before {
+  opacity: 0.6;
+}
+
 .form-filters__color label:active::before {
+  opacity: 1;
+}
+
+.form-filters__ckeckbox:active + label::before,
+.form-filters__radio:active + label::before{
   opacity: 1;
 }
 
@@ -1411,6 +1419,8 @@ html {
   font-family: inherit;
   font-weight: 700;
   border: none;
+
+  padding: 14px 40px 14px 40px;
 }
 
 
