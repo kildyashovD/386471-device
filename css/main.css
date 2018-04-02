@@ -212,7 +212,7 @@ html {
 
 .catalog-page .main-header__container {
   min-height: 185px;
-  padding-bottom: 40px;
+  padding-bottom: 41px;
 }
 
 /* ----- LOGO ----- */
@@ -581,7 +581,7 @@ html {
 }
 
 .catalog {
-  padding-bottom: 40px;
+  padding-bottom: 41px;
 
   z-index: 2;
   background-color: #f7e296;
