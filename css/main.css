@@ -2481,13 +2481,14 @@ html {
 }
 
 .footer-nav__item {
-  margin-right: 42px;
+  margin-right: 33px;
 }
 
 .footer-nav a {
   font-size: 18px;
-  letter-spacing: 4px;
+  letter-spacing: 3.6px;
   color: rgb(255, 255, 255);
+  text-transform: uppercase;
 }
 
 .footer-nav a:hover,
