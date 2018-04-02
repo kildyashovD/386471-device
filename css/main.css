@@ -1361,11 +1361,6 @@ html {
   opacity: 0.25;
 }
 
-.form-filters__ckeckbox:focus + label::before,
-.form-filters__radio:focus + label::before {
-  opacity: 0.6;
-}
-
 .form-filters__color label:active::before {
   opacity: 1;
 }
