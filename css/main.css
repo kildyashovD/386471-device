@@ -827,9 +827,6 @@ html {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: stretch;
-  -ms-flex-pack: stretch;
-  justify-content: stretch;
 
   padding: 0;
   margin: 0;
