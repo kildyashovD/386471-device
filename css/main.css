@@ -1342,13 +1342,13 @@ html {
   opacity: 0.6;
 }
 
-.form-filters__ckeckbox:disabled + label,
-.form-filters__radio:disabled + label {
-  opacity: 0.25;
-}
-
 .form-filters__color label:active::before {
   opacity: 1;
+}
+
+.form-filters__ckeckbox:focus + label::before,
+.form-filters__radio:focus + label::before {
+  opacity: 0.6;
 }
 
 .form-filters__ckeckbox:active + label::before,
@@ -1392,6 +1392,11 @@ html {
   border: none;
 
   background-image: url("../img/radio-on.svg");
+}
+
+.form-filters__ckeckbox:disabled + label,
+.form-filters__radio:disabled + label {
+  opacity: 0.25;
 }
 
 .form-filters__btn {
