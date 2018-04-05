@@ -1342,7 +1342,7 @@ html {
   opacity: 0.6;
 }
 
-.form-filters__color label:active::before {
+.form-filters__ckeckbox:checked label::before {
   opacity: 1;
 }
 
@@ -1384,7 +1384,7 @@ html {
   opacity: 0.6;
 }
 
-.form-filters__bluetooth label:active::before {
+.form-filters__bluetooth:checked label::before {
   opacity: 1;
 }
 
@@ -1392,6 +1392,10 @@ html {
   border: none;
 
   background-image: url("../img/radio-on.svg");
+}
+
+.form-filters__radio:checked + label::before {
+  opacity: 1;
 }
 
 .form-filters__ckeckbox:disabled + label,
